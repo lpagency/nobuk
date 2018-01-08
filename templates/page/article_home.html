@@ -1,0 +1,21 @@
+<div class="col-md-12">
+    
+    <div class="col-md-6 col-xs-12 zig box-6">
+            <img class="mini-articulos" src="{{ article["thumb_500"] }}" />
+
+            <div class="mask-6">
+            <a class="di" href="{{ site_base }}/article/detail/a/{{ article["id"] }}">
+                <button type="button" class="btn btn-outline home"> VER ARTICULO</button>
+            </a>
+            </div>
+    </div>
+
+            
+    <div class="col-md-6 col-xs-12 lef">
+        <h1 class="text-left tres"> {{ article["title"] }} </h1>
+        <p class="text-left cuatro ellipsis multiline">{{ article["caption"] }} </p>
+        <a href="{{ site_base }}/article/detail/a/{{ article["id"] }}" onclick="vermas()" class="lok">Ver más</a>
+        <div id="vermasdiv" style="display:none">Texto de Ver Más</div>
+    </div>
+
+</div>

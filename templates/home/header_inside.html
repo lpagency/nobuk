@@ -1,0 +1,139 @@
+<div class="line-white">
+    <div class="container">
+        <div align="center">
+            <div class="logo_wrapper navbar-brand hidden-xs">
+                <div class="col-md-12">
+                <div class="caja-log">
+                    {% if is_admin %}
+                    <div class="image-upload visible-movil">
+                        <label for="img_logo">
+                            <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'" style="">
+                        </label>
+                        <input type="file" class="editableimage" image-id="{{ site.name }}_img_logo" name="image" id="img_logo" >
+                    </div>
+                    {% end %}
+                    <a href="#">
+                        <div class="container_header">
+                            <img class="logo-desk-inside" id="{{ site.name }}_img_logo" src="{{ read_image(site.name + '_img_logo', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_img_logo',500) }}'" alt="item">
+                        </div>
+                    </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<nav class="navbar nobuk-2-menu  hidden-xs" role="navigation">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle toggle" data-toggle="collapse"
+                data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Desplegar navegación</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+    </div>
+    <!-- LOGO -->
+        <div class="hidden-lg hidden-md hidden-sm visible-xs" style="">
+            
+            <div class="caja-log">
+                {% if is_admin %}
+            <div class="image-upload visible-movil">
+                <label for="img_logo_movil">
+                    <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'" style="">
+                </label>
+                <input type="file" class="editableimage" image-id="{{ site.name }}_img_logo_movil" name="image" id="img_logo_movil">
+            </div>
+            {% end %}
+            <a id="{{ site.name + '_logo_movil' }}" href="#">
+                <img class="logo" id="{{ site.name }}_img_logo_movil" src="{{ read_image(site.name + '_img_logo_movil', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_img_logo_movil',500) }}'" alt="item">
+            </a>
+        </div>
+        </div>
+    <!-- /LOGO -->
+   
+    <div class="collapse navbar-collapse navbar-ex1-collapse box-menu pad0">
+        <ul class="mg-home nav navbar-nav col-md-8 pad0">
+             <div class="dropdown col-md-3 hed col-sm-3 col-xs-2">
+                <button class="btn btn-primary menu dropdown-toggle" type="button" data-toggle="dropdown">Nosotros
+                 </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="{{ site_base }}/historia">Nuestra Historia</a></li>
+                    <li><a href="http://nobuk.lpe.cl/gallery/detail/galeria_de_prueba_taller_nobuk/1624">Nuestros Artesanos</a></li>
+                </ul>
+            </div>
+
+            <div class="dropdown col-md-3 hed col-sm-3 col-xs-2">
+                <button class="btn btn-primary menu dropdown-toggle" type="button" data-toggle="dropdown">Productos
+                 </button>
+                  <ul class="dropdown-menu">
+                    <li><a href="{{ site_base }}/listado_productos?tag=carteras">Carteras</a></li>
+                    <li><a href="{{ site_base }}/listado_productos?tag=bolso">Bolsos</a></li>
+                    <li><a href="{{ site_base }}/listado_productos?tag=maletines">Maletines</a></li>
+                    <li><a href="{{ site_base }}/listado_productos?tag=mochilas">Mochilas</a></li>
+                    <li><a href="{{ site_base }}/listado_productos?tag=accesorios">Accesorios</a></li>
+                    <li><a href="{{ site_base }}/listado_productos?tag=nino">Niños</a></li>
+                    <li><a href="{{ site_base }}/listado_productos">Todos</a></li>
+                </ul>
+            </div>
+            <li class="" style="left:4px;">
+                <a href="{{ site_base }}/listado_productos?tag=new">Lo Nuevo</a>
+            </li>
+         <!--     <li >
+                <a href="{{ site_base }}/contact">Contactanos</a>
+            </li> -->
+
+        </ul>
+        <ul class="nav navbar-nav col-md-2 pad0">
+            <!-- LOGO -->
+<!--             <div class="logo_wrapper navbar-brand hidden-xs">
+            <div class="caja-log">
+                {% if is_admin %}
+                <div class="image-upload visible-movil">
+                    <label for="img_logo">
+                        <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'" style="">
+                    </label>
+                    <input type="file" class="editableimage" image-id="{{ site.name }}_img_logo" name="image" id="img_logo" >
+                </div>
+                {% end %}
+                <a href="#">
+                    <div class="container_header">
+                        <img class="logo-desk" id="{{ site.name }}_img_logo" src="{{ read_image(site.name + '_img_logo', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_img_logo',500) }}'" alt="item">
+                    </div>
+                </a>
+                </div>
+            </div> -->
+
+
+            <!-- /LOGO -->
+        </ul>
+        <ul class="nav navbar-nav col-md-4 pad0 cero">
+<!--        <li class="icon" id="open-cart" data-toggle="modal" data-target="#myModal">
+                <span> Tu carrito </span> <span class="units-total">0</span> 
+            </li>
+            <li class="sig hidden-xs-sm">
+                <a href=""> | </a>
+            </li>
+            
+            <li class="" style="float: right;">
+                <a href=""> Total Compra </a>
+            </li> -->
+
+            <li class="" style="">
+                 <a href="http://nobuk.lpe.cl/listado_productos?tag=hombre"> Hombre</a>
+            </li>
+             <li class="" style="">
+                 <a href="http://nobuk.lpe.cl/listado_productos?tag=mujer"> Mujer </a>
+            </li>
+            <li class="sig hidden-xs-sm">
+                <a href=""> | </a>
+            </li>
+            <li class="icon" id="open-cart" data-toggle="modal" data-target="#myModal">
+                <span> Total Compra </span> <span class="units-total">0</span> 
+            </li>
+
+        </ul>
+    </div>
+</nav>

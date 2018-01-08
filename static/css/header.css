@@ -1,0 +1,490 @@
+.nobuk-menu {
+    z-index: 1000;
+    position: absolute;
+    width: 100%;
+    background:transparent;
+    border-radius: 1px;
+    top: 23px;
+   /* border-bottom: 1px solid;*/
+   /* border-top: 1px solid;*/
+}
+
+.container_header{
+    width: 100%;
+}
+
+.logo-desk {
+    float: left;
+    padding: 0px;
+    top: 43px;
+    width: 175px;
+    height: 57px;
+    object-fit: scale-down;
+    position: relative;
+}
+
+.nav>li.logo_wrapper>a:hover:focus {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+/*.nav>li.logo_wrapper>a:hover:focus {
+    text-decoration: none;
+    background-color: transparent;
+}
+*/
+
+.logo_wrapper{
+    height: 0px;
+    padding: 0px 5px;
+}
+
+.navbar-nav li a {
+    font-size: 16px;
+    color: white;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    padding: 8px 23px 8px 31px;
+    margin-top: 7px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: 2px;
+}
+
+
+.nav>li>a:hover {
+    text-decoration: none;
+    background-color: transparent;
+    color: #ecd1af;
+}
+
+.nav>li>a:focus {
+    text-decoration: none !important;
+    background-color: transparent !important;
+    color: gray;
+}
+
+.box-menu{
+    margin: auto;
+/*    max-width: 80%;*/
+}
+
+
+.cero{
+    width: 36%;
+  float: right;
+}
+
+.icon {
+    top: 13px;
+    font-size: 16px;
+    left: -7px;
+    cursor: pointer;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.caja-log {
+    width: 224px;
+    float: left;
+    margin-top: -18px;
+    margin-bottom: 21px;
+    left: 474px;
+    position: absolute;
+    z-index: 1030;
+}
+
+.sig{
+  position:relative;
+  left: -14px;
+}
+
+.line-white{
+  background: white;
+  width: 100%;
+  height: 65px;
+}
+
+.btn-primary.menu {
+    display: inline-block;
+    padding: 0px 0px;
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    top: 14px;
+    position: relative;
+    background-color: transparent;
+    border: transparent;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    letter-spacing: 2px;
+}
+
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active, .open>.dropdown-toggle.btn-primary {
+    color: #727272;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.dropdown-menu>li>a{
+    padding: 0px 32px 0px 15px !important;
+    font-size: 13px;
+    color: #727272;
+    margin-bottom: 14px;
+    margin-top: 16px;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 155%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 126px;
+    padding: 0px 0;
+    margin: 2px 0 0;
+    font-size: 10px !important;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    -webkit-background-clip: padding-box;
+    background-clip: padding-box;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 0px;
+    -webkit-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.26);
+    -moz-box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.26);
+    box-shadow: 0px 0px 10px 5px rgba(119, 119, 119, 0.26);
+    font-family: 'Lato', sans-serif;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+}
+
+.col-md-3.hed {
+    width: 21%;
+}
+
+.nobuk-2-menu {
+    z-index: 1000;
+    position: absolute;
+    width: 100%;
+    background: rgba(115, 61, 20, 0.72);
+    border-radius: 1px;
+    top: 64px;
+    /* border-bottom: 1px solid; */
+    /* border-top: 1px solid; */
+    margin-top: -64px;
+}
+
+.logo-desk-inside{
+    float: left;
+    padding: 0px;
+    top: 22px;
+    width: 175px;
+    height: 45px;
+    object-fit: scale-down;
+    position: relative;
+}
+
+/*-------------------------------------Responsive--------------------------------------------------------*/
+@media (max-width: 1280px){
+     .logo_wrapper-2{
+      display: none;
+    }
+}
+
+@media (max-width: 1277px){
+    .navbar-nav li a {
+    font-size: 14px;
+    padding: 8px 33px 8px 17px;
+}
+
+.btn-primary.menu {
+    display: inline-block;
+    padding: 0px 0px;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+.icon {
+    font-size: 14px !important;
+}
+
+.logo-desk-inside {
+    float: left;
+    padding: 0px;
+    top: 28px;
+    width: 175px;
+    height: 45px;
+    object-fit: scale-down;
+    position: relative;
+}
+
+
+}
+
+@media (max-width: 1227px){
+.navbar-nav li a {
+    font-size: 13px;
+    padding: 8px 33px 8px 8px;
+}
+
+.icon {
+    top: 15px;
+    font-size: 13px;
+    left: 13px;
+    cursor: pointer;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.btn-primary.menu {
+    display: inline-block;
+    padding: 0px 0px;
+    margin-bottom: 0;
+    font-size: 13px;
+}
+
+}
+
+
+@media (max-width: 1199px){
+
+.carro{
+  width: 34px;
+
+}
+
+.caja-log {
+    width: 179px;
+    float: left;
+    margin-top: -24px;
+    margin-bottom: 0px;
+    left: 350px;
+}
+
+
+}
+
+
+@media (max-width: 1141px){
+    .navbar-nav li a {
+    font-size: 12px;
+    padding: 8px 23px 8px 8px;
+}
+
+.icon{
+    font-size: 12px !important;
+}
+
+}
+
+@media (max-width: 1140px){
+  .sig {
+    position: relative;
+    left: 21px;
+}
+
+}
+
+@media (max-width: 1117px){
+    .btn-primary.menu {
+    display: inline-block;
+    padding: 0px 0px;
+    margin-bottom: 0;
+    font-size: 12px;
+}
+
+}
+
+@media (max-width: 1116px){
+     .navbar-nav li a {
+    font-size: 12px;
+    padding: 8px 20px 8px 8px;
+}
+
+.icon{
+    font-size: 12px !important;
+}
+
+
+}
+
+@media (max-width: 1092px){
+     .navbar-nav li a {
+    font-size: 12px;
+    padding: 8px 18px 8px 8px;
+}
+
+.icon{
+    font-size: 12px !important;
+}
+
+
+}
+
+@media (max-width: 1076px){
+     .navbar-nav li a {
+    font-size: 12px;
+    padding: 8px 11px 8px 8px;
+}
+
+.icon{
+    font-size: 12px !important;
+}
+
+
+}
+
+@media (max-width: 1020px){
+    .navbar-nav li a {
+    font-size: 12px;
+    padding: 8px 8px 8px 8px;
+}
+.sig {
+    position: relative;
+    left: 16px;
+}
+
+}
+
+@media (max-width: 997px){
+
+}
+
+@media (max-width: 991px){
+.caja-log {
+    width: 179px;
+    float: left;
+    margin-top: 11px;
+    margin-bottom: 0px;
+    left: 332px;
+}
+
+.navbar-nav li a {
+    font-size: 12px;
+    padding: 8px 8px 8px 26px;
+}
+
+.logo-desk-inside {
+    float: left;
+    padding: 0px;
+    top: 8px;
+    width: 175px;
+    height: 45px;
+    object-fit: scale-down;
+    position: relative;
+}
+
+
+}
+
+
+@media screen and (max-width: 1130px){
+}
+
+@media screen and (max-width: 767px){
+.logo {
+    max-width: 160px;
+    background: inherit;
+    border-radius: inherit;
+    float: inherit;
+    margin-top: 0px;
+    position: absolute;
+    width: 63%;
+    z-index: 1111;
+    top: 63px;
+    left: -13px;
+}
+
+.navbar {
+    position: absolute;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    top: 0px;
+    z-index: 1030;
+    width: 100%;
+    background-color: #d0be97;
+}
+
+.line-white {
+    background: white;
+    width: 100%;
+    height: 65px;
+    position: relative;
+    top: 0px;
+    /*z-index: 1030;*/
+}
+
+.icon {
+    top: 11px;
+    font-size: 15px;
+    left: -2px;
+    /* color: white; */
+    position: relative;
+    text-align: center;
+    width: 14%;
+    float: right;
+}
+
+
+.dropdown:hover .dropdown-menu {
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.caja-log {
+    width: 300px;
+    float: left;
+    margin-top: -115px;
+    margin-bottom: 0px;
+    left: 27px;
+}
+
+}
+
+@media screen and (max-width: 700px){
+  .toggle {
+    background-color: rgba(0, 0, 0, 0.24);
+    border: 1px solid rgba(0, 0, 0, 0.13);
+    top: 9px;
+    margin-bottom: 18px;
+}
+
+ .icon-bar {
+    background-color: black !important;
+}
+.redes-menu{
+    bottom: 40px!important;
+    position: relative!important;
+  }
+}
+

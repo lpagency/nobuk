@@ -1,0 +1,283 @@
+{% extends "../base.html" %}
+
+{% block title %}
+{{ site.name }}
+{% end %}
+
+{% block header %}
+{% include '../home/header.html' %}
+{% end %}
+{% block css %}
+
+{% if is_admin %}
+{% end %}
+<link rel="stylesheet" type="text/css" href="{{ site_base }}/common/js/bodegas/dist/bodegas.client.css">
+<style type="text/css">
+
+    body{
+/*      background-color: rgba(128, 128, 128, 0.15);*/
+    }
+</style>
+{% end %}
+
+
+{% block javascript %}
+<script type="text/javascript" src="{{ site_base }}/static/js/cart.config.js"></script>
+<script type="text/javascript" src="{{ site_base }}/static/js/frubik.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function()
+    {
+
+      $("#OpenAlert").click();
+
+
+    });
+</script>
+<script type="text/javascript">
+    $(document).ready(function()
+    {
+    //   
+    $(document).on("click", ".subcateg", function(ev){
+        // ev.preventDefault();
+    $(".subcateg").removeClass('active');
+        $(this).addClass('active');
+    });
+
+    });
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function()
+  {
+    setTimeout(function(){
+      $(".inf").each(function()
+      {
+
+        var b = $(this);
+
+        var a = $(this).attr("in_stock");
+
+        console.log(a);
+
+        if(a == "false")
+        {
+          console.log("aaaa");
+          b.parent().children().children("button").html("Agotado");
+          b.parent().children().children("button").attr("disabled", true);
+        }
+
+      });
+    },2000);
+  });
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function()
+  {
+    $(document).on("click", ".mas-info", function()
+    {
+      var a = $(this).children().children("button");
+
+      if(a.html() == "Agotado")
+      {
+        document.cookie = "stock=none";
+      }
+      else
+      {
+        document.cookie = "stock=true";
+      }
+    });
+  });
+
+</script>
+{% end %}
+
+
+{% block body %}
+
+{% if is_admin %}
+{% set editabletext = 'editabletext' %}
+{% else %}
+{% set editabletext = '' %}
+{% end %}
+
+
+<!-- *contenido* -->
+<body id="lapimport">
+   <section>
+   <div align="center" style="">
+        {% if is_admin %}
+        <div class="image-upload part1 lapiz visible-movil">
+            <label for="img_productos_nobuk">
+                <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
+            </label>
+            <input type="file" class="editableimage" image-id="{{ site.name }}_productos_nobuk" name="image" id="img_productos_nobuk" >
+        </div>
+        {% end %}
+        <img id="{{ site.name }}_productos_nobuk" src="{{ read_image(site.name + '_productos_nobuk', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_productos_nobuk',500) }}'" class="banner_productos" alt="item">
+    </div>
+
+    <div class="container">
+        <div class="col-md-12">
+            <div class="text-center titulo-prou {{editabletext}}" text-id="{{ site.name + '_productos_til' }}"> {{ read_text(site.name +  '_productos_til') }}</div>
+        </div>
+    </div>
+ 
+</section>
+
+
+  <section class="h_submenu">
+        <div align="center">
+          <div class="container-fluid col-md-12 col-sm-12 col-xs-12 mtl text-center" style="padding-top: 1em;">
+            <a href="#" id="categoria_1" class="subcateg mbtm5" tag="madre, carteras" role="button">Carteras </a>
+            <a href="#" id="categoria_2" class="subcateg mbtm5" tag="madre, bolso" role="button">Bolsos</a>
+            <a href="#" id="categoria_3" class="subcateg mbtm5" tag="madre, maletines" role="button">Maletines</a>
+            <a href="#" id="categoria_4" class="subcateg mbtm5" tag="madre, mochilas" role="button">Mochilas</a>
+            <a href="#" id="categoria_5" class="subcateg mbtm5" tag="madre, accesorios" role="button">Accesorios</a>
+            <a href="{{ site_base }}/listado_productos" class="subcateg mbtm5">Ver todos</a>
+          </div>
+          </div>
+  </section>
+
+<section class="nov" style="height:500px;">
+   <div class="container">
+           <div align="center" class="to"> 
+              <div class="products">
+                  <div class="spinner">
+                    <div class="rect1"></div>
+                    <div class="rect2"></div>
+                    <div class="rect3"></div>
+                    <div class="rect4"></div>
+                    <div class="rect5"></div>
+                </div>
+              </div>
+            <div class="col-xs-12">
+              <div style="margin-top:45px;"></div>
+             <!--  <button type="button" class="btn btn-default more-products" style="display: none font-weight: 600;border-color: black;border-radius: 0px; margin-bottom: 100px;">Cargar más productos</button> -->
+            </div>
+          </div> 
+
+    </div>
+</section>
+
+<!-- ************++********box banner*********+*++***** -->
+
+<div class="clearfix-dos"> </div>
+<section>
+<!-- <div class="container-fluid">
+ <div class="col-md-6 article-box-2">
+      <div style="position:relative;">
+        {% if is_admin %}
+        <div class="image-upload lapiz visible-movil">
+         <label for="img_box_productos_1">
+           <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
+         </label>
+         <input type="file" class="editableimage" image-id="{{ site.name }}_box_productos_1" name="image" id="img_box_productos_1" >
+       </div>
+       {% end %}
+       <a id="{{ site.name + '_box_productos_1' }}" href="{{ read_link(site.name + '_box_productos_1') }}">
+        <img id="{{ site.name }}_box_productos_1" src="{{ read_image(site.name + '_box_productos_1', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_box_productos_1',) }}'" class="cuadros-home-2" alt="item">
+
+        <div align="center">
+          <div class="texto-img-2 {{editabletext}}" text-id="{{ site.name + '_t_productos_1' }}"> {{ read_text(site.name +  '_t_productos_1') }}</div>
+        </div>
+      </a> 
+    
+    </div>
+
+    {% if is_admin %}
+    <img class="change-image editablelink" link-id="{{ site.name + '_box_productos_1' }}" content="{{ read_link(site.name + '_box_productos_1') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
+    {% end %}
+  </div>
+
+
+
+    <div class="col-md-6 article-box-2">
+      <div style="position:relative;">
+        {% if is_admin %}
+        <div class="image-upload lapiz visible-movil">
+         <label for="img_box_productos_2">
+           <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
+         </label>
+         <input type="file" class="editableimage" image-id="{{ site.name }}_box_productos_2" name="image" id="img_box_productos_2" >
+       </div>
+       {% end %}
+       <a id="{{ site.name + '_box_productos_2' }}" href="{{ read_link(site.name + '_box_productos_2') }}">
+        <img id="{{ site.name }}_box_productos_2" src="{{ read_image(site.name + '_box_productos_2', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_box_productos_2',) }}'" class="cuadros-home-2" alt="item">
+
+        <div align="center">
+          <div class="texto-img-2 {{editabletext}}" text-id="{{ site.name + '_t_productos_2' }}"> {{ read_text(site.name +  '_t_productos_2') }}</div>
+        </div>
+      </a> 
+ 
+    </div>
+
+    {% if is_admin %}
+    <img class="change-image editablelink" link-id="{{ site.name + '_box_productos_2' }}" content="{{ read_link(site.name + '_box_productos_2') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
+    {% end %}
+  </div>
+
+   <div class="col-md-8 article-box-2">
+      <div style="position:relative;">
+        {% if is_admin %}
+        <div class="image-upload lapiz visible-movil">
+         <label for="img_box_productos_3">
+           <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
+         </label>
+         <input type="file" class="editableimage" image-id="{{ site.name }}_box_productos_3" name="image" id="img_box_productos_3" >
+       </div>
+       {% end %}
+       <a id="{{ site.name + '_box_productos_3' }}" href="{{ read_link(site.name + '_box_productos_3') }}">
+        <img id="{{ site.name }}_box_productos_3" src="{{ read_image(site.name + '_box_productos_3', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_box_productos_3',) }}'" class="cuadros-home-2" alt="item">
+
+        <div align="center">
+          <div class="texto-img-2 {{editabletext}}" text-id="{{ site.name + '_t_productos_3' }}"> {{ read_text(site.name +  '_t_productos_3') }}</div>
+        </div>
+      </a> 
+
+    </div>
+
+    {% if is_admin %}
+    <img class="change-image editablelink" link-id="{{ site.name + '_box_productos_3' }}" content="{{ read_link(site.name + '_box_productos_3') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
+    {% end %}
+  </div>
+
+     <div class="col-md-4 article-box-2">
+      <div style="position:relative;">
+        {% if is_admin %}
+        <div class="image-upload lapiz visible-movil">
+         <label for="img_box_productos_4">
+           <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
+         </label>
+         <input type="file" class="editableimage" image-id="{{ site.name }}_box_productos_4" name="image" id="img_box_productos_4" >
+       </div>
+       {% end %}
+       <a id="{{ site.name + '_box_productos_4' }}" href="{{ read_link(site.name + '_box_productos_4') }}">
+        <img id="{{ site.name }}_box_productos_4" src="{{ read_image(site.name + '_box_productos_4', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_box_productos_4',) }}'" class="cuadros-home-2" alt="item">
+
+        <div align="center">
+          <div class="texto-img-2 {{editabletext}}" text-id="{{ site.name + '_t_productos_4' }}"> {{ read_text(site.name +  '_t_productos_4') }}</div>
+        </div>
+      </a> 
+  
+    </div>
+
+    {% if is_admin %}
+    <img class="change-image editablelink" link-id="{{ site.name + '_box_productos_4' }}" content="{{ read_link(site.name + '_box_productos_4') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
+    {% end %}
+  </div>
+
+</div> -->
+
+
+
+</section>
+
+</body>
+
+
+{% include '../home/footer.html' %}
+{% end %}
+
+

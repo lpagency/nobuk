@@ -1,0 +1,121 @@
+{% extends "../base.html" %}
+
+{% block title %}
+{{ site.name }}
+{% end %}
+
+{% block header %}
+{% include '../home/header.html' %}
+{% end %}
+
+
+{% block javascript %}
+
+<script type="text/javascript">
+
+</script>
+{% end %}
+
+
+{% block body %}
+
+{% if is_admin %}
+{% set editabletext = 'editabletext' %}
+{% else %}
+{% set editabletext = '' %}
+{% end %}
+
+
+<!-- *contenido* -->
+<body id="lapimport">
+   <section>
+    <div class="mobile" style="background:url('{{ read_image(site.name + '_productos',500) }}'); height:300px; background-size:cover; margin-top: 0px;  filter: grayscale(0%) brightness(65%); -webkit-filter: grayscale(0%) brightness(65%); -moz-filter: grayscale(0%) brightness(65%); -ms-filter: grayscale(0%) brightness(65%);-o-filter: grayscale(0%) brightness(65%); background-position:center; margin-bottom: 40px;" data-img-width="1600" data-img-height="1064" data-diff="100">
+        {% if is_admin %}
+        <div class="image-upload part1 lapiz visible-movil">
+            <label for="img_productos">
+                <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
+            </label>
+            <input type="file" class="editableimage" image-id="{{ site.name }}_productos" name="image" id="img_productos" >
+        </div>
+        {% end %}
+        <img id="{{ site.name }}_productos" src="{{ read_image(site.name + '_productos', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_productos',500) }}'" class="banner_uno_list hidden" alt="item">
+    </div>
+
+    <div class="container">
+        <div class="col-md-12">
+            <div class="text-center titulo-prou {{editabletext}}" text-id="{{ site.name + '_productos' }}"> {{ read_text(site.name +  '_productos') }}</div>
+        </div>
+    </div>
+ 
+</section>
+
+ <section>
+   <div class="container-fluid">
+    <div class="clearfix-dos"> </div>
+         <div class="col-md-6 col-xs-12">
+             <div alig="center">
+               <a href="{{ site_base }}/sc/product/detail/{{! name|friendly }}/{{! id }}">
+                 {% if is_admin %}
+        <div class="image-upload part1 lapiz visible-movil">
+            <label for="img_cat_3">
+                <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
+            </label>
+            <input type="file" class="editableimage" image-id="{{ site.name }}_cat_3" name="image" id="img_cat_3" >
+        </div>
+        {% end %}
+        <img id="{{ site.name }}_cat_3" src="{{ read_image(site.name + '_cat_3', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_cat_3',500) }}'" class="img-pro" alt="item">
+                <!-- <img src="{{! images[0]['thumb_200'] }}" alt="" class="img-responsive img-pro" > -->
+               <!--  <p class="inf">{{! name }}</p> -->
+                </a>
+              </div>
+          </div>   
+          <div class="col-md-6 col-xs-12">
+             <div alig="center">
+               <a href="{{ site_base }}/sc/product/detail/{{! name|friendly }}/{{! id }}">
+                 {% if is_admin %}
+        <div class="image-upload part1 lapiz visible-movil">
+            <label for="img_cat_3">
+                <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
+            </label>
+            <input type="file" class="editableimage" image-id="{{ site.name }}_cat_3" name="image" id="img_cat_3" >
+        </div>
+        {% end %}
+        <img id="{{ site.name }}_cat_3" src="{{ read_image(site.name + '_cat_3', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_cat_3',500) }}'" class="img-pro" alt="item">
+                <!-- <img src="{{! images[0]['thumb_200'] }}" alt="" class="img-responsive img-pro" > -->
+               <!--  <p class="inf">{{! name }}</p> -->
+                <!-- <img src="{{! images[0]['thumb_200'] }}" alt="" class="img-responsive img-pro" > -->
+                </a>
+              </div>
+          </div> 
+          <div class="col-md-6 col-xs-12">
+             <div alig="center">
+               <a href="{{ site_base }}/sc/product/detail/{{! name|friendly }}/{{! id }}">
+                 {% if is_admin %}
+        <div class="image-upload part1 lapiz visible-movil">
+            <label for="img_cat_3">
+                <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
+            </label>
+            <input type="file" class="editableimage" image-id="{{ site.name }}_cat_3" name="image" id="img_cat_3" >
+        </div>
+        {% end %}
+        <img id="{{ site.name }}_cat_3" src="{{ read_image(site.name + '_cat_3', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_cat_3',500) }}'" class="img-pro" alt="item">
+                <!-- <img src="{{! images[0]['thumb_200'] }}" alt="" class="img-responsive img-pro" > -->
+               <!--  <p class="inf">{{! name }}</p> -->
+               <!--  <img src="{{! images[0]['thumb_200'] }}" alt="" class="img-responsive img-pro" > -->
+                <p class="inf">{{! name }}</p>
+                </a>
+              </div>
+          </div> 
+
+
+    </div>
+</section>
+
+
+</body>
+
+
+{% include '../home/footer.html' %}
+{% end %}
+
+

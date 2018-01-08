@@ -1,0 +1,591 @@
+
+html * {
+/*-webkit-font-smoothing: antialiased;*/
+/*-moz-osx-font-smoothing: grayscale;*/
+
+}
+
+html, body {
+/*font-family: 'Open Sans', sans-serif;*/
+font-family: 'Oxygen', sans-serif;
+
+}
+
+div.upload input, div.image-upload input {
+    position: absolute;
+    left: auto;
+    right: 0px;
+    top: 0px;
+    margin: 0;
+    padding: 0;
+    opacity: 0;
+    -moz-opacity: 0;
+    opacity: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+a{
+    color: gray;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+
+li{
+	list-style: none;
+}
+
+.text-cont {
+    margin-top: 40px;
+    border-bottom: 1px solid #8a6d3b;
+    text-transform: uppercase;
+    color: #8a6d3b;
+    padding-left: 20px;
+    font-size: 28px;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 200;
+}
+
+.text-black {
+    margin-top: 40px;
+    padding-left: 20px;
+    font-size: 16px;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.text-black-contenido {
+    margin-top: -10px;
+    padding-left: 20px;
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.text-black-contenido-2 {
+    margin-top: 29px;
+    padding-left: 20px;
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+.pin {
+    float: left !important;
+    background: rgba(119, 119, 119, 0.43) !important;
+    font-size: 15px !important;
+    padding: 15px 11px !important;
+    color: gray !important;
+    font-weight: 600 !important;
+    height: 51px;
+    width: 31%;
+    cursor: pointer;
+}
+
+img.editablelink {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    z-index: 1030 !important;
+}
+
+div.image-upload {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    z-index: 1030 !important;
+}
+
+
+div.image-upload.par1 {
+    position: absolute;
+    right: 20px;
+    top: 115px;
+    z-index: 100000;
+}
+
+
+
+.box-chic{
+	 width: 100%;
+    position: relative;
+    height: 500px;
+    object-fit: cover;
+    filter: grayscale(0%) brightness(75%);
+    -webkit-filter: grayscale(0%) brightness(75%);
+    -moz-filter: grayscale(0%) brightness(75%);
+    -ms-filter: grayscale(0%) brightness(75%);
+    -o-filter: grayscale(0%) brightness(75%);
+}
+
+.article-box-2 {
+    overflow: hidden;
+    padding: 0px 2px;
+    /*margin-bottom: 17px;*/
+}
+
+.text-box{
+    position: absolute;
+    bottom: 0px;
+    width: 97%;
+    color: white;
+    font-size: 35px;
+    margin-bottom: 5px;
+    font-weight: 100;
+    font-family: 'Oxygen', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+
+.box-gra{
+	 width: 100%;
+    position: relative;
+    height: 400px;
+    object-fit: cover;
+    filter: grayscale(0%) brightness(75%);
+    -webkit-filter: grayscale(0%) brightness(75%);
+    -moz-filter: grayscale(0%) brightness(75%);
+    -ms-filter: grayscale(0%) brightness(75%);
+    -o-filter: grayscale(0%) brightness(75%);
+}
+
+.box-med{
+	 width: 100%;
+    position: relative;
+    height: 400px;
+    object-fit: cover;
+    filter: grayscale(0%) brightness(75%);
+    -webkit-filter: grayscale(0%) brightness(75%);
+    -moz-filter: grayscale(0%) brightness(75%);
+    -ms-filter: grayscale(0%) brightness(75%);
+    -o-filter: grayscale(0%) brightness(75%);
+}
+
+.box-ma{
+	 width: 100%;
+    position: relative;
+    height: 450px;
+    object-fit: cover;
+    filter: grayscale(0%) brightness(75%);
+    -webkit-filter: grayscale(0%) brightness(75%);
+    -moz-filter: grayscale(0%) brightness(75%);
+    -ms-filter: grayscale(0%) brightness(75%);
+    -o-filter: grayscale(0%) brightness(75%);
+}
+
+.box-pe{
+	 width: 100%;
+    position: relative;
+    height: 450px;
+    object-fit: cover;
+    filter: grayscale(0%) brightness(75%);
+    -webkit-filter: grayscale(0%) brightness(75%);
+    -moz-filter: grayscale(0%) brightness(75%);
+    -ms-filter: grayscale(0%) brightness(75%);
+    -o-filter: grayscale(0%) brightness(75%);
+}
+
+
+
+.fondo-contact {
+    width: 100%;
+    height: auto;
+}
+
+.align-form-contact {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 305px;
+    /* vertical-align: middle! important; */
+    margin-top: 30px;
+    padding-right: 305px;
+    padding-bottom: 20px;
+}
+
+div.image-upload.con {
+    position: absolute;
+    right: 20px;
+    top: 86px;
+    z-index: 100000;
+}
+
+.texto-banner{
+   font-size: 38px;
+    color: white;
+    text-align: left;
+    position: absolute;
+    bottom: 0px;
+    width: 70%;
+    overflow: hidden;
+    line-height: 31px;
+    margin-bottom: 15px;
+    font-weight: 200;
+    font-family: 'Oxygen', sans-serif;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+.res{
+    text-align: left;
+    font-size: 23px;
+    color: white;
+}
+
+.text-one{
+    position: relative;
+    top: 30px;
+    margin-bottom: 23px;
+    font-size: 26px;
+    font-weight: 100;
+}
+
+.cuadros-home{
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    margin-bottom: 40px;
+    filter: grayscale(0%) brightness(75%);
+    -webkit-filter: grayscale(0%) brightness(75%);
+    -moz-filter: grayscale(0%) brightness(75%);
+    -ms-filter: grayscale(0%) brightness(75%);
+    -o-filter: grayscale(0%) brightness(75%);
+}
+
+.cuadros-home-2{
+    width: 100%;
+    height: 570px;
+    object-fit: cover;
+    margin-bottom: 40px;
+    filter: grayscale(0%) brightness(55%);
+    -webkit-filter: grayscale(0%) brightness(55%);
+    -moz-filter: grayscale(0%) brightness(55%);
+    -ms-filter: grayscale(0%) brightness(55%);
+    -o-filter: grayscale(0%) brightness(55%);
+}
+
+.cuadros-home-3{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 40px;
+    filter: grayscale(0%) brightness(75%);
+    -webkit-filter: grayscale(0%) brightness(75%);
+    -moz-filter: grayscale(0%) brightness(75%);
+    -ms-filter: grayscale(0%) brightness(75%);
+    -o-filter: grayscale(0%) brightness(75%);
+}
+
+.cuadros-home-4{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 40px;
+    filter: grayscale(0%) brightness(75%);
+    -webkit-filter: grayscale(0%) brightness(75%);
+    -moz-filter: grayscale(0%) brightness(75%);
+    -ms-filter: grayscale(0%) brightness(75%);
+    -o-filter: grayscale(0%) brightness(75%);
+}
+
+
+.texto-img{
+    position: absolute;
+    top: 28px;
+    width: 97%;
+    color: white;
+    font-size: 35px;
+    font-weight: 100;
+    text-align: left;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+    line-height: 33px;
+    padding-left: 24px;
+}
+
+.texto-img-2{
+    position: absolute;
+    bottom: 297px;
+    width: 97%;
+    color: white;
+    font-size: 30px;
+    font-weight: 100;
+    text-align: center;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+    line-height: 33px;
+    padding-left: 17px;
+    padding-right: 17px;
+}
+
+.hovereffect {
+width:100%;
+height:100%;
+float:left;
+/*overflow:hidden;*/
+position:relative;
+text-align:center;
+cursor:default;
+}
+
+.hovereffect .overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: transparent;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+ /*   border: 1px solid black;*/
+}
+
+.hovereffect img {
+display:block;
+position:relative;
+-webkit-transition:all .4s linear;
+transition:all .4s linear;
+}
+
+.hovereffect h2 {
+text-transform:uppercase;
+color:#fff;
+text-align:center;
+position:relative;
+font-size:17px;
+background:rgba(0,0,0,0.6);
+-webkit-transform:translatey(-100px);
+-ms-transform:translatey(-100px);
+transform:translatey(-100px);
+-webkit-transition:all .2s ease-in-out;
+transition:all .2s ease-in-out;
+padding:10px;
+}
+
+.hovereffect a.info {
+text-decoration:none;
+display:inline-block;
+text-transform:uppercase;
+color:#fff;
+border:1px solid #fff;
+background-color:transparent;
+opacity:0;
+filter:alpha(opacity=0);
+-webkit-transition:all .2s ease-in-out;
+transition:all .2s ease-in-out;
+margin:50px 0 0;
+padding:7px 14px;
+}
+
+.hovereffect a.info:hover {
+box-shadow:0 0 5px #fff;
+}
+
+.hovereffect:hover img {
+/*-ms-transform:scale(1.2);
+-webkit-transform:scale(1.2);
+transform:scale(1.2);*/
+
+}
+
+.hovereffect:hover .overlay {
+opacity:1;
+filter:alpha(opacity=100);
+}
+
+.hovereffect:hover h2,.hovereffect:hover a.info {
+opacity:1;
+filter:alpha(opacity=100);
+-ms-transform:translatey(0);
+-webkit-transform:translatey(0);
+transform:translatey(0);
+}
+
+.hovereffect:hover a.info {
+-webkit-transition-delay:.2s;
+transition-delay:.2s;
+}
+
+
+.fondo-form {
+    width: 100%;
+    object-fit: cover !important;
+    height: 375px;
+    filter: grayscale(0%) brightness(55%);
+    -webkit-filter: grayscale(0%) brightness(55%);
+    -moz-filter: grayscale(0%) brightness(55%);
+    -ms-filter: grayscale(0%) brightness(55%);
+    -o-filter: grayscale(0%) brightness(55%);
+    margin-top: -68px;
+}
+
+.titulo-about {
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    font-size: 52px;
+    width: 100%;
+    padding-bottom: 41px;
+    font-weight: 200;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.titulo-peq {
+    position: absolute;
+    bottom: 0px;
+    color: white;
+    font-size: 25px;
+    width: 100%;
+}
+
+
+
+.contenedor
+    {
+    width: 100%;
+    height: 162px;
+    line-height: 114px;
+    text-align: center;
+    bottom: 410px;
+    position: relative;
+    margin-bottom: -150px;
+
+    }
+    .contenedor>div.tu {
+        display:inline-block;
+        vertical-align:middle;
+        line-height:normal;
+        font-size: 30px;
+        color: white;
+       text-rendering: optimizeLegibility;
+       -webkit-font-smoothing: antialiased;
+       -moz-osx-font-smoothing: grayscale;
+       font-weight: 100;
+       overflow: hidden;
+        padding-left: 17px;
+        padding-right: 17px;
+    }
+    .mg-home{
+        width: 50%;
+        margin-left: 20px;
+     }
+     .sep-home{
+        position: relative;
+        top: 3px;
+        padding: 0 24px;
+     }
+
+     .banner_home{
+        height: 500px;
+        object-fit: cover;
+        margin-top: -68px;
+        filter: grayscale(0%) brightness(55%);
+        -webkit-filter: grayscale(0%) brightness(55%);
+        -moz-filter: grayscale(0%) brightness(55%);
+        -ms-filter: grayscale(0%) brightness(55%);
+        -o-filter: grayscale(0%) brightness(55%);
+        width: 99%;
+     }
+
+/*-----------------------------------------------Responsive--------------------------------------------------*/
+@media (max-width: 1199px){
+    .img-mobile{
+        margin-top: -124px !important;
+    }
+
+    .img-mobile {
+    margin-top: 0px !important;
+   }
+
+   .logo-mob {
+    width: 70px;
+    position: relative;
+    left: 27px;
+    }
+
+    .texto-img-2 {
+    position: relative;
+    bottom: 349px;
+    width: 97%;
+    color: white;
+    font-size: 28px;
+}
+
+}
+
+@media (max-width: 1127px){
+    .texto-img-2 {
+    position: relative;
+    bottom: 349px;
+    width: 97%;
+    color: white;
+    font-size: 24px;
+}
+
+}
+
+@media (max-width: 991px){
+.align-form-contact {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.hovereffect .overlay {
+    width: 96%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    background-color: transparent;
+    -webkit-transition: all .4s ease-in-out;
+    transition: all .4s ease-in-out;
+    border: 1px solid black;
+}
+
+  .contenedor>div.tu {
+        padding-left: 48px;
+        padding-right: 48px;
+    }
+
+}
+
+@media (max-width: 420px){
+    .lateral.l-movil {
+    left: -88px !important;
+}
+
+}
+
+@media (max-width: 414px){
+.logo-mob {
+    width: 73px !important;
+    top: 2px;
+    position: relative;
+}
+
+.img-mobile {
+    margin-top: 0px !important;
+}
+
+}
+
+

@@ -1,0 +1,179 @@
+{% extends "../base.html" %}
+
+{% block title %}
+{{ site.name }}
+{% end %}
+
+{% block header %}
+ {% include '../home/header.html' %}
+{% end %}
+
+
+{% block javascript %}
+<script type="text/javascript" src="{{ site_base }}/static/js/dermatologia.js"></script>
+<script type="text/javascript" src="{{ site_base }}/static/js/frubik.js"></script>
+<script type="text/javascript">
+    $(document).ready(function()
+    {
+
+      $("#OpenAlert").click();
+
+        var config = {
+            'app_public' : app_public,
+            'base_url' : base_url,
+            'maxProducts' : 16,
+            'templateOrigin' : '#product_template',
+            'tag' : '',
+            'ignore_stock' : true,
+            'onLoad':function(){
+               // $('.ellipsis').ellipsis();
+               // $(".ellipsis").dotdotdot();
+             }
+        };
+         $(document).ecommerce({
+       'app_public' :  app_public,
+       'animation' : 'simple',
+       'base_url' : base_url,
+       'checkout_url' :  checkout_url,
+       'products_per_page' : 9
+     });
+
+        $('.product-list').ecommerce('product_box', config);
+
+        // destacado categoria 2
+        // config.tag = 'destacado_categoria2';
+        // $('.product-list2').ecommerce('product_box', config);
+    });
+</script>
+
+{% end %}
+
+
+{% block body %}
+{% if is_admin %}
+    {% set editabletext = 'editabletext' %}
+{% else %}
+    {% set editabletext = '' %}
+{% end %}
+
+
+
+<section>
+      <div class="mobile fullscreen background parallax img-mobile" style="background:url('{{ read_image(site.name + '_banner_cate_li_historia',500) }}'); height:375px; background-size:cover; margin-top: -68px;
+  filter: grayscale(0%) brightness(55%);-webkit-filter: grayscale(0%) brightness(55%);
+    -moz-filter: grayscale(0%) brightness(55%);-ms-filter: grayscale(0%) brightness(55%);-o-filter: grayscale(0%) brightness(55%); background-repeat: no-repeat;
+    background-position: center;" data-img-width="1600" data-img-height="860" data-diff="100">
+        {% if is_admin %}
+               <div class="image-upload part1 lapiz visible-movil">
+                   <label for="img_banner_cate_li_historia">
+                       <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
+                   </label>
+                   <input type="file" class="editableimage" image-id="{{ site.name }}_banner_cate_li_historia" name="image" id="img_banner_cate_li_historia" >
+               </div>
+        {% end %}
+                <img id="{{ site.name }}_banner_cate_li_historia" src="{{ read_image(site.name + '_banner_cate_li_historia', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_banner_cate_li_historia',500) }}'" class="banner_uno_list hidden" alt="item">        
+       </div>
+       
+       <div class="col-md-12">
+            <div class="box-text-gal">
+                <h1 class="text-center titulo {{editabletext}}" text-id="{{ site.name + '_til_li_no_his' }}"> {{ read_text(site.name +  '_til_li_no_his') }}</h1>
+            </div>
+
+        </div>
+    
+</section>
+
+
+<section>
+    <!-- <div class="row"> -->
+    <div class="container">
+        <div class="col-md-12">
+          <div align="center">
+            <div class="bajada text-center {{editabletext}}" text-id="{{ site.name + '_baj_li_no_hi' }}"> {{ read_text(site.name +  '_baj_li_no_hi') }} </div>
+          </div>
+        </div>
+      </div>
+   <!--  </div> -->
+
+</section>
+
+
+<section>
+    <!-- *articulos* -->
+
+     <div class="container">
+      <!--   <div class="row"> -->
+          {{ getArticleList(limit=1, html="page/article_home.html", tag='historia,posicion 1') }}
+          {{ getArticleList(limit=1, html="page/article_home.html", tag='historia,posicion 2') }}
+          {{ getArticleList(limit=1, html="page/article_home.html", tag='historia,posicion 3') }}
+          {{ getArticleList(limit=1, html="page/article_home.html", tag='historia,posicion 4') }}
+        <!-- </div> -->
+    </div>
+  
+</section>
+
+
+<!-- 
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 col-xs-12">
+                <img class="img-responsive img-1" src="https://7static.loadingplay.com/static/images/19729ec1fa62f98c3fe0454154017acb_skinface.png">
+                <p class="inf">contenido</p>
+            </div>
+            <div class="col-md-6 col-xs-12">
+                <img class="img-responsive img-2" src="https://7static.loadingplay.com/static/images/19729ec1fa62f98c3fe0454154017acb_skinface.png">
+                <p class="inf">contenido</p>
+            </div>
+            <div class="col-md-3 col-xs-12">
+                <img class="img-responsive img-3" src="https://7static.loadingplay.com/static/images/19729ec1fa62f98c3fe0454154017acb_skinface.png">
+                <p class="inf2">contenido</p>
+            </div>
+             <div class="col-md-3 col-xs-12">
+                <img class="img-responsive img-3" src="https://7static.loadingplay.com/static/images/19729ec1fa62f98c3fe0454154017acb_skinface.png">
+                <p class="inf2">contenido</p>
+            </div>
+        </div>
+    </div>
+</section> -->
+
+<!-- <section>
+
+        <div class="col-md-12">
+            <div class="bajada-2 text-center {{editabletext}}" text-id="{{ site.name + '_baj_li_2' }}"> {{ read_text(site.name +  '_baj_li_2') }} </div>
+        </div>
+
+
+</section> -->
+
+
+<section id="contenedor">
+    <div class="container">
+        <div class="row spa article_list">
+           {{ getArticleList(tag='historia,-posicion 1,-posicion 2,-posicion 3,-posicion 4') }}
+        </div>
+    </div>
+
+</section>
+
+
+
+<!--
+<section>
+    <div class="row">
+       <div align="center">
+            <div class="col-md-12 col-xs-12">
+                <a href="#">
+                <button type="button" class="btn btn-cargar">Cargar más contenido </button>
+                </a>
+            </div>
+       </div>
+</section>
+-->
+
+
+
+{% include '../home/footer.html' %}
+
+{% end %}
+

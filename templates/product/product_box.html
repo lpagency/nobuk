@@ -1,0 +1,29 @@
+
+<script type="text/template" id="product_template" class="hidden">
+<div class="clearfix-dos ocul">  </div> 
+  <div class="col-md-3 col-xs-12 art-hi hidden-xs ocul">
+      <div class="hovereffect hidden-xs">
+        <a class="mas-info" in_stock="{{! in_stock }}" href="{{ site_base }}/sc/product/detail/{{! name|friendly }}/{{! id }}">
+           <img src="{{! images[0]['thumb_500'] }}" alt="" class="img-responsive img-pro hidden-xs" >
+           <p class="inf ellipsis multiline hidden-xs" in_stock="{{! in_stock }}">{{! name }}</p>
+              <div class="overlay hidden-xs" id="testButton">
+               <div class="product-price pri hidden-xs">{{! main_price|money }} </div>  
+                 <button type="button" class="btn add-to-cart btn-default carr">Comprar</button>
+              </div>
+        </a>
+      </div>
+    </div>   
+
+
+
+    <div class="col-md-4 col-xs-12 art-hi hidden-lg hidden-md hidden-sm ocul detalle-prod">
+        <a class="mas-info" in_stock="{{! in_stock }}" href="{{ site_base }}/sc/product/detail/{{! name|friendly }}/{{! id }}">
+           <img src="{{! images[0]['thumb_500'] }}" alt="" class="img-responsive img-pro hidden-lg hidden-md hidden-sm" >
+              <p class="inf ellipsis multiline hidden-lg hidden-md hidden-sm" in_stock="{{! in_stock }}">{{! name }}</p>
+              <div class="product-price pri hidden-lg hidden-md hidden-sm">{{! main_price|money }} </div>
+              <a href="{{ site_base }}/sc/product/detail/{{! name|friendly }}/{{! id }}">
+                 <button type="button" class="btn add-to-cart btn-default carr">Comprar</button>
+              </a>
+        </a>  
+   </div>
+</script>

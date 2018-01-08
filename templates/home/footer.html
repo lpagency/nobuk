@@ -1,0 +1,166 @@
+<section>
+  <div id="footer" class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+   <div align="center">
+     <hr>
+   </div>
+
+   <div class="col-md-2 col-sm-2 col-xs-12">
+    <div class="inform-comerc-2 text-left fot">
+      <div class="clearfix"></div>
+      <ul class="no-dot op">
+        <div class="ul-2 {{editabletext}}" text-id="{{ site.name + '_footer_ex_1' }}"> {{ read_text(site.name +  '_footer_ex_1') }}
+        </div>
+
+        <div class="col-md-2 col-sm-2 col-xs-2 my" style=" padding: 0px ;">
+          <div class="caja-fo-red">
+           {% if is_admin %}
+           <div class="image-upload redes-sociales visible-movil">
+             <label for="img_footer_1_blue">
+               <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
+             </label>
+             <input type="file" class="editableimage" image-id="{{ site.name }}_footer_1_blue" name="image" id="img_footer_1_blue" >
+           </div>
+           {% end %}
+           <a id="{{ site.name + '_footer_1_blue' }}" href="{{ read_link(site.name + '_footer_1_blue') }}" target="_blank">
+
+             <img id="{{ site.name }}_footer_1_blue" src="{{ read_image(site.name + '_footer_1_blue', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_footer_1_blue',500) }}'" class="img-foot-red" alt="item">
+           </a>
+           {% if is_admin %}
+           <img class="change-image editablelink redess" link-id="{{ site.name + '_footer_1_blue' }}" content="{{ read_link(site.name + '_footer_1_blue') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
+           {% end %}
+         </div>
+       </div>
+
+       <div class="col-md-2 col-sm-2 col-xs-2 my">
+        <div class="caja-fo-red">
+         {% if is_admin %}
+         <div class="image-upload redes-sociales visible-movil">
+           <label for="img_footer_1_green">
+             <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
+           </label>
+           <input type="file" class="editableimage" image-id="{{ site.name }}_footer_1_green" name="image" id="img_footer_1_green" >
+         </div>
+         {% end %}
+         <a id="{{ site.name + '_footer_1_green' }}" href="{{ read_link(site.name + '_footer_1_green') }}" target="_blank">
+           <img id="{{ site.name }}_footer_1_green" src="{{ read_image(site.name + '_footer_1_green', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_footer_1_green',500) }}'" class="img-foot-red" alt="item">
+         </a>
+         {% if is_admin %}
+         <img class="change-image editablelink redess" link-id="{{ site.name + '_footer_1_green' }}" content="{{ read_link(site.name + '_footer_1_green') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
+         {% end %}
+       </div>
+     </ul> 
+        <p class="pas-4 hidden-xs">
+         {% if user is None %}
+         <a href="{{ site_base }}/auth/login" class="a-footer" >Login</a>
+         {% else %}
+         <a href="{{ site_base }}/auth/logout" class="a-footer" >
+          Logout</a>
+          {% end %}
+        </p>
+   </div>
+ </div>
+
+
+
+ <div class="col-md-3 col-sm-3 col-xs-12 col-md-offset-2">
+  <div class="inform-comerc text-left fot">
+    <div class="clearfix"></div>
+    <ul class="no-dot">
+      <div class="pas-2 {{editabletext}}" text-id="{{ site.name + '_lod_ter_fir' }}"> {{ read_text(site.name +  '_lod_ter_fir') }}
+         </div>
+      <div class="pas-2 {{editabletext}}" text-id="{{ site.name + '_footer_wew_ere1' }}"> {{ read_text(site.name +  '_footer_wew_ere1') }}
+      </div>
+      <a href="{{ site_base}}/terminos_y_condiciones">
+       <div class="text-center footer-ul"> Términos y Condiciones  </div>
+     </a>
+        <p class="pas-4 hidden-lg hidden-md hidden-sm visible-xs">
+         {% if user is None %}
+         <a href="{{ site_base }}/auth/login" class="a-footer" >Login</a>
+         {% else %}
+         <a href="{{ site_base }}/auth/logout" class="a-footer" >
+          Logout</a>
+          {% end %}
+        </p>
+
+   </ul>
+ </div>
+</div>
+
+
+
+<!-- **logo 2**** -->
+
+<div class="col-md-2 hy col-sm-2 col-xs-12">
+ <div class="caja-fo hidden-xs">
+   {% if is_admin %}
+   <div class="image-upload lapiz visible-movil">
+     <label for="img_footer_2">
+       <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
+     </label>
+     <input type="file" class="editableimage" image-id="{{ site.name }}_footer_2" name="image" id="img_footer_2" >
+   </div>
+   {% end %}
+   <img id="{{ site.name }}_footer_2" src="{{ read_image(site.name + '_footer_2', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_footer_2',500) }}'" class="img-foot-2" alt="item">
+ </div>
+
+ <div align="center" class="hidden-lg hidden-md hidden-sm visible-xs">
+   <div class="caja-fo">
+     {% if is_admin %}
+     <div class="image-upload lapiz visible-movil">
+       <label for="img_footer_2">
+         <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
+       </label>
+       <input type="file" class="editableimage" image-id="{{ site.name }}_footer_2" name="image" id="img_footer_2" >
+     </div>
+     {% end %}
+     <img id="{{ site.name }}_footer_2" src="{{ read_image(site.name + '_footer_2', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_footer_2',500) }}'" class="img-foot" alt="item">
+   </div>
+ </div>
+</div>
+
+<!-- **logo3 ** -->
+<div class="col-md-2 hy col-sm-2 col-xs-12">
+ <div class="caja-fo hidden-xs">
+   {% if is_admin %}
+   <div class="image-upload lapiz visible-movil">
+     <label for="img_footer_3">
+       <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
+     </label>
+     <input type="file" class="editableimage" image-id="{{ site.name }}_footer_3" name="image" id="img_footer_3" >
+   </div>
+   {% end %}
+   <img id="{{ site.name }}_footer_3" src="{{ read_image(site.name + '_footer_3', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_footer_3',500) }}'" class="img-foot" alt="item">
+ </div>
+
+ <div align="center" class="hidden-lg hidden-md hidden-sm visible-xs">
+   <div class="caja-fo">
+     {% if is_admin %}
+     <div class="image-upload lapiz visible-movil">
+       <label for="img_footer_3">
+         <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
+       </label>
+       <input type="file" class="editableimage" image-id="{{ site.name }}_footer_3" name="image" id="img_footer_3" >
+     </div>
+     {% end %}
+     <img id="{{ site.name }}_footer_3" src="{{ read_image(site.name + '_footer_3', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_footer_3',500) }}'" class="img-foot" alt="item">
+   </div>
+ </div>
+
+</div>
+
+
+
+
+<div class="col-md-12 col-sm-12 col-xs-12">
+ <div align="center">
+           <a href="http://www.loadingplay.com">
+            <div class="text-center footer-ul" style="position: relative;bottom:0px;margin-top:10px;width: 77%;margin-left: 0;">Sytes tech. Developed by Loadingplay</div>
+          </a>
+           <!--  <div class="text-center footer-ul {{editabletext}}" text-id="{{ site.name + '_lod_ter_fir' }}"> {{ read_text(site.name +  '_lod_ter_fir') }}
+         </div> -->
+       </div>
+     </div>
+
+
+   </div>
+ </section>
