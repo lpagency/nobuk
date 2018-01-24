@@ -59,14 +59,14 @@ $(document).ready(function()
         $("#todos").addClass("active");
     }
 
-    if (tag === '' || tag === undefined)
-    {
-        tag = 'madre';
-    }
-    else
-    {
-        tag += ',madre';
-    }
+    // if (tag === '' || tag === undefined)
+    // {
+    //     tag = 'madre';
+    // }
+    // else
+    // {
+    //     tag += ',madre';
+    // }
 
 
     var config = {
