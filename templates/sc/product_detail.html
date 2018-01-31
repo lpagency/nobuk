@@ -116,6 +116,44 @@
 
 </script>
 
+<script type="text/javascript">
+    $(document).ready(function()
+    {
+        $(document).on("click", "#open-cart", function()
+        {
+          setTimeout(function()
+          {
+            if($(".total-carro").val() > 0)
+            {
+              $(".pagar-carro").attr("disabled", false);
+            }
+          },100);
+        });
+
+        $(document).on("click", ".add-one", function()
+        {
+          setTimeout(function()
+          {
+            if($(".total-carro").val() > 0)
+            {
+              $(".pagar-carro").attr("disabled", false);
+            }
+          },1);
+        });
+
+        $(document).on("click", ".remove-one", function()
+        {
+          setTimeout(function()
+          {
+            if($(".total-carro").val() > 0)
+            {
+              $(".pagar-carro").attr("disabled", false);
+            }
+          },1);
+        });
+    });
+</script>
+
 <script type="text/template" id="product_detail">
     <section>
         <div style="margin-bottom:-80px;">
