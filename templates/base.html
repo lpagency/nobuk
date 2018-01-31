@@ -192,11 +192,18 @@
                                             <th>Nombre</th>
                                             <th>Precio</th>
                                             <th class="text-center">Cant</th>
-                                            <th class="text-right"></th>
                                         </tr>
                                     </thead>
                                     <tbody class="shopping-cart">
                                     </tbody>
+                                    <!--codigo vacaciones!!!-->
+                                    <tbody>
+                                        <tr>
+                                            <td colspan="3">
+                                                <p style="text-align: justify;">Nos vamos de vacaciones!! Todas las compras realizadas en la web, serán despachadas a fines de febrero. Seguimos vendiendo de forma normal en el local del Drugstore</p></td>
+                                        </tr>
+                                    </tbody>
+                                    <!--END CODIGO VACACIONES-->
                                 </table>
                                 <div class="checkout-form"></div>
                             </div>
@@ -351,13 +358,12 @@
 <script type="text/x-template" id="shopping-cart-product">
 <tr>
     <td class="vert-align text-left">{{! name }}</td>
-    <td class="vert-align money">{{! price }}</td>
+    <td class="vert-align money">{{! price|money }}</td>
     <td class="text-center vert-align">
         <a href="#!" class="remove-one" lp-cart-remove-one="{{! id }}">-</a>
         {{! quantity }}
         <a href="#!" class="add-one" lp-cart-add-one="{{! id }}">+</a>
     </td>
-    <td class="text-center vert-align"><a class="borrarproducto" cart-id=""><i class="icon-close"></i></a></td>
 </tr>
 </script>
 <script type="text/x-template" id="shopping-cart-total" >
@@ -367,7 +373,7 @@
 </thead>
 <tr>
     <td>Total:</td> 
-    <td id="total" class="text-right money lib">{{! total }}</td>
+    <td id="total" class="money lib">{{! total|money }}</td>
     <td></td>
 </tr>
 </script>
