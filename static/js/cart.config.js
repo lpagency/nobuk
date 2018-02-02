@@ -88,27 +88,27 @@ $(document).ready(function()
 
         hyper = hyper.split("tag=");
 
-        switch(hyper[1])
+        if(hyper[1].indexOf("mujer") > -1)
         {
-            case "mujer":
-                tag = "mujer";
-                var tag_url = (tag + "," + subtag);
-                config.tag = (tag + "," + subtag);
-                console.log(config);
-                history.pushState('', 'nobuk', hyper[0]+'tag='+tag_url);
-            break;
+            tag = "mujer";
+            var tag_url = (tag + "," + subtag);
+            config.tag = (tag + "," + subtag);
+            console.log(config);
+            history.pushState('', 'nobuk', hyper[0]+'tag='+tag_url);
+        }
 
-            case "hombre":
-                tag = "hombre";
-                var tag_url = (tag + "," + subtag);
-                config.tag = (tag + "," + subtag);
-                console.log(config);
-                history.pushState('', 'nobuk', hyper[0]+'tag='+tag_url);
-            break;
+        if(hyper[1].indexOf("hombre") > -1)
+        {
+            tag = "hombre";
+            var tag_url = (tag + "," + subtag);
+            config.tag = (tag + "," + subtag);
+            console.log(config);
+            history.pushState('', 'nobuk', hyper[0]+'tag='+tag_url);
+        }
 
-            default:
-                config.tag = subtag;
-            break;
+        if(hyper[1].indexOf("hombre") == -1 && hyper[1].indexOf("mujer") == -1)
+        {
+            config.tag = subtag;
         }
 
         console.log(config.tag);
