@@ -92,14 +92,18 @@ $(document).ready(function()
         {
             case "mujer":
                 tag = "mujer";
+                var tag_url = (tag + "," + subtag);
                 config.tag = (tag + "," + subtag);
                 console.log(config);
+                history.pushState('', 'nobuk', hyper[0]+'tag='+tag_url);
             break;
 
             case "hombre":
                 tag = "hombre";
+                var tag_url = (tag + "," + subtag);
                 config.tag = (tag + "," + subtag);
                 console.log(config);
+                history.pushState('', 'nobuk', hyper[0]+'tag='+tag_url);
             break;
 
             default:
