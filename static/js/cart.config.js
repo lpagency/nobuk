@@ -78,7 +78,7 @@ $(document).ready(function()
         'infinite_scroll': true,
         // 'maxProducts': 100,
         'checkout_url': checkout_url, 
-        'operator' :'and',
+        'operator' :'or',
         'onLoad': function(products) 
         {
             console.log(products);
