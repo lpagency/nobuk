@@ -59,16 +59,6 @@ $(document).ready(function()
         $("#todos").addClass("active");
     }
 
-    // if (tag === '' || tag === undefined)
-    // {
-    //     tag = 'madre';
-    // }
-    // else
-    // {
-    //     tag += ',madre';
-    // }
-
-
     var config = {
         'app_public': app_public,
         'base_url': base_url,
@@ -81,14 +71,10 @@ $(document).ready(function()
         'operator' :'or',
         'onLoad': function(products) 
         {
-            console.log(products);
-            // if (products.length === 0)
-            // {
-            //     $(".products").html("no hay productos con estos filtros");
-            // }
-
         }
     };
+
+    console.log(config.tag);
 
     $(document).ecommerce(config);
 
