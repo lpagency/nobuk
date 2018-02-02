@@ -29,6 +29,14 @@
     $(document).ready(function()
     {
 
+      var hyper = location.href;
+      hyper = hyper.split("tag=");
+
+      if(hyper[1] != "new")
+      {
+        $(".mtl").removeClass("hidden");
+      }
+
       $("#OpenAlert").click();
 
 
@@ -129,7 +137,7 @@
 
   <section class="h_submenu">
         <div align="center">
-          <div class="container-fluid col-md-12 col-sm-12 col-xs-12 mtl text-center" style="padding-top: 1em;">
+          <div class="container-fluid col-md-12 col-sm-12 col-xs-12 mtl text-center hidden" style="padding-top: 1em;">
             <a href="#" id="categoria_1" class="subcateg mbtm5" tag="carteras" role="button">Carteras </a>
             <a href="#" id="categoria_2" class="subcateg mbtm5" tag="bolso" role="button">Bolsos</a>
             <a href="#" id="categoria_3" class="subcateg mbtm5" tag="maletines" role="button">Maletines</a>

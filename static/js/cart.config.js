@@ -94,18 +94,33 @@ $(document).ready(function()
 
     $(document).on("click", ".subcateg", function(ev){
         ev.preventDefault();
-        // $(".subcateg").css("border-bottom", "");
-        // $(this).css("border-bottom", "dashed 1px rgba(0, 0, 0, 0.33)");
 
-        // if (tag === $(this).attr('tag')){
-        //     config.tag=tag;
-        //     config.operator = "or";
-        // }else{
-        //     var multiple_tag = tag+", "+$(this).attr('tag');
-        //     config.tag=multiple_tag;
-        //     config.operator = "and";
-        // }
-        config.tag=$(this).attr('tag');
+        var subtag = $(this).attr('tag');
+        var hyper = location.href;
+        var tag = "";
+
+        hyper = hyper.split("tag=");
+
+        if(hyper[1] == "hombre")
+        {
+            tag = "hombre";
+            config.tag=(tag + "," + subtag);
+            console.log(config.tag);
+        }
+
+        if(hyper[1] == "mujer")
+        {
+            tag = "mujer";
+            config.tag=(tag + "," + subtag);
+            console.log(config.tag);
+        }
+
+        if(hyper[1] != "hombre" && hyper != "mujer")
+        {
+            config.tag = subtag;
+        }
+
+        
         // console.log(config);
         
         // facade.page = 1; // o 1 no estoy seguro
