@@ -88,27 +88,36 @@ $(document).ready(function()
 
         hyper = hyper.split("tag=");
 
-        if(hyper[1].indexOf("mujer") > -1)
-        {
-            tag = "mujer";
-            var tag_url = (tag + "," + subtag);
-            config.tag = (tag + "," + subtag);
-            console.log(config);
-            history.pushState('', 'nobuk', hyper[0]+'tag='+tag_url);
-        }
-
-        if(hyper[1].indexOf("hombre") > -1)
-        {
-            tag = "hombre";
-            var tag_url = (tag + "," + subtag);
-            config.tag = (tag + "," + subtag);
-            console.log(config);
-            history.pushState('', 'nobuk', hyper[0]+'tag='+tag_url);
-        }
-
-        if(hyper[1].indexOf("hombre") == -1 && hyper[1].indexOf("mujer") == -1)
+        if(hyper[1] == undefined)
         {
             config.tag = subtag;
+            history.pushState('', 'nobuk', hyper[0]+'?tag='+subtag);
+        }
+        else
+        {
+            if(hyper[1].indexOf("mujer") > -1)
+            {
+                tag = "mujer";
+                var tag_url = (tag + "," + subtag);
+                config.tag = (tag + "," + subtag);
+                console.log(config);
+                history.pushState('', 'nobuk', hyper[0]+'tag='+tag_url);
+            }
+
+            if(hyper[1].indexOf("hombre") > -1)
+            {
+                tag = "hombre";
+                var tag_url = (tag + "," + subtag);
+                config.tag = (tag + "," + subtag);
+                console.log(config);
+                history.pushState('', 'nobuk', hyper[0]+'tag='+tag_url);
+            }
+
+            if(hyper[1].indexOf("hombre") == -1 && hyper[1].indexOf("mujer") == -1)
+            {
+                config.tag = subtag;
+                history.pushState('', 'nobuk', hyper[0]+'tag='+subtag);
+            }
         }
 
         console.log(config.tag);
