@@ -38,6 +38,10 @@ li{
 	list-style: none;
 }
 
+.to{
+    margin-top: 100px;
+}
+
 .text-cont {
     margin-top: 40px;
     border-bottom: 1px solid #8a6d3b;
