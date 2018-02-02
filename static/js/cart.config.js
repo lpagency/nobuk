@@ -68,9 +68,10 @@ $(document).ready(function()
         'infinite_scroll': true,
         // 'maxProducts': 100,
         'checkout_url': checkout_url, 
-        'operator' :'or',
+        'operator' :'and',
         'onLoad': function(products) 
         {
+            console.log(products);
         }
     };
 
@@ -87,32 +88,35 @@ $(document).ready(function()
 
         hyper = hyper.split("tag=");
 
-        if(hyper[1] == "hombre")
+        switch(hyper[1])
         {
-            tag = "hombre";
-            config.tag=(tag + "," + subtag);
-            console.log(config.tag);
+            case "mujer":
+                tag = "mujer";
+                config.tag = (tag + "," + subtag);
+                console.log(config);
+            break;
+
+            case "hombre":
+                tag = "hombre";
+                config.tag = (tag + "," + subtag);
+                console.log(config);
+            break;
+
+            default:
+                config.tag = subtag;
+            break;
         }
 
-        if(hyper[1] == "mujer")
-        {
-            tag = "mujer";
-            config.tag=(tag + "," + subtag);
-            console.log(config.tag);
-        }
-
-        if(hyper[1] != "hombre" && hyper != "mujer")
-        {
-            config.tag = subtag;
-        }
+        console.log(config.tag);
+        $(".products").html("");
+        $(document).ecommerce('destroy');
+        $(document).ecommerce(config);
 
         
         // console.log(config);
         
         // facade.page = 1; // o 1 no estoy seguro
-        $(".products").html("");
-        $(document).ecommerce('destroy');
-        $(document).ecommerce(config);
+        
 
             // alert($(this).attr("tag"));
     });
