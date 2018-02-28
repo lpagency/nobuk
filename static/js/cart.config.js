@@ -71,7 +71,6 @@ $(document).ready(function()
         'operator' :'and',
         'onLoad': function(products) 
         {
-            console.log(products);
         }
     };
 
@@ -91,7 +90,7 @@ $(document).ready(function()
         if(hyper[1] == undefined)
         {
             config.tag = subtag;
-            history.pushState('', 'nobuk', hyper[0]+'?tag='+subtag);
+            history.pushState('', 'nobuk', hyper[0]+'tag='+subtag);
         }
         else
         {
@@ -100,7 +99,6 @@ $(document).ready(function()
                 tag = "mujer";
                 var tag_url = (tag + "," + subtag);
                 config.tag = (tag + "," + subtag);
-                console.log(config);
                 history.pushState('', 'nobuk', hyper[0]+'tag='+tag_url);
             }
 
@@ -109,7 +107,6 @@ $(document).ready(function()
                 tag = "hombre";
                 var tag_url = (tag + "," + subtag);
                 config.tag = (tag + "," + subtag);
-                console.log(config);
                 history.pushState('', 'nobuk', hyper[0]+'tag='+tag_url);
             }
 
@@ -120,7 +117,6 @@ $(document).ready(function()
             }
         }
 
-        console.log(config.tag);
         $(".products").html("");
         $(document).ecommerce('destroy');
         $(document).ecommerce(config);
