@@ -90,7 +90,7 @@ $(document).ready(function()
         if(hyper[1] == undefined)
         {
             config.tag = subtag;
-            history.pushState('', 'nobuk', hyper[0]+'tag='+subtag);
+            history.pushState('', 'nobuk', hyper[0]+'?tag='+subtag);
         }
         else
         {
