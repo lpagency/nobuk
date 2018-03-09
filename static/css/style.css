@@ -275,11 +275,11 @@ div.image-upload.con {
     height: 570px;
     object-fit: cover;
     margin-bottom: 40px;
-    filter: grayscale(0%) brightness(55%);
-    -webkit-filter: grayscale(0%) brightness(55%);
-    -moz-filter: grayscale(0%) brightness(55%);
-    -ms-filter: grayscale(0%) brightness(55%);
-    -o-filter: grayscale(0%) brightness(55%);
+    filter: grayscale(0%) brightness(80%);
+    -webkit-filter: grayscale(0%) brightness(80%);
+    -moz-filter: grayscale(0%) brightness(80%);
+    -ms-filter: grayscale(0%) brightness(80%);
+    -o-filter: grayscale(0%) brightness(80%);
 }
 
 .cuadros-home-3{
@@ -505,11 +505,11 @@ transition-delay:.2s;
         height: 500px;
         object-fit: cover;
         margin-top: -68px;
-        filter: grayscale(0%) brightness(55%);
-        -webkit-filter: grayscale(0%) brightness(55%);
-        -moz-filter: grayscale(0%) brightness(55%);
-        -ms-filter: grayscale(0%) brightness(55%);
-        -o-filter: grayscale(0%) brightness(55%);
+        filter: grayscale(0%) brightness(80%);
+        -webkit-filter: grayscale(0%) brightness(80%);
+        -moz-filter: grayscale(0%) brightness(80%);
+        -ms-filter: grayscale(0%) brightness(80%);
+        -o-filter: grayscale(0%) brightness(80%);
         width: 99%;
      }
 
