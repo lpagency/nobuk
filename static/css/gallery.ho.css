@@ -7,11 +7,11 @@
 .banner_gallery{
 	width: 100%;
 	height: 655px;
-    filter: grayscale(0%) brightness(55%);
-    -webkit-filter: grayscale(0%) brightness(55%);
-    -moz-filter: grayscale(0%) brightness(55%);
-    -ms-filter: grayscale(0%) brightness(55%);
-    -o-filter: grayscale(0%) brightness(55%);
+    filter: grayscale(0%) brightness(80%);
+    -webkit-filter: grayscale(0%) brightness(80%);
+    -moz-filter: grayscale(0%) brightness(80%);
+    -ms-filter: grayscale(0%) brightness(80%);
+    -o-filter: grayscale(0%) brightness(80%);
     object-fit: cover;
     margin-top: -68px;
 }

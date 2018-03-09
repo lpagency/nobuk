@@ -450,11 +450,11 @@ img.mini {
     height: 375px;
     object-fit: cover;
     margin-top: -68px;
-    filter: grayscale(0%) brightness(55%);
-    -webkit-filter: grayscale(0%) brightness(55%);
-    -moz-filter: grayscale(0%) brightness(55%);
-    -ms-filter: grayscale(0%) brightness(55%);
-    -o-filter: grayscale(0%) brightness(55%);
+    filter: grayscale(0%) brightness(80%);
+    -webkit-filter: grayscale(0%) brightness(80%);
+    -moz-filter: grayscale(0%) brightness(80%);
+    -ms-filter: grayscale(0%) brightness(80%);
+    -o-filter: grayscale(0%) brightness(80%);
     margin-bottom: 40px;
     width: 100%;
 }
