@@ -46,8 +46,35 @@ $(document).ready(function()
 
     try
     {
-        tag = Utils.getUrlParameter('tag');
-        tag = tag.replaceAll("%20", " ");
+        var h = window.location.href.split("/");
+        if(h[h.length-1].indexOf("hombre") != -1)
+        {
+            if(Utils.getUrlParameter("tag") != undefined)
+            {
+                tag = "hombre," + Utils.getUrlParameter('tag');
+                tag = tag.replaceAll("%20", " ");
+            }
+            else
+            {
+                tag = "hombre";
+                tag = tag.replaceAll("%20", " ");
+            }
+        }
+
+        if(h[h.length-1].indexOf("mujer") != -1)
+        {
+            if(Utils.getUrlParameter("tag") != undefined)
+            {
+                tag = "mujer," + Utils.getUrlParameter('tag');
+                tag = tag.replaceAll("%20", " ");
+            }
+            else
+            {
+                tag = "mujer";
+                tag = tag.replaceAll("%20", " ");
+            }
+        }
+        console.log(tag);
     }
     catch(ex)
     {
@@ -85,7 +112,8 @@ $(document).ready(function()
         var hyper = location.href;
         var tag = "";
 
-        hyper = hyper.split("tag=");
+        hyper = hyper.split("/");
+        console.log(hyper);
 
         if(hyper[1] == undefined)
         {
@@ -94,8 +122,18 @@ $(document).ready(function()
         }
         else
         {
-            config.tag = subtag;
-            history.pushState('', 'nobuk', hyper[0]+'tag='+subtag);
+            if(hyper[hyper.length-1].indexOf("mujer") > -1)
+            {
+                config.tag = ("mujer," + subtag);
+                history.pushState('', 'nobuk', 'mujer?tag='+subtag);
+            }
+
+            if(hyper[hyper.length-1].indexOf("hombre") > -1)
+            {
+                config.tag = ("hombre," + subtag);
+                history.pushState('', 'nobuk', 'hombre?tag='+subtag);
+            }
+
         }
 
         $(".products").html("");
