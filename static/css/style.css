@@ -582,6 +582,10 @@ transition-delay:.2s;
     left: -88px !important;
 }
 
+.movil-cont{
+    margin-bottom: 42px;
+}
+
 }
 
 @media (max-width: 414px){

@@ -600,7 +600,7 @@ img.mini {
     font-weight: 300;
     color: rgba(0, 0, 0, 0.66);
     width: 50%;
-    margin-top: 58px;
+    margin-top: 0px;
 }
 
 hr.hr-pro {
@@ -713,10 +713,12 @@ img.mini {
 .bullet{
     margin-bottom: 0%;
     margin-top: 180%;
+    text-align: left;
+    font-size: 20px;
 }
 
 .combinaciones{
-    text-align: center;
+    text-align: left;
 }
 
 .up-ex {
@@ -743,6 +745,23 @@ img.mini {
     font-weight: 200;
 }
 
+.product-related{
+    margin-bottom: 32px !important;
+}
+
+.product-price-2{
+    left: 20px;
+}
+
+.btn-success.car{
+    left: 7px;
+}
+
+.kim{
+    position: relative;
+    left: 20px;
+}
+
 .subcateg {
     color: #b1a9a9;
     font-size: 15px;
@@ -758,7 +777,7 @@ img.mini {
     width: 89%;
     height: 285px;
     object-fit: scale-down;
-    margin-bottom: 139px;
+    margin-bottom: 75px;
     padding-left: 0px;
     top: 38px;
     position: relative;
@@ -854,7 +873,7 @@ a.subcateg:hover {
 
 @media (max-width: 414px){
     .descr_prod_detail {
-    font-size: 14px;
+    font-size: 20px;
 }
 .img_prod_little {
     top: 1px;
