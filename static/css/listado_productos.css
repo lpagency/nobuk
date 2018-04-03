@@ -951,9 +951,17 @@ a.subcateg:hover {
     width: 80%;
 }
 
+.kim{
+    margin-right: 20px;
+}
+
 .bullet{
     margin-left: -35%;
     width: 161%;
+    font-size: 14px;
+    text-align: center;
+    position: relative;
+    top: -16px;
 }
 
 .img_prod_little {
