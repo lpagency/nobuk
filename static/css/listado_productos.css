@@ -1018,72 +1018,83 @@ a.subcateg:hover {
         margin-bottom: 57px;
     }
 
-.subcateg.active {
-    background-color: rgba(128, 128, 128, 0.52);
-    font-size: 13px;
-    padding: 0px 10px;
-    color: white;
-    font-weight: 400;
-    margin-left: 2px;
-    margin-right: 2px;
-}
+    .carro{
+        position: relative;
+        left: -20px;
+    }
 
-.subcateg {
-    color: black;
-    font-size: 13px;
-    font-weight: 400;
-    padding: 0px 10px;
-    /* border: 1px solid black; */
-    margin-left: 2px;
-    margin-right: 2px;
-}
+    .units-total{
+        position: relative;
+        top: -25px;
+        left: 7px;
+    }
+
+    .subcateg.active {
+        background-color: rgba(128, 128, 128, 0.52);
+        font-size: 13px;
+        padding: 0px 10px;
+        color: white;
+        font-weight: 400;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
+
+    .subcateg {
+        color: black;
+        font-size: 13px;
+        font-weight: 400;
+        padding: 0px 10px;
+        /* border: 1px solid black; */
+        margin-left: 2px;
+        margin-right: 2px;
+    }
 
 
-.subcateg:hover {
-   /* background-color: rgba(128, 128, 128, 0.38);*/
-    font-size: 13px;
-    padding: 0px 10px;
-    color:gray;
-    font-weight: 400;
-    margin-left: 2px;
-    margin-right: 2px;
-}
+    .subcateg:hover {
+       /* background-color: rgba(128, 128, 128, 0.38);*/
+        font-size: 13px;
+        padding: 0px 10px;
+        color:gray;
+        font-weight: 400;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
 
-a.subcateg:hover {
-   /* background-color: rgba(128, 128, 128, 0.38);*/
-    font-size: 13px;
-    padding: 0px 10px;
-    color:gray;
-    font-weight: 400;
-    margin-left: 2px;
-    margin-right: 2px;
-}
+    a.subcateg:hover {
+       /* background-color: rgba(128, 128, 128, 0.38);*/
+        font-size: 13px;
+        padding: 0px 10px;
+        color:gray;
+        font-weight: 400;
+        margin-left: 2px;
+        margin-right: 2px;
+    }
 
-.btn-success.car {
-    color: black;
-    background-color: white;
-    border-color: black;
-    border-radius: 0px;
-    width: 68%;
-    height: 63px;
-    float: left;
-    top: 45px;
-    position: relative;
-    right: 0px;
-}
+    .btn-success.car {
+        color: black;
+        background-color: white;
+        border-color: black;
+        border-radius: 0px;
+        width: 68%;
+        height: 63px;
+        float: left;
+        top: 45px;
+        position: relative;
+        right: 0px;
+    }
 
-.btn-success.car:hover {
-    color:white;
-    background-color:black ;
-    border-color: black;
-    border-radius: 0px;
-    width: 68%;
-    height: 63px;
-    float: left;
-    top: 45px;
-    position: relative;
-    right: 0px;
-}
+    .btn-success.car:hover {
+        color:white;
+        background-color:black ;
+        border-color: black;
+        border-radius: 0px;
+        width: 68%;
+        height: 63px;
+        float: left;
+        top: 45px;
+        position: relative;
+        right: 0px;
+    }
 
 
 }
