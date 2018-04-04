@@ -161,186 +161,115 @@
 
 
 
-    <div class="col-md-4 article-box-2">
-      <div style="position:relative;">
-        {% if is_admin %}
+  <div class="col-md-4 article-box-2">
+    <div style="position:relative;">
+      {% if is_admin %}
         <div class="image-upload lapiz visible-movil">
-         <label for="img_box_nobuk_3">
-           <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
-         </label>
-         <input type="file" class="editableimage" image-id="{{ site.name }}_box_nobuk_3" name="image" id="img_box_nobuk_3" >
-       </div>
-       {% end %}
-       <a id="{{ site.name + '_box_nobuk_3' }}" href="{{ read_link(site.name + '_box_nobuk_3') }}">
+          <label for="img_box_nobuk_3">
+            <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
+          </label>
+          <input type="file" class="editableimage" image-id="{{ site.name }}_box_nobuk_3" name="image" id="img_box_nobuk_3" >
+        </div>
+      {% end %}
+      <a id="{{ site.name + '_box_nobuk_3' }}" href="{{ read_link(site.name + '_box_nobuk_3') }}">
         <img id="{{ site.name }}_box_nobuk_3" src="{{ read_image(site.name + '_box_nobuk_3', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_box_nobuk_3',500) }}'" class="cuadros-home-2" alt="item">
-
-   <!--      <div class="padre">
-          <div class="texto-img-2  {{editabletext}}" text-id="{{ site.name + '_t_no_3' }}"> {{ read_text(site.name +  '_t_no_3') }}</div>
-        </div> -->
         <div class='contenedor'>
           <div class="tu {{editabletext}}" text-id="{{ site.name + '_t_no_3' }}"> {{ read_text(site.name +  '_t_no_3') }}</div>
         </div>
       </a> 
-
     </div>
-
     {% if is_admin %}
-    <img class="change-image editablelink" link-id="{{ site.name + '_box_nobuk_3' }}" content="{{ read_link(site.name + '_box_nobuk_3') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
+      <img class="change-image editablelink" link-id="{{ site.name + '_box_nobuk_3' }}" content="{{ read_link(site.name + '_box_nobuk_3') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
     {% end %}
   </div>
 
-
-<!--     <div class="col-md-6 article-box-2">
-      <div style="position:relative;">
-        {% if is_admin %}
+  <div class="col-md-3 article-box-3">
+    <div style="position:relative;">
+      {% if is_admin %}
         <div class="image-upload lapiz visible-movil">
-         <label for="img_box_nobuk_4">
-           <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
-         </label>
-         <input type="file" class="editableimage" image-id="{{ site.name }}_box_nobuk_4" name="image" id="img_box_nobuk_4" >
-       </div>
-       {% end %}
-       <a id="{{ site.name + '_box_nobuk_4' }}" href="{{ read_link(site.name + '_box_nobuk_4') }}">
-        <img id="{{ site.name }}_box_nobuk_4" src="{{ read_image(site.name + '_box_nobuk_4', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_box_nobuk_4',) }}'" class="cuadros-home-2" alt="item">
-
-        <div align="center">
-          <div class="texto-img-2 {{editabletext}}" text-id="{{ site.name + '_t_no_4' }}"> {{ read_text(site.name +  '_t_no_4') }}</div>
+          <label for="img_box_nobuk_4">
+            <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
+          </label>
+          <input type="file" class="editableimage" image-id="{{ site.name }}_box_nobuk_4" name="image" id="img_box_nobuk_4" >
         </div>
-      </a> 
-  
-    </div>
-
-    {% if is_admin %}
-    <img class="change-image editablelink" link-id="{{ site.name + '_box_nobuk_4' }}" content="{{ read_link(site.name + '_box_nobuk_4') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
-    {% end %}
-  </div> -->
-
-  
-  <!-- <div class="col-md-6 article-box-2">
-      <div style="position:relative;">
-        {% if is_admin %}
-        <div class="image-upload lapiz visible-movil">
-         <label for="img_box_nobuk_5">
-           <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
-         </label>
-         <input type="file" class="editableimage" image-id="{{ site.name }}_box_nobuk_5" name="image" id="img_box_nobuk_5" >
-       </div>
-       {% end %}
-       <a id="{{ site.name + '_box_nobuk_5' }}" href="{{ read_link(site.name + '_box_nobuk_5') }}">
-        <img id="{{ site.name }}_box_nobuk_5" src="{{ read_image(site.name + '_box_nobuk_5', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_box_nobuk_5',) }}'" class="cuadros-home-2" alt="item">
-
-        <div align="center">
-          <div class="texto-img-2 {{editabletext}}" text-id="{{ site.name + '_t_no_5' }}"> {{ read_text(site.name +  '_t_no_5') }}</div>
-        </div>
-      </a> 
- 
-    </div>
-
-    {% if is_admin %}
-    <img class="change-image editablelink" link-id="{{ site.name + '_box_nobuk_5' }}" content="{{ read_link(site.name + '_box_nobuk_5') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
-    {% end %}
-  </div> -->
-
-<!--     <div class="col-md-6 article-box-2">
-      <div style="position:relative;">
-        {% if is_admin %}
-        <div class="image-upload lapiz visible-movil">
-         <label for="img_box_nobuk_6">
-           <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
-         </label>
-         <input type="file" class="editableimage" image-id="{{ site.name }}_box_nobuk_6" name="image" id="img_box_nobuk_6" >
-       </div>
-       {% end %}
-       <a id="{{ site.name + '_box_nobuk_6' }}" href="{{ read_link(site.name + '_box_nobuk_6') }}">
-        <img id="{{ site.name }}_box_nobuk_6" src="{{ read_image(site.name + '_box_nobuk_6', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_box_nobuk_6',) }}'" class="cuadros-home-2" alt="item">
-
-        <div align="center">
-          <div class="texto-img-2 {{editabletext}}" text-id="{{ site.name + '_t_no_6' }}"> {{ read_text(site.name +  '_t_no_6') }}</div>
+      {% end %}
+      <a id="{{ site.name + '_box_nobuk_4' }}" href="{{ read_link(site.name + '_box_nobuk_4') }}">
+        <img id="{{ site.name }}_box_nobuk_4" src="{{ read_image(site.name + '_box_nobuk_4', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_box_nobuk_4',500) }}'" class="cuadros-home-5" alt="item">
+        <div class='contenedor-2'>
+          <div class="tu {{editabletext}}" text-id="{{ site.name + '_t_no_3' }}"> {{ read_text(site.name +  '_t_no_3') }}</div>
         </div>
       </a> 
     </div>
-
     {% if is_admin %}
-    <img class="change-image editablelink" link-id="{{ site.name + '_box_nobuk_6' }}" content="{{ read_link(site.name + '_box_nobuk_6') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
+      <img class="change-image editablelink" link-id="{{ site.name + '_box_nobuk_4' }}" content="{{ read_link(site.name + '_box_nobuk_4') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
     {% end %}
-  </div> -->
+  </div>
 
-<!-- 
-    <div class="col-md-6 article-box-2">
-      <div style="position:relative;">
-        {% if is_admin %}
+  <div class="col-md-3 article-box-3">
+    <div style="position:relative;">
+      {% if is_admin %}
         <div class="image-upload lapiz visible-movil">
-         <label for="img_box_nobuk_7">
-           <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
-         </label>
-         <input type="file" class="editableimage" image-id="{{ site.name }}_box_nobuk_7" name="image" id="img_box_nobuk_7" >
-       </div>
-       {% end %}
-       <a id="{{ site.name + '_box_nobuk_7' }}" href="{{ read_link(site.name + '_box_nobuk_7') }}">
-        <img id="{{ site.name }}_box_nobuk_7" src="{{ read_image(site.name + '_box_nobuk_7', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_box_nobuk_7',) }}'" class="cuadros-home-3" alt="item">
-
-        <div align="center">
-          <div class="texto-img-2 {{editabletext}}" text-id="{{ site.name + '_t_no_7' }}"> {{ read_text(site.name +  '_t_no_7') }}</div>
+          <label for="img_box_nobuk_5">
+            <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
+          </label>
+          <input type="file" class="editableimage" image-id="{{ site.name }}_box_nobuk_5" name="image" id="img_box_nobuk_5" >
+        </div>
+      {% end %}
+      <a id="{{ site.name + '_box_nobuk_5' }}" href="{{ read_link(site.name + '_box_nobuk_5') }}">
+        <img id="{{ site.name }}_box_nobuk_5" src="{{ read_image(site.name + '_box_nobuk_5', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_box_nobuk_5',500) }}'" class="cuadros-home-5" alt="item">
+        <div class='contenedor-2'>
+          <div class="tu {{editabletext}}" text-id="{{ site.name + '_t_no_3' }}"> {{ read_text(site.name +  '_t_no_3') }}</div>
         </div>
       </a> 
     </div>
-
     {% if is_admin %}
-    <img class="change-image editablelink" link-id="{{ site.name + '_box_nobuk_7' }}" content="{{ read_link(site.name + '_box_nobuk_7') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
+      <img class="change-image editablelink" link-id="{{ site.name + '_box_nobuk_5' }}" content="{{ read_link(site.name + '_box_nobuk_5') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
     {% end %}
-  </div> -->
+  </div>
 
-
-
-<!--     <div class="col-md-3 article-box-2">
-      <div style="position:relative;">
-        {% if is_admin %}
+  <div class="col-md-3 article-box-3">
+    <div style="position:relative;">
+      {% if is_admin %}
         <div class="image-upload lapiz visible-movil">
-         <label for="img_box_nobuk_8">
-           <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
-         </label>
-         <input type="file" class="editableimage" image-id="{{ site.name }}_box_nobuk_8" name="image" id="img_box_nobuk_8" >
-       </div>
-       {% end %}
-       <a id="{{ site.name + '_box_nobuk_8' }}" href="{{ read_link(site.name + '_box_nobuk_8') }}">
-        <img id="{{ site.name }}_box_nobuk_8" src="{{ read_image(site.name + '_box_nobuk_8', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_box_nobuk_8',) }}'" class="cuadros-home-4" alt="item">
-
-        <div align="center">
-          <div class="texto-img-2 {{editabletext}}" text-id="{{ site.name + '_t_no_8' }}"> {{ read_text(site.name +  '_t_no_8') }}</div>
+          <label for="img_box_nobuk_6">
+            <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
+          </label>
+          <input type="file" class="editableimage" image-id="{{ site.name }}_box_nobuk_6" name="image" id="img_box_nobuk_6" >
+        </div>
+      {% end %}
+      <a id="{{ site.name + '_box_nobuk_6' }}" href="{{ read_link(site.name + '_box_nobuk_6') }}">
+        <img id="{{ site.name }}_box_nobuk_6" src="{{ read_image(site.name + '_box_nobuk_6', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_box_nobuk_6',500) }}'" class="cuadros-home-5" alt="item">
+        <div class='contenedor-2'>
+          <div class="tu {{editabletext}}" text-id="{{ site.name + '_t_no_3' }}"> {{ read_text(site.name +  '_t_no_3') }}</div>
         </div>
       </a> 
     </div>
-
     {% if is_admin %}
-    <img class="change-image editablelink" link-id="{{ site.name + '_box_nobuk_8' }}" content="{{ read_link(site.name + '_box_nobuk_8') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
+      <img class="change-image editablelink" link-id="{{ site.name + '_box_nobuk_6' }}" content="{{ read_link(site.name + '_box_nobuk_6') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
     {% end %}
-  </div> -->
+  </div>
 
-
-<!--     <div class="col-md-3 article-box-2">
-      <div style="position:relative;">
-        {% if is_admin %}
+  <div class="col-md-3 article-box-3">
+    <div style="position:relative;">
+      {% if is_admin %}
         <div class="image-upload lapiz visible-movil">
-         <label for="img_box_nobuk_9">
-           <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
-         </label>
-         <input type="file" class="editableimage" image-id="{{ site.name }}_box_nobuk_9" name="image" id="img_box_nobuk_9" >
-       </div>
-       {% end %}
-       <a id="{{ site.name + '_box_nobuk_9' }}" href="{{ read_link(site.name + '_box_nobuk_9') }}">
-        <img id="{{ site.name }}_box_nobuk_9" src="{{ read_image(site.name + '_box_nobuk_9', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_box_nobuk_9',) }}'" class="cuadros-home-4" alt="item">
-
-        <div align="center">
-          <div class="texto-img-2 {{editabletext}}" text-id="{{ site.name + '_t_no_9' }}"> {{ read_text(site.name +  '_t_no_9') }}</div>
+          <label for="img_box_nobuk_7">
+            <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
+          </label>
+          <input type="file" class="editableimage" image-id="{{ site.name }}_box_nobuk_7" name="image" id="img_box_nobuk_7" >
+        </div>
+      {% end %}
+      <a id="{{ site.name + '_box_nobuk_7' }}" href="{{ read_link(site.name + '_box_nobuk_7') }}">
+        <img id="{{ site.name }}_box_nobuk_7" src="{{ read_image(site.name + '_box_nobuk_7', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_box_nobuk_7',500) }}'" class="cuadros-home-5" alt="item">
+        <div class='contenedor-2'>
+          <div class="tu {{editabletext}}" text-id="{{ site.name + '_t_no_3' }}"> {{ read_text(site.name +  '_t_no_3') }}</div>
         </div>
       </a> 
-
     </div>
-
     {% if is_admin %}
-    <img class="change-image editablelink" link-id="{{ site.name + '_box_nobuk_9' }}" content="{{ read_link(site.name + '_box_nobuk_9') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
+      <img class="change-image editablelink" link-id="{{ site.name + '_box_nobuk_7' }}" content="{{ read_link(site.name + '_box_nobuk_7') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
     {% end %}
-  </div> -->
+  </div>
 
   </div>
 </section>

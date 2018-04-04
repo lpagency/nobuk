@@ -135,7 +135,13 @@ div.image-upload.par1 {
 .article-box-2 {
     overflow: hidden;
     padding: 0px 2px;
-    /*margin-bottom: 17px;*/
+    height: 573px;
+}
+
+.article-box-3 {
+    overflow: hidden;
+    padding: 0px 2px;
+    height: 250px;
 }
 
 .text-box{
@@ -262,7 +268,7 @@ div.image-upload.con {
     width: 100%;
     height: 420px;
     object-fit: cover;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
     filter: grayscale(0%) brightness(75%);
     -webkit-filter: grayscale(0%) brightness(75%);
     -moz-filter: grayscale(0%) brightness(75%);
@@ -304,6 +310,18 @@ div.image-upload.con {
     -moz-filter: grayscale(0%) brightness(75%);
     -ms-filter: grayscale(0%) brightness(75%);
     -o-filter: grayscale(0%) brightness(75%);
+}
+
+.cuadros-home-5{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    margin-bottom: 40px;
+    filter: grayscale(0%) brightness(80%);
+    -webkit-filter: grayscale(0%) brightness(80%);
+    -moz-filter: grayscale(0%) brightness(80%);
+    -ms-filter: grayscale(0%) brightness(80%);
+    -o-filter: grayscale(0%) brightness(80%);
 }
 
 
@@ -467,7 +485,7 @@ transition-delay:.2s;
 
 
 .contenedor
-    {
+{
     width: 100%;
     height: 162px;
     line-height: 114px;
@@ -476,7 +494,33 @@ transition-delay:.2s;
     position: relative;
     margin-bottom: -150px;
 
-    }
+}
+
+.contenedor-2 {
+    width: 100%;
+    height: 162px;
+    line-height: 114px;
+    text-align: center;
+    bottom: 235px;
+    position: relative;
+    margin-bottom: -150px;
+}
+
+.contenedor-2>div.tu {
+    display:inline-block;
+    vertical-align:middle;
+    line-height:normal;
+    font-size: 30px;
+    color: white;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-weight: 100;
+    overflow: hidden;
+    padding-left: 17px;
+    padding-right: 17px;
+}
+
     .contenedor>div.tu {
         display:inline-block;
         vertical-align:middle;
@@ -571,6 +615,11 @@ transition-delay:.2s;
 }
 
   .contenedor>div.tu {
+        padding-left: 48px;
+        padding-right: 48px;
+    }
+
+    .contenedor-2>div.tu {
         padding-left: 48px;
         padding-right: 48px;
     }
