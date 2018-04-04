@@ -75,6 +75,7 @@
        {% end %}
        <a id="{{ site.name + '_home_nobuk' }}" href="{{ read_link(site.name + '_home_nobuk') }}">
         <img id="{{ site.name }}_home_nobuk" src="{{ read_image(site.name + '_home_nobuk', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_home_nobuk',500) }}'" class="banner_home" alt="item">
+        </a>
     </div>
 
     <div class="container-fluid">
@@ -86,16 +87,19 @@
 </section>
 </div>
 
-<!-- 
+
 <section>
-   <div class="container-fluid"> 
-     <div class="col-md-12">
-       <div class="text-one"> </div>
+   <div class="container min" style="padding: 0px 25px"> 
+     <div class="col-md-12 col-sm-12 especial-mama">
+       <div class="col-md-9 col-sm-12 text-one {{editabletext}}" text-id="{{ site.name + '_especial_mama' }}"> {{ read_text(site.name +  '_especial_mama') }} </div>
+       <div class="col-md-3 col-sm-12 especial-mama-cont-boton">
+        <button class="boton-mama" onclick="'{{ site_base }}'">VER PRODUCTOS</button>
+       </div>
      </div>
    </div>
 </section>
 
- -->
+
 <!-- ***cuadros** -->
 
 <section>

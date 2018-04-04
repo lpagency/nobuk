@@ -42,6 +42,23 @@ li{
     margin-top: 100px;
 }
 
+.especial-mama{
+    height: auto;
+    background-color: pink;
+    margin-top: 2px;
+}
+
+.especial-mama-cont-boton{
+    position: relative;
+    top: 36px;
+}
+
+.boton-mama{
+    background-color: transparent;
+    border: solid 1px;
+    padding: 10px 63px;
+}
+
 .text-cont {
     margin-top: 40px;
     border-bottom: 1px solid #8a6d3b;
@@ -258,8 +275,8 @@ div.image-upload.con {
 
 .text-one{
     position: relative;
-    top: 30px;
-    margin-bottom: 23px;
+    top: 36px;
+    margin-bottom: 60px;
     font-size: 26px;
     font-weight: 100;
 }
@@ -595,24 +612,33 @@ transition-delay:.2s;
 }
 
 @media (max-width: 991px){
-.align-form-contact {
-    padding-left: 0px;
-    padding-right: 0px;
-}
 
-.hovereffect .overlay {
-    width: 96%;
-    height: 100%;
-    position: absolute;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-    opacity: 0;
-    background-color: transparent;
-    -webkit-transition: all .4s ease-in-out;
-    transition: all .4s ease-in-out;
-    border: 1px solid black;
-}
+    .boton-mama{
+        left: 27%;
+        position: relative;
+    }
+
+    .especial-mama-cont-boton{
+        margin-bottom: 40px;
+    }
+    .align-form-contact {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .hovereffect .overlay {
+        width: 96%;
+        height: 100%;
+        position: absolute;
+        overflow: hidden;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        background-color: transparent;
+        -webkit-transition: all .4s ease-in-out;
+        transition: all .4s ease-in-out;
+        border: 1px solid black;
+    }
 
   .contenedor>div.tu {
         padding-left: 48px;
@@ -627,13 +653,24 @@ transition-delay:.2s;
 }
 
 @media (max-width: 420px){
-    .lateral.l-movil {
-    left: -88px !important;
-}
 
-.movil-cont{
-    margin-bottom: 42px;
-}
+    .especial-mama-cont-boton{
+        left: 8%;
+    }
+
+    .boton-mama{
+        position: relative;
+        top: -12px;
+        left: 0px;
+    }
+
+    .lateral.l-movil {
+        left: -88px !important;
+    }
+
+    .movil-cont{
+        margin-bottom: 42px;
+    }
 
 }
 
@@ -648,6 +685,19 @@ transition-delay:.2s;
     margin-top: 0px !important;
 }
 
+}
+
+@media (max-width: 375px){
+    .especial-mama-cont-boton{
+        left: 5%;
+    }
+}
+
+
+@media (max-width: 320px){
+    .especial-mama-cont-boton{
+        left: 0%;
+    }
 }
 
 
