@@ -950,7 +950,7 @@ a.subcateg:hover {
 @media (max-width: 320px){
     .descr_prod_detail {
         position: relative;
-        font-size: 17px;
+        font-size: 13px;
         width: 80%;
     }
 
@@ -987,7 +987,7 @@ a.subcateg:hover {
     }
 
     .fin {
-        font-size: 13px;
+        font-size: 15px;
         position: relative;
         top: 110px;
         width: 80%;
