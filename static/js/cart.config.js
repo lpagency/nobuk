@@ -67,7 +67,8 @@ $(document).ready(function()
         'ignore_stock': true,
         'infinite_scroll': true,
         // 'maxProducts': 100,
-        'checkout_url': checkout_url, 
+        'checkout_url': checkout_url,
+        'column': 'position', 
         'operator' :'and',
         'onLoad': function(products) 
         {
