@@ -971,35 +971,52 @@ a.subcateg:hover {
         width: 89%;
     }
 
-.img_prod_little {
-    top: 1px;
-    left: 0px;
-    width: 45px;
-    height: 45px;
-    object-fit: cover;
-    padding: 0;
-    left: -15px;
-    margin: 3px;
-}
+    .up-ex {
+        left: 2px;
+    }
 
-.fin {
-    position: relative;
-    top: 110px;
-    width: 80%;
-    margin-top: 96px;
-}
+    .img_prod_little {
+        top: 1px;
+        left: 0px;
+        width: 45px;
+        height: 45px;
+        object-fit: cover;
+        padding: 0;
+        left: -15px;
+        margin: 3px;
+    }
 
-.inf{
-    position: absolute;
-    bottom: 0px;
-    width:61%;
-    text-align: left;
-    left: 64px;
-    color: white;
-    font-size: 25px;
-    font-weight: 300;
-    margin-bottom: 57px;
-}
+    .fin {
+        font-size: 13px;
+        position: relative;
+        top: 110px;
+        width: 80%;
+        margin-top: 0px;
+    }
+
+    .combinaciones {
+        left: 2px;
+    }
+
+    .btn-success.car {
+        left: 5px;
+    }
+
+    hr.len{
+        width: 100%;
+    }
+
+    .inf{
+        position: absolute;
+        bottom: 0px;
+        width:61%;
+        text-align: left;
+        left: 64px;
+        color: white;
+        font-size: 25px;
+        font-weight: 300;
+        margin-bottom: 57px;
+    }
 
 .subcateg.active {
     background-color: rgba(128, 128, 128, 0.52);
