@@ -2,8 +2,16 @@
  display: none;
 }
 
-@media only screen and (max-width: 420px){
-	.detalle-prod{
-		top: 115px;
+@media only screen and (max-width: 420px)
+{
+	.img-pro
+	{
+		width: 100%;
 	}
+
+	.btn-default.carr
+	{
+		margin-top: 40px;
+	}
+
 }

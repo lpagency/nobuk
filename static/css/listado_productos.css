@@ -1,11 +1,13 @@
-div.image-upload.part1 {
+div.image-upload.part1
+{
     position: absolute;
     right: 20px;
     top: 115px;
     z-index: 100000;
 }
 
-.titulo-prou{
+.titulo-prou
+{
     position: absolute;
     text-align: center;
     width: 100%;
@@ -20,7 +22,8 @@ div.image-upload.part1 {
 
 }
 
-.img-pro{
+.img-pro
+{
     width: 100%;
     height: 219px;
     object-fit: scale-down;
@@ -29,7 +32,24 @@ div.image-upload.part1 {
     top: 39px;
 }
 
-.inf{
+.relacionados
+{
+    position: relative;
+    top: 200px;
+}
+
+.text-two
+{
+    position: relative;
+    top: 36px;
+    margin-bottom: 90px;
+    font-size: 24px;
+    font-weight: 100;
+    color: grey;
+}
+
+.inf
+{
     position: absolute;
     bottom: -56px;
     width: 100%;
@@ -52,12 +72,14 @@ div.image-upload.part1 {
     -o-transform: scaleY(1.2);
 }
 
-.clearfix-dos{
+.clearfix-dos
+{
     margin-top: 78px;
     margin-bottom: 0px;
 }
 
-.fondo-detalle{
+.fondo-detalle
+{
     width: 100%;
     height: 760px;
     object-fit: cover;
