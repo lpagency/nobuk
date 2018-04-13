@@ -78,7 +78,32 @@
                 var tagProd2 = tagProd[0] + "-" + tagProd[1];
 
                 related(tagProd2.toLowerCase());
-                related_tipo(product.tags[0].name);
+
+                for(var x = 0; x<product.tags.length; x++)
+                {
+                    switch(product.tags[x].name)
+                    {
+                        case "carteras":
+                            related_tipo("carteras");
+                        break;
+
+                        case "bolso":
+                            related_tipo("bolso");
+                        break;
+
+                        case "maletines":
+                            related_tipo("maletines");
+                        break;
+
+                        case "mochilas":
+                            related_tipo("mochilas");
+                        break;
+
+                        case "accesorios":
+                            related_tipo("accesorios");
+                        break;
+                    }
+                }
 
                 if (product.bullet_1 != "" ){
                     $.get(site_base + "/article/tag?tag="+product.bullet_1, function(data)
