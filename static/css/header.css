@@ -494,20 +494,24 @@ li#open-cart {
     }
 }
 
-@media screen and (max-width: 700px){
-  .toggle {
-    background-color: rgba(0, 0, 0, 0.24);
-    border: 1px solid rgba(0, 0, 0, 0.13);
-    top: 9px;
-    margin-bottom: 18px;
-}
+@media screen and (max-width: 700px)
+{
+    .toggle
+    {
+        background-color: rgba(0, 0, 0, 0.24);
+        border: 1px solid rgba(0, 0, 0, 0.13);
+        top: 9px;
+        margin-bottom: 18px;
+    }
 
- .icon-bar {
-    background-color: black !important;
-}
-.redes-menu{
-    bottom: 40px!important;
-    position: relative!important;
-  }
+    .icon-bar
+    {
+        background-color: black !important;
+    }
+    .redes-menu
+    {
+        bottom: 40px!important;
+        position: relative!important;
+    }
 }
 
