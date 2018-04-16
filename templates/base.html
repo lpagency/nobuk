@@ -9,12 +9,8 @@
         <meta name="author" content="loadingplay.com">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="keywords" content="jquery, vertical, scrolling, scroll, smooth"/>
-
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <!-- <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300,400,600,600,700,700,800,800' rel='stylesheet' type='text/css'> -->
         <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400" rel="stylesheet">
-        <!-- <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'> -->
-<!--         <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900,100' rel='stylesheet' type='text/css'> -->
         <link rel="stylesheet" type="text/css" href="{{ site_base }}/common/js/bower/bodegas.client/dist/bodegas.client.css">
         <link rel="stylesheet" href="{{ site_base }}/common/css/editableimage.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -27,146 +23,98 @@
         <link rel="stylesheet" href="{{ site_base }}/static/css/header.css">
         <link rel="stylesheet" href="{{ site_base }}/static/css/header_movil.css">
         <link rel="stylesheet" href="{{ site_base }}/static/css/quienes.css">
-
-        
         <link rel="stylesheet" type="text/css" href="{{ site_base }}/static/fancybox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
-
         <!-- aqui se ponen los demas css -de las paginas -->
         <link rel="stylesheet" href="{{ site_base }}/common/css/editableimage.css">
 
-
-        <!-- autocomplete
-        <link rel="stylesheet" type="text/css" href="{{ site_base }}/static/js/plugins/selectize/selectize.css" />
-        <!-autocomplete -->
         <link rel="stylesheet" href="{{ site_base }}/common/js/bower/file_uploader/dist/fileuploader.css">
 
         <link rel="stylesheet" href="{{ site_base }}/static/css/ligthbox-d.css">
-     <!--    <link rel="stylesheet" href="{{ site_base }}/static/css/gallery.css">
+
 
         <link rel="stylesheet" href="{{ site_base }}/static/js/fancybox/source/jquery.fancybox.css?v=2.1.5"> -->
 
         <link rel="stylesheet" href="{{ site_base }}/common/css/ellipsis.css">
 
-
-
-        <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/s/dt/dt-1.10.10/datatables.min.css"/> -->
-
-        
         {% block css %}{% end %}
 
         {% include 'product/product_box.html' %}
         {% include 'product/product_home.html' %}
 
         {% if is_admin %}
-        {% set editabletext = 'editabletext' %}
+            {% set editabletext = 'editabletext' %}
         {% else %}
-        {% set editabletext = '' %}
+            {% set editabletext = '' %}
         {% end %}
-
     </head>
 
-     <nav class="navbar navbar-default hidden-lg hidden-md hidden-sm visible-xs">
+    <nav class="navbar navbar-default hidden-lg hidden-md hidden-sm visible-xs">
         <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-               <li class="icon" id="open-cart" data-toggle="modal" data-target="#myModal" >
-                <img class="carro" src="https://84static.loadingplay.com/static/images/c0554a3e4e3948796b585853ebc0b290_carro.png">
-                <span> </span> <span class="units-total">0</span> 
-            </li>
-          </div>
-                  <div class="hidden-lg hidden-md hidden-sm visible-xs" style="">
-            
-            <div class="caja-log">
-                {% if is_admin %}
-            <div class="image-upload visible-movil">
-                <label for="img_logo_movil">
-                    <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'" style="">
-                </label>
-                <input type="file" class="editableimage" image-id="{{ site.name }}_img_logo_movil" name="image" id="img_logo_movil">
-            </div>
-            {% end %}
-            <a id="{{ site.name + '_logo_movil' }}" href="#">
-                <img class="logo" id="{{ site.name }}_img_logo_movil" src="{{ read_image(site.name + '_img_logo_movil', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_img_logo_movil',500) }}'" alt="item">
-            </a>
-        </div>
-        </div>
-          <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-               <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nosotros<span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="{{ site_base }}/historia">Nuestra Historia</a></li>
-                  <li><a href="https://www.nobuk.cl/gallery/detail/galeria_de_prueba_taller_nobuk/1624">Nuestros Artesanos</a></li>
-                </ul>
-              </li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Productos<span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="{{ site_base }}/listado_productos?tag=carteras">Carteras</a></li>
-                  <li><a href="{{ site_base }}/listado_productos?tag=bolso">Bolsos</a></li>
-                  <li><a href="{{ site_base }}/listado_productos?tag=maletines">Maletines</a></li>
-                  <li><a href="{{ site_base }}/listado_productos?tag=mochilas">Mochilas</a></li>
-                  <li><a href="{{ site_base }}/listado_productos?tag=accesorios">Accesorios</a></li>
-                  <li><a href="{{ site_base }}/listado_productos">Todos</a></li>
-                </ul>
-              </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-              <li class=""><a href="{{ site_base }}/listado_productos?tag=new">Lo Nuevo</a></li>
-              <li class=""><a href="{{ site_base }}/contact">Contactanos</a></li>
-              <li class=""><a href="{{ site_base }}/listado_productos?tag=hombre">Hombre</a></li>
-              <li class=""><a href="{{ site_base }}/listado_productos?tag=mujer">Mujer</a></li>
-           <!--    <li><a href="../navbar-static-top/">Contacto</a></li> -->
-            </ul>
-          </div><!--/.nav-collapse -->
-        </div><!--/.container-fluid -->
-      </nav>
-
-<!--     <div class="fondo">   
-        <input class="menu-two" type="checkbox" id="op"></input>
-        <a href="#">
-            <div class="caja-log-2">
-                <img class="logo-mob hidden-lg" src="https://7static.loadingplay.com/static/images/3df98c3eee002ef02d90f5d1174b2ed2_logo-nobuk.png" />
-            </div>
-        </a>
-        <div class="lower hidden-lg">
-            <li class="icon" id="open-cart" data-toggle="modal" data-target="#myModal" >
-                <img class="carro" src="https://84static.loadingplay.com/static/images/c0554a3e4e3948796b585853ebc0b290_carro.png">
-                <span> </span> <span class="units-total">0</span> 
-            </li>
-            <label for="op">
-             <i class="fa fa-align-justify" aria-hidden="true"></i>
-         </label>
-     </div>
-     <div class="overlay overlay-hugeinc">
-        <label for="op"></label>
-        <nav>
-            <ul>
-                <li><a href="{{ site_base }}/historia">Historia</a></li>
-                <li><a href="{{ site_base }}/concepto">Concepto </a></li>
-                <li><a href="{{ site_base }}/quienes_somos">Quiénes somos </a></li>
-                <li><a href="{{ site_base }}/listado_productos">Productos </a></li>
-                <li class="">
-                    <a href="">Total compra</a>
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <li class="icon" id="open-cart" data-toggle="modal" data-target="#myModal" >
+                    <img class="carro" src="https://84static.loadingplay.com/static/images/c0554a3e4e3948796b585853ebc0b290_carro.png">
+                    <span></span>
+                    <span class="units-total">0</span> 
                 </li>
-            </ul>
-        </nav>
-    </div>
-</div> -->
-
-
-   <body>
+            </div>
+            <div class="hidden-lg hidden-md hidden-sm visible-xs" style="">
+                <div class="caja-log">
+                    {% if is_admin %}
+                        <div class="image-upload visible-movil">
+                            <label for="img_logo_movil">
+                                <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'" style="">
+                            </label>
+                            <input type="file" class="editableimage" image-id="{{ site.name }}_img_logo_movil" name="image" id="img_logo_movil">
+                        </div>
+                    {% end %}
+                    <a id="{{ site.name + '_logo_movil' }}" href="#">
+                        <img class="logo" id="{{ site.name }}_img_logo_movil" src="{{ read_image(site.name + '_img_logo_movil', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_img_logo_movil',500) }}'" alt="item">
+                    </a>
+                </div>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Nosotros<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{ site_base }}/historia">Nuestra Historia</a></li>
+                            <li><a href="https://www.nobuk.cl/gallery/detail/galeria_de_prueba_taller_nobuk/1624">Nuestros Artesanos</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Productos<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="{{ site_base }}/listado_productos?tag=carteras">Carteras</a></li>
+                            <li><a href="{{ site_base }}/listado_productos?tag=bolso">Bolsos</a></li>
+                            <li><a href="{{ site_base }}/listado_productos?tag=maletines">Maletines</a></li>
+                            <li><a href="{{ site_base }}/listado_productos?tag=mochilas">Mochilas</a></li>
+                            <li><a href="{{ site_base }}/listado_productos?tag=accesorios">Accesorios</a></li>
+                            <li><a href="{{ site_base }}/listado_productos">Todos</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class=""><a href="{{ site_base }}/listado_productos?tag=new">Lo Nuevo</a></li>
+                    <li class=""><a href="{{ site_base }}/contact">Contactanos</a></li>
+                    <li class=""><a href="{{ site_base }}/listado_productos?tag=hombre">Hombre</a></li>
+                    <li class=""><a href="{{ site_base }}/listado_productos?tag=mujer">Mujer</a></li>
+                </ul>
+            </div><!--/.nav-collapse -->
+        </div><!--/.container-fluid -->
+    </nav>
+    <body>
 
     {% include 'product/product_box.html' %} 
     {% include 'product/product_home.html' %} 
-        {% if is_admin %}
+    {% if is_admin %}
         {% set editabletext = 'editabletext' %}
-        {% else %}
+    {% else %}
         {% set editabletext = '' %} 
     {% end %}
 
@@ -430,6 +378,69 @@
 
                    $('.cate').click(function(){
                         $('#myModal-pro').modal('toggle');                   
+                        // alert("algo");
+                   });
+                });
+                
+    </script>
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', '{{ get_config("analytics") }}', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+    <script type="text/javascript">
+        $(document).ready(function()
+        {
+            $(document).on("click", "#open-cart", function()
+            {
+                if($(".total-carro").val() > 0)
+                {
+                    $(".pagar-carro").attr("disabled", false);
+                }
+            });
+
+            $(document).on("click", ".add-one", function()
+            {
+              setTimeout(function()
+              {
+                if($(".total-carro").val() > 0)
+                {
+                  $(".pagar-carro").attr("disabled", false);
+                }
+              },1);
+            });
+
+            $(document).on("click", ".remove-one", function()
+            {
+              setTimeout(function()
+              {
+                if($(".total-carro").val() > 0)
+                {
+                  $(".pagar-carro").attr("disabled", false);
+                }
+              },1);
+            });
+
+            $(document).on("click", ".remove-from-cart", function()
+            {
+              setTimeout(function()
+              {
+                if($(".total-carro").val() > 0)
+                {
+                  $(".pagar-carro").attr("disabled", false);
+                }
+              },1);
+            });
+        });
+    </script>
+</body>
+</html>
+'toggle');                   
                         // alert("algo");
                    });
                 });
