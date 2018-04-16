@@ -363,13 +363,14 @@ a.lok
     }
 }
 
-@media (max-width: 1200px){
-    .titulo {
-    position: absolute;
-    width: 94%;
-    font-size: 24px;
-}
-
+@media (max-width: 1200px)
+{
+    .titulo
+    {
+        position: absolute;
+        width: 94%;
+        font-size: 24px;
+    }
 }
 
 @media (max-width: 991px){
