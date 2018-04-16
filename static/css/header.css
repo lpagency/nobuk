@@ -1,4 +1,5 @@
-.nobuk-menu {
+.nobuk-menu
+{
     z-index: 1000;
     position: absolute;
     width: 100%;
@@ -9,11 +10,13 @@
     padding-right: 60px;
 }
 
-.container_header{
+.container_header
+{
     width: 100%;
 }
 
-.logo-desk {
+.logo-desk
+{
     float: left;
     padding: 0px;
     top: 43px;
@@ -23,23 +26,20 @@
     position: relative;
 }
 
-.nav>li.logo_wrapper>a:hover:focus {
+.nav>li.logo_wrapper>a:hover:focus
+{
     text-decoration: none;
     background-color: transparent;
 }
 
-/*.nav>li.logo_wrapper>a:hover:focus {
-    text-decoration: none;
-    background-color: transparent;
-}
-*/
-
-.logo_wrapper{
+.logo_wrappe
+{
     height: 0px;
     padding: 0px 5px;
 }
 
-.navbar-nav li a {
+.navbar-nav li a
+{
     font-size: 13px;
     color: white;
     font-weight: 400;
@@ -220,33 +220,37 @@ li#open-cart {
     }
 }
 
-@media (max-width: 1277px){
-    .navbar-nav li a {
-    font-size: 14px;
-    padding: 8px 33px 8px 17px;
-}
+@media (max-width: 1277px)
+{
+    .navbar-nav li a
+    {
+        font-size: 13px;
+        padding: 8px 33px 8px 17px;
+    }
 
-.btn-primary.menu {
-    display: inline-block;
-    padding: 0px 0px;
-    margin-bottom: 0;
-    font-size: 14px;
-}
-.icon {
-    font-size: 14px !important;
-}
+    .btn-primary.menu
+    {
+        display: inline-block;
+        padding: 0px 0px;
+        margin-bottom: 0;
+        font-size: 14px;
+    }
 
-.logo-desk-inside {
-    float: left;
-    padding: 0px;
-    top: 28px;
-    width: 175px;
-    height: 45px;
-    object-fit: scale-down;
-    position: relative;
-}
+    .icon
+    {
+        font-size: 13px !important;
+    }
 
-
+    .logo-desk-inside
+    {
+        float: left;
+        padding: 0px;
+        top: 28px;
+        width: 175px;
+        height: 45px;
+        object-fit: scale-down;
+        position: relative;
+    }
 }
 
 @media (max-width: 1227px){
