@@ -77,6 +77,10 @@
 
                 var tagProd2 = tagProd[0] + "-" + tagProd[1];
 
+                var url = document.referrer;
+
+                url = url.split("tag=");
+
                 related(tagProd2.toLowerCase());
 
                 for(var x = 0; x<product.tags.length; x++)
@@ -84,23 +88,93 @@
                     switch(product.tags[x].name)
                     {
                         case "carteras":
-                            related_tipo("carteras");
+                            if(url[1] == "hombre")
+                            {
+                                related_tipo("hombre, carteras");
+                            }
+                            else
+                            {
+                                if(url[1] == "mujer")
+                                {
+                                    related_tipo("mujer, carteras");
+                                }
+                                else
+                                {
+                                    related_tipo("carteras");
+                                }
+                            }
                         break;
 
                         case "bolso":
-                            related_tipo("bolso");
+                            if(url[1] == "hombre")
+                            {
+                                related_tipo("hombre, bolso");
+                            }
+                            else
+                            {
+                                if(url[1] == "mujer")
+                                {
+                                    related_tipo("mujer, bolso");
+                                }
+                                else
+                                {
+                                    related_tipo("bolso");
+                                }
+                            }
                         break;
 
                         case "maletines":
-                            related_tipo("maletines");
+                            if(url[1] == "hombre")
+                            {
+                                related_tipo("hombre, maletines");
+                            }
+                            else
+                            {
+                                if(url[1] == "mujer")
+                                {
+                                    related_tipo("mujer, maletines");
+                                }
+                                else
+                                {
+                                    related_tipo("maletines");
+                                }
+                            }
                         break;
 
                         case "mochilas":
-                            related_tipo("mochilas");
+                            if(url[1] == "hombre")
+                            {
+                                related_tipo("hombre, mochilas");
+                            }
+                            else
+                            {
+                                if(url[1] == "mujer")
+                                {
+                                    related_tipo("mujer, mochilas");
+                                }
+                                else
+                                {
+                                    related_tipo("mochilas");
+                                }
+                            }
                         break;
 
                         case "accesorios":
-                            related_tipo("accesorios");
+                            if(url[1] == "hombre")
+                            {
+                                related_tipo("hombre, accesorios");
+                            }
+                            else
+                            {
+                                if(url[1] == "mujer")
+                                {
+                                    related_tipo("mujer, accesorios");
+                                }
+                                else
+                                {
+                                    related_tipo("accesorios");
+                                }
+                            }
                         break;
                     }
                 }
@@ -118,8 +192,8 @@
         var related = function(tag)
         {
 
-
-            var config = {
+            var config =
+            {
                 'app_public' : app_public,
                 'base_url' : base_url,
                 'maxProducts' : 8,
@@ -130,7 +204,6 @@
                          // $('.ellipsis').ellipsis();
                          $(".ellipsis").dotdotdot();
                      }
-                
             };
             $('.product-related').ecommerce('product_box', config);
         };
@@ -139,7 +212,8 @@
         {
 
 
-            var config = {
+            var config =
+            {
                 'app_public' : app_public,
                 'base_url' : base_url,
                 'maxProducts' : 8,
@@ -150,7 +224,6 @@
                          // $('.ellipsis').ellipsis();
                          $(".ellipsis").dotdotdot();
                      }
-                
             };
             $('.product-related-tipo').ecommerce('product_box', config);
         };
