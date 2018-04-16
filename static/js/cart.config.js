@@ -69,6 +69,7 @@ $(document).ready(function()
         // 'maxProducts': 100,
         'checkout_url': checkout_url,
         'column': 'position', 
+        'direction': 'asc',
         'operator' :'and',
         'onLoad': function(products) 
         {
