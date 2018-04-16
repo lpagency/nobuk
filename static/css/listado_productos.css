@@ -716,18 +716,6 @@ img.mini {
         display: block;
     }
 
-    a.subcateg:hover
-    {
-        background-color: transparent;
-        font-size: 15px;
-        padding: 0px 10px;
-        color: #b1a9a9;
-        font-weight: 300;
-        margin-left: 2px;
-        margin-right: 2px;
-        display: block;
-    }
-
     .subcateg.active
     {
         background-color:transparent;
@@ -918,18 +906,6 @@ img.mini {
         margin-left: 2px;
         margin-right: 2px;
         display: block
-    }
-
-    a.subcateg:hover
-    {
-        background-color: transparent;
-        font-size: 13px;
-        padding: 0px 10px;
-        color: #b1a9a9;
-        font-weight:300;
-        margin-left: 2px;
-        margin-right: 2px;
-        display: block;
     }
 }
 
