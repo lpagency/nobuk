@@ -284,217 +284,234 @@ li#open-cart {
 }
 
 
-@media (max-width: 1199px){
+@media (max-width: 1199px)
+{
+    .carro
+    {
+        width: 34px;
+    }
 
-.carro{
-  width: 34px;
-
-}
-
-.caja-log {
-    width: 179px;
-    float: left;
-    margin-top: -24px;
-    margin-bottom: 0px;
-    left: 350px;
-}
-
-
-}
-
-
-@media (max-width: 1141px){
-    .navbar-nav li a {
-    font-size: 12px;
-    padding: 8px 23px 8px 8px;
-}
-
-.icon{
-    font-size: 12px !important;
-}
-
-}
-
-@media (max-width: 1140px){
-  .sig {
-    position: relative;
-    left: 21px;
-}
-
-}
-
-@media (max-width: 1117px){
-    .btn-primary.menu {
-    display: inline-block;
-    padding: 0px 0px;
-    margin-bottom: 0;
-    font-size: 12px;
-}
-
-}
-
-@media (max-width: 1116px){
-     .navbar-nav li a {
-    font-size: 12px;
-    padding: 8px 20px 8px 8px;
-}
-
-.icon{
-    font-size: 12px !important;
+    .caja-log
+    {
+        width: 179px;
+        float: left;
+        margin-top: -24px;
+        margin-bottom: 0px;
+        left: 350px;
+    }
 }
 
 
+@media (max-width: 1141px)
+{
+    .navbar-nav li a
+    {
+        font-size: 12px;
+        padding: 8px 23px 8px 8px;
+    }
+
+    .icon
+    {
+        font-size: 12px !important;
+    }
 }
 
-@media (max-width: 1092px){
-     .navbar-nav li a {
-    font-size: 12px;
-    padding: 8px 18px 8px 8px;
+@media (max-width: 1140px)
+{
+    .sig
+    {
+        position: relative;
+        left: 21px;
+    }
 }
 
-.icon{
-    font-size: 12px !important;
+@media (max-width: 1117px)
+{
+    .btn-primary.menu
+    {
+        display: inline-block;
+        padding: 0px 0px;
+        margin-bottom: 0;
+        font-size: 12px;
+    }
 }
 
+@media (max-width: 1116px)
+{
+    .navbar-nav li a
+    {
+        font-size: 12px;
+        padding: 8px 20px 8px 8px;
+    }
 
+    .icon
+    {
+        font-size: 12px !important;
+    }
 }
 
-@media (max-width: 1076px){
-     .navbar-nav li a {
-    font-size: 12px;
-    padding: 8px 11px 8px 8px;
+@media (max-width: 1092px)
+{
+    .navbar-nav li a
+    {
+        font-size: 12px;
+        padding: 8px 18px 8px 8px;
+    }
+
+    .icon
+    {
+        font-size: 12px !important;
+    }
 }
 
-.icon{
-    font-size: 12px !important;
+@media (max-width: 1076px)
+{
+     .navbar-nav li a
+     {
+        font-size: 12px;
+        padding: 8px 11px 8px 8px;
+    }
+
+    .icon
+    {
+        font-size: 12px !important;
+    }
 }
 
+@media (max-width: 1020px)
+{
+    .navbar-nav li a
+    {
+        font-size: 12px;
+        padding: 8px 8px 8px 8px;
+    }
 
+    .sig
+    {
+        position: relative;
+        left: 16px;
+    }
 }
 
-@media (max-width: 1020px){
-    .navbar-nav li a {
-    font-size: 12px;
-    padding: 8px 8px 8px 8px;
-}
-.sig {
-    position: relative;
-    left: 16px;
-}
+@media (max-width: 991px)
+{
+    .caja-log
+    {
+        width: 179px;
+        float: left;
+        margin-top: 11px;
+        margin-bottom: 0px;
+        left: 332px;
+    }
 
-}
+    .navbar-nav li a
+    {
+        font-size: 12px;
+        padding: 8px 8px 8px 26px;
+    }
 
-@media (max-width: 997px){
-
-}
-
-@media (max-width: 991px){
-.caja-log {
-    width: 179px;
-    float: left;
-    margin-top: 11px;
-    margin-bottom: 0px;
-    left: 332px;
-}
-
-.navbar-nav li a {
-    font-size: 12px;
-    padding: 8px 8px 8px 26px;
-}
-
-.logo-desk-inside {
-    float: left;
-    padding: 0px;
-    top: 8px;
-    width: 175px;
-    height: 45px;
-    object-fit: scale-down;
-    position: relative;
-}
-
-
-}
-
-
-@media screen and (max-width: 1130px){
-}
-
-@media screen and (max-width: 767px){
-.logo {
-    max-width: 160px;
-    background: inherit;
-    border-radius: inherit;
-    float: inherit;
-    margin-top: 0px;
-    position: absolute;
-    width: 63%;
-    z-index: 1111;
-    top: 63px;
-    left: -13px;
-}
-
-.navbar {
-    position: absolute;
-    min-height: 50px;
-    margin-bottom: 20px;
-    border: 1px solid transparent;
-    top: 0px;
-    z-index: 1030;
-    width: 100%;
-    background-color: #d0be97;
-}
-
-.line-white {
-    background: white;
-    width: 100%;
-    height: 65px;
-    position: relative;
-    top: 0px;
-    /*z-index: 1030;*/
-}
-
-.icon {
-    top: 11px;
-    font-size: 15px;
-    left: -2px;
-    /* color: white; */
-    position: relative;
-    text-align: center;
-    width: 14%;
-    float: right;
+    .logo-desk-inside
+    {
+        float: left;
+        padding: 0px;
+        top: 8px;
+        width: 175px;
+        height: 45px;
+        object-fit: scale-down;
+        position: relative;
+    }
 }
 
 
-.dropdown:hover .dropdown-menu {
-    width: 100%;
-    text-align: center;
-    position: relative;
+@media screen and (max-width: 767px)
+{
+    .logo
+    {
+        max-width: 160px;
+        background: inherit;
+        border-radius: inherit;
+        float: inherit;
+        margin-top: 0px;
+        position: absolute;
+        width: 63%;
+        z-index: 1111;
+        top: 63px;
+        left: -13px;
+    }
+
+    .navbar-default .navbar-nav .open .dropdown-menu>li>a
+    {
+        text-align: center;
+    }
+
+    .navbar
+    {
+        position: absolute;
+        min-height: 50px;
+        margin-bottom: 20px;
+        border: 1px solid transparent;
+        top: 0px;
+        z-index: 1030;
+        width: 100%;
+        background-color: #d0be97;
+    }
+
+    .line-white
+    {
+        background: white;
+        width: 100%;
+        height: 65px;
+        position: relative;
+        top: 0px;
+    }
+
+    .icon
+    {
+        top: 11px;
+        font-size: 15px;
+        left: -2px;
+        position: relative;
+        text-align: center;
+        width: 14%;
+        float: right;
+    }
+
+
+    .dropdown:hover .dropdown-menu
+    {
+        width: 100%;
+        text-align: center;
+        position: relative;
+    }
+
+    .caja-log
+    {
+        width: 300px;
+        float: left;
+        margin-top: -115px;
+        margin-bottom: 0px;
+        left: 27px;
+    }
 }
 
-.caja-log {
-    width: 300px;
-    float: left;
-    margin-top: -115px;
-    margin-bottom: 0px;
-    left: 27px;
-}
+@media screen and (max-width: 700px)
+{
+    .toggle
+    {
+        background-color: rgba(0, 0, 0, 0.24);
+        border: 1px solid rgba(0, 0, 0, 0.13);
+        top: 9px;
+        margin-bottom: 18px;
+    }
 
-}
-
-@media screen and (max-width: 700px){
-  .toggle {
-    background-color: rgba(0, 0, 0, 0.24);
-    border: 1px solid rgba(0, 0, 0, 0.13);
-    top: 9px;
-    margin-bottom: 18px;
-}
-
- .icon-bar {
-    background-color: black !important;
-}
-.redes-menu{
-    bottom: 40px!important;
-    position: relative!important;
-  }
+    .icon-bar
+    {
+        background-color: black !important;
+    }
+    .redes-menu
+    {
+        bottom: 40px!important;
+        position: relative!important;
+    }
 }
 
