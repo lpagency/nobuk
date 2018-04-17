@@ -18,7 +18,7 @@
         $(document).ready(function()
         {
 
-        $("#OpenAlert").click();
+            $("#OpenAlert").click();
 
             var config =
             {
@@ -56,14 +56,10 @@
         {% set editabletext = '' %}
     {% end %}
 
-
-
     <!-- *BANNER PRINCIPAL (3 BANNERS)* -->
     <div class="container min movil-cont">
         <section>
-
             <!--1º banner-->
-
             <div align="center" style="padding: 0px 4px;">
                 {% if is_admin %}
                     <div class="image-upload lapiz visible-movil">
@@ -83,9 +79,7 @@
                     <div class="texto-banner {{editabletext}}" text-id="{{ site.name + '_uno_no' }}"> {{ read_text(site.name +  '_uno_no') }} </div>
                 </div>
             </div>
-
             <!--2º banner-->
-
             <div align="center" style="padding: 0px 4px;">
                 {% if is_admin %}
                     <div class="image-upload lapiz visible-movil" style="top: 100px">
@@ -105,9 +99,7 @@
                     <div class="texto-banner {{editabletext}}" text-id="{{ site.name + '_nobuk_banner_2' }}"> {{ read_text(site.name +  '_nobuk_banner_2') }} </div>
                 </div>
             </div>
-
             <!--3º banner-->
-
             <div align="center" style="padding: 0px 4px;">
                 {% if is_admin %}
                     <div class="image-upload lapiz visible-movil" style="top: 200px">
@@ -130,10 +122,8 @@
 
         </section>
     </div>
-
     <!--*END BANNER PRINCIPAL (3 BANNERS)*-->
     <!--*BOTON CON TEXTO*-->
-
     <section>
         <div class="container min" style="padding: 0px 25px"> 
             <div class="col-md-12 col-sm-12 especial-mama">
@@ -144,10 +134,8 @@
             </div>
         </div>
     </section>
-
     <!--*END BOTON CON TEXTO*-->
     <!--*BANNER SECUNDARIO (1 BANNER)*-->
-
     <section>
         <div class="container min movil-cont">
             <div align="center" style="padding: 0px 4px;">
@@ -171,9 +159,7 @@
             </div>
         </div>
     </section>
-
     <!--*END BANNER SECUNDARIO (1 BANNER)*-->
-
     <section>
         <div class="container min sep-home"> 
             <div class="col-md-3 article-box-3">
@@ -266,10 +252,5 @@
         </div>
     </section>
 
-
-
-
 {% include '../home/footer.html' %}
 {% end %}
-
-
