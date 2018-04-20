@@ -40,6 +40,31 @@ li
     margin-top: 100px;
 }
 
+.seccion-mama
+{
+    padding: 0px 25px;
+}
+
+.banner-principal-abajo
+{
+    padding: 0px 4px;
+}
+
+.banner-izquerda
+{
+    padding: 4px 0px 0px 9px;
+}
+
+.banner-centro
+{
+    padding: 4px 0px 0px 0px;
+}
+
+.banner-derecha
+{
+    padding: 4px 8px 0px 0px;
+}
+
 .especial-mama
 {
     height: auto;
@@ -146,8 +171,6 @@ div.image-upload.par1
     z-index: 100000;
 }
 
-
-
 .box-chic
 {
     width: 100%;
@@ -242,8 +265,6 @@ div.image-upload.par1
     -o-filter: grayscale(0%) brightness(75%);
 }
 
-
-
 .fondo-contact
 {
     width: 100%;
@@ -285,7 +306,6 @@ div.image-upload.con
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-
 
 .res
 {
@@ -367,7 +387,6 @@ div.image-upload.con
     -ms-filter: grayscale(0%) brightness(80%);
     -o-filter: grayscale(0%) brightness(80%);
 }
-
 
 .texto-img
 {
@@ -495,7 +514,6 @@ div.image-upload.con
     transition-delay:.2s;
 }
 
-
 .fondo-form
 {
     width: 100%;
@@ -600,11 +618,6 @@ div.image-upload.con
     padding: 0 24px;
 }
 
-.margen-principal
-{
-    margin-top: -68px;
-}
-
 .banner_home
 {
     height: 500px;
@@ -674,6 +687,36 @@ div.image-upload.con
         top: 0px;
     }
 
+    .banner-principal-abajo
+    {
+        padding: 0px 1px 0px 1px;
+    }
+
+    .banner_home
+    {
+        height: 300px;
+    }
+
+    .img-abajo
+    {
+        width: 100%;
+    }
+
+    .seccion-mama
+    {
+        padding: 0px 16px;
+    }
+
+    .banner-izquerda
+    {
+        padding: 4px 0px 0px 0px;
+    }
+
+    .banner-derecha
+    {
+        padding: 4px 0px 0px 0px;
+    }
+
     .align-form-contact
     {
         padding-left: 0px;
@@ -715,10 +758,14 @@ div.image-upload.con
 
 @media (max-width: 420px)
 {
-
     .especial-mama-cont-boton
     {
         left: 8%;
+    }
+
+    .especial-mama-cont-boton
+    {
+        margin-bottom: 4px;
     }
 
     .boton-mama
@@ -728,14 +775,19 @@ div.image-upload.con
         left: 0px;
     }
 
+    .banner-principal-abajo
+    {
+        padding: 0px 0px;
+    }
+
     .lateral.l-movil
     {
         left: -88px !important;
     }
 
-    .movil-cont
+    .seccion-mama
     {
-        margin-bottom: 42px;
+        padding: 0px 17px;
     }
 }
 
