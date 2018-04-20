@@ -60,7 +60,7 @@
     <div class="container min movil-cont">
         <section>
             <!--1º banner-->
-            <div align="center" style="padding: 0px 4px;">
+            <div class="col-md-4 col-sm-4 col-xs-12 banner-izquerda" align="center">
                 {% if is_admin %}
                     <div class="image-upload lapiz visible-movil">
                         <label for="img_home_nobuk">
@@ -72,17 +72,12 @@
                 <a id="{{ site.name + '_home_nobuk' }}" href="{{ read_link(site.name + '_home_nobuk') }}">
                     <img id="{{ site.name }}_home_nobuk" src="{{ read_image(site.name + '_home_nobuk', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_home_nobuk',500) }}'" class="banner_home margen-principal" alt="item">
                 </a>
-            </div>
-
-            <div class="container-fluid">
-                <div class="col-md-12">
-                    <div class="texto-banner {{editabletext}}" text-id="{{ site.name + '_uno_no' }}"> {{ read_text(site.name +  '_uno_no') }} </div>
-                </div>
+                <div class="texto-banner {{editabletext}}" text-id="{{ site.name + '_uno_no' }}"> {{ read_text(site.name +  '_uno_no') }} </div>
             </div>
             <!--2º banner-->
-            <div align="center" style="padding: 0px 4px;">
+            <div class="col-md-4 col-sm-4 col-xs-12 banner-centro" align="center">
                 {% if is_admin %}
-                    <div class="image-upload lapiz visible-movil" style="top: 100px">
+                    <div class="image-upload lapiz visible-movil">
                         <label for="img_home_nobuk_2">
                             <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
                         </label>
@@ -92,17 +87,12 @@
                 <a id="{{ site.name + '_home_nobuk_2' }}" href="{{ read_link(site.name + '_home_nobuk_2') }}">
                     <img id="{{ site.name }}_home_nobuk_2" src="{{ read_image(site.name + '_home_nobuk_2', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_home_nobuk_2',500) }}'" class="banner_home" alt="item">
                 </a>
-            </div>
-
-            <div class="container-fluid">
-                <div class="col-md-12">
-                    <div class="texto-banner {{editabletext}}" text-id="{{ site.name + '_nobuk_banner_2' }}"> {{ read_text(site.name +  '_nobuk_banner_2') }} </div>
-                </div>
+                <div class="texto-banner {{editabletext}}" text-id="{{ site.name + '_nobuk_banner_2' }}"> {{ read_text(site.name +  '_nobuk_banner_2') }} </div>
             </div>
             <!--3º banner-->
-            <div align="center" style="padding: 0px 4px;">
+            <div class="col-md-4 col-sm-4 col-xs-12 banner-derecha" align="center">
                 {% if is_admin %}
-                    <div class="image-upload lapiz visible-movil" style="top: 200px">
+                    <div class="image-upload lapiz visible-movil">
                         <label for="img_home_nobuk_3">
                             <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'">
                         </label>
@@ -112,20 +102,14 @@
                 <a id="{{ site.name + '_home_nobuk_3' }}" href="{{ read_link(site.name + '_home_nobuk_3') }}">
                     <img id="{{ site.name }}_home_nobuk_3" src="{{ read_image(site.name + '_home_nobuk_3', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_home_nobuk_3',500) }}'" class="banner_home" alt="item">
                 </a>
+                <div class="texto-banner {{editabletext}}" text-id="{{ site.name + '_nobuk_banner_3' }}"> {{ read_text(site.name +  '_nobuk_banner_3') }} </div>
             </div>
-
-            <div class="container-fluid">
-                <div class="col-md-12">
-                    <div class="texto-banner {{editabletext}}" text-id="{{ site.name + '_nobuk_banner_3' }}"> {{ read_text(site.name +  '_nobuk_banner_3') }} </div>
-                </div>
-            </div>
-
         </section>
     </div>
     <!--*END BANNER PRINCIPAL (3 BANNERS)*-->
     <!--*BOTON CON TEXTO*-->
     <section>
-        <div class="container min" style="padding: 0px 25px"> 
+        <div class="container min seccion-mama"> 
             <div class="col-md-12 col-sm-12 especial-mama">
                 <div class="col-md-9 col-sm-12 text-one {{editabletext}}" text-id="{{ site.name + '_especial_mama' }}"> {{ read_text(site.name +  '_especial_mama') }} </div>
                 <div class="col-md-3 col-sm-12 especial-mama-cont-boton">
@@ -138,7 +122,7 @@
     <!--*BANNER SECUNDARIO (1 BANNER)*-->
     <section>
         <div class="container min movil-cont">
-            <div align="center" style="padding: 0px 4px;">
+            <div class="banner-principal-abajo" align="center">
                 {% if is_admin %}
                     <div class="image-upload lapiz visible-movil">
                         <label for="img_home_nobuk_4">
@@ -148,7 +132,7 @@
                     </div>
                 {% end %}
                 <a id="{{ site.name + '_home_nobuk_4' }}" href="{{ read_link(site.name + '_home_nobuk_4') }}">
-                    <img id="{{ site.name }}_home_nobuk_4" src="{{ read_image(site.name + '_home_nobuk_4', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_home_nobuk_4',500) }}'" class="banner_home" alt="item">
+                    <img id="{{ site.name }}_home_nobuk_4" src="{{ read_image(site.name + '_home_nobuk_4', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_home_nobuk_4',500) }}'" class="banner_home img-abajo" alt="item">
                 </a>
             </div>
 
