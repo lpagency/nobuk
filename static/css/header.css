@@ -5,7 +5,7 @@
     width: 100%;
     background:transparent;
     border-radius: 1px;
-    top: 26px;
+    top: -10px;
     padding-left: 15px;
     padding-right: 0px;
 }
@@ -116,7 +116,7 @@ span.units-total
     float: left;
     margin-top: -18px;
     margin-bottom: 21px;
-    left: 420px;
+    left: 435px;
     position: absolute;
     z-index: 1030;
 }
@@ -132,7 +132,8 @@ span.units-total
     background: gainsboro;
     width: 1120px;
     height: 86px;
-    margin-top: -44px;
+    margin-top: 0px;
+    margin-bottom: -51px;
 }
 
 .btn-primary.menu
