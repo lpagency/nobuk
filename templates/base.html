@@ -157,29 +157,27 @@
     <!-- **modal categorias productos** -->
 
 <!-- Modal -->
-  <div class="modal fade" id="myModal-pro" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header-pro">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title-pro">TODAS LAS CATEGORIAS</h4>
+    <div class="modal fade" id="myModal-pro" role="dialog">
+        <div class="modal-dialog">
+        <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header-pro">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title-pro">TODAS LAS CATEGORIAS</h4>
+                </div>
+                <div class="modal-body" style="text-align:center;">
+                    <a href="#" id="categoria_1" class="subcateg mbtm5 cate" tag="hombre" role="button">Hombre</a>
+                    <a href="#" id="categoria_2" class="subcateg mbtm5 cate" tag="mujer" role="button">Mujer</a>
+                    <a href="#" id="categoria_3" class="subcateg mbtm5 cate" tag="todos" role="button">Todos</a>
+                </div>
+                <div class="modal-footer">
+                    <div align="center">
+                        <button type="button" class="btn btn-default" data-dismiss="modal" style="background-color: rgba(0, 0, 0, 0.24);color: #777;width: 31%;border-radius: 0px;height: 51px;font-weight: 600;font-size: 20px;">CERRAR</button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="modal-body" style="text-align:center;">
-            <a href="#" id="categoria_1" class="subcateg mbtm5 cate" tag="hombre" role="button">Hombre</a>
-            <a href="#" id="categoria_2" class="subcateg mbtm5 cate" tag="mujer" role="button">Mujer</a>
-            <a href="#" id="categoria_3" class="subcateg mbtm5 cate" tag="todos" role="button">Todos</a>
-        </div>
-        <div class="modal-footer">
-            <div align="center">
-          <button type="button" class="btn btn-default" data-dismiss="modal" style="background-color: rgba(0, 0, 0, 0.24);color: #777;width: 31%;border-radius: 0px;height: 51px;font-weight: 600;font-size: 20px;">CERRAR</button>
-      </div>
-        </div>
-      </div>
-      
     </div>
-  </div>
 
    <!-- ***fin categorias** -->
 
@@ -190,15 +188,6 @@
     </script>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
-
-  <!--   // <script type="text/javascript" src="{{ site_base }}/static/js/redukcal2.js"></script> -->
-    <!-- <script type="text/javascript" src="{{ site_base }}/static/js/dermatologia.js"></script> -->
-    <!-- <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script> -->
-    <!--         <script src="/path/to/parallax.js"></script> -->
-    <!--         <script type="text/javascript" src="{{ site_base }}/static/js/mlb.js"></script>
-
-    <script type="text/javascript" src="{{ site_base }}/static/js/me.js" ></script> -->
-    <!-- <script type="text/javascript" src="{{ site_base }}/static/js/main.js"></script> -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
      <script type="text/javascript" src="{{ site_base }}/static/fancybox/source/jquery.fancybox.js?v=2.1.5"></script>
     <!-- <script src="/node_modules/readmore-js/readmore.min.js"></script> -->
@@ -209,179 +198,114 @@
     <script type="text/javascript" src="{{ site_base }}/common/js/page_editable.js"></script>
     <script type="text/javascript" src="{{ site_base }}/common/js/editableimage.js"></script>
     <script type="text/javascript" src="{{ site_base }}/common/js/bower/file_uploader/dist/fileuploader.js"></script>
-    <!-- carga de productos -->
-    <!--          <script type="text/javascript" src="{{ site_base }}/static/js/plugins/jquery.lazyload.js"></script> -->
-    <!-- <script type="text/javascript" src="{{ site_base }}/static/js/imageloader.js" ></script> -->
     <script type="text/javascript" src="{{ site_base }}/common/js/jquery.cookie.js"></script>
     <script type="text/javascript" src="{{ site_base }}/common/js/environment.detection.js"></script>
     <script type="text/javascript" src="{{ site_base }}/common/js/bower/bodegas.client/dist/bodegas.client.js?12"></script>
-    <!--         // <script type="text/javascript" src="{{ site_base }}/static/js/fancybox/jquery.fancybox.pack.js"></script> -->
-    <!--         <script type="text/javascript" src="{{ site_base }}/static/js/fancybox/source/jquery.fancybox.js?v=2.1.5"></script> -->
-    <!--         <script type="text/javascript" src="https://cdn.datatables.net/s/dt/dt-1.10.10/datatables.min.js"></script>
-    <script type="text/javascript" src="https://cdn.datatables.net/1.10.11/js/dataTables.bootstrap.min.js"></script> -->
-  <!--   <script type="text/javascript" src="{{ site_base }}/static/js/jquery.ellipsis.js"></script> -->
     <script type="text/javascript" src="{{ site_base }}/common/js/parallax.min.js"></script>
     <script type="text/javascript" src="{{ site_base }}/common/js/ellipsis/src/jquery.dotdotdot.min.js"></script>
     <script type="text/javascript" src="{{ site_base }}/common/js/ellipsis/src/jquery.dotdotdot.min.umd.js"></script>
     <script type="text/javascript" src="{{ site_base }}/static/js/config.js"></script>
-    <!--         <div type="template" id="product_loading" style="display:none;" >
-            <div class="spinner">
-                <div class="rect1"></div>
-                <div class="rect2"></div>
-                <div class="rect3"></div>
-                <div class="rect4"></div>
-                <div class="rect5"></div>
-            </div>
-        </div> -->
     <script type="text/javascript">
-    $(document).ready(function() {
-
-        $(".fancybox").fancybox({
-            'width': 800,
-            'height': 630,
-            'autoSize': false,
-            'autoScale': false,
-            'padding': 0,
-            'helpers': {
-                overlay: {
-                    locked: false
+        $(document).ready(function()
+        {
+            $(".fancybox").fancybox({
+                'width': 800,
+                'height': 630,
+                'autoSize': false,
+                'autoScale': false,
+                'padding': 0,
+                'helpers':
+                {
+                    overlay:
+                    {
+                        locked: false
+                    }
                 }
-            }
+            });
         });
-    });
     </script>
-    <!--         <script type="text/x-template" id="shopping-cart-total" >
-</script> -->
-    <!-- este es el script para unidades -->
-   <!--  <script type="text/x-template" id="shopping-cart-units-total">
-        <span> {{! units_total }}</span>
-    </script>
+
     <script type="text/x-template" id="shopping-cart-product">
         <tr>
-            <td class="ellipsis multiline vert-align text-left">{{! name }}</td>
-            <td class="vert-align money mon-car">{{! price }}</td>           
-           <td class="text-center vert-align">
-            <a href="#!" class="remove-one" product-id="534">-</a>
-            1
-            <a href="#!" class="add-one" product-id="534">+</a>
-           </td>
-
+            <td class="vert-align text-left">{{! name }}</td>
+            <td class="vert-align money">{{! price|money }}</td>
+            <td class="text-center vert-align">
+                <a href="#!" class="remove-one" lp-cart-remove-one="{{! id }}">-</a>
+                {{! quantity }}
+                <a href="#!" class="add-one" lp-cart-add-one="{{! id }}">+</a>
+            </td>
         </tr>
     </script>
-    <script type="text/x-template" id="shopping-cart-total">
-  
+    <script type="text/x-template" id="shopping-cart-total" >
         <tr>
-            <th colspan="3" class="text-center">Resumen Pedido</th>
-
         </tr>
-    
+        </thead>
         <tr>
-            <td class="to">TOTAL:</td>
-            <td id="total" class="text-center money cen">{{! total }}</td>
+            <td>Total:</td> 
+            <td id="total" class="money lib">{{! total|money }}</td>
             <td></td>
         </tr>
-
     </script>
-    <script type="text/x-template" id="shopping-cart-checkout-form">
-        <form action="{{! checkout_url}}" method="get" novalidate id="shipping-form" class="myform">
-            <input name="site_id" class="form-control required" type="hidden" value="{{! site_id}}">
+    <script type="text/x-template" id="shopping-cart-units-total" >
+        <span> {{! units_total }}</span>
+    </script>
+    <script type="text/x-template" id="shopping-cart-checkout-form" >
+        <form action="{{! checkout_url}}" method="get" novalidate id="shipping-form" class="myform" onclick="return Validate()">
+            <input name="site_id" class="form-control required" type="hidden" value="34">
             <input name="cart_id" class="form-control required" type="hidden" value="{{! cart_id}}">
+            <input name="origin" class="form-control required" type="hidden" value="{{ site.name }}">
+            <input name="total" class="total-carro" type="hidden" value="{{! total }}">
             <div class="form-group text-center">
-
-                <button type="submit" class="btn bn" style="
-                       background-color: rgba(0, 0, 0, 0.24); color: #777; width: 28%;border-radius: 0px; height: 51px; font-weight: 600;">PAGAR</button>
-           </div>
+                <button type="submit" class="btn bn pagar-carro" style="background-color: rgba(0, 0, 0, 0.24); color: #777; width: 31%;border-radius: 0px; height: 51px; font-weight: 600; float:right;" disabled>PAGAR
+                </button>
+            </div>
         </form>
-    </script> -->
-<script type="text/x-template" id="shopping-cart-product">
-<tr>
-    <td class="vert-align text-left">{{! name }}</td>
-    <td class="vert-align money">{{! price|money }}</td>
-    <td class="text-center vert-align">
-        <a href="#!" class="remove-one" lp-cart-remove-one="{{! id }}">-</a>
-        {{! quantity }}
-        <a href="#!" class="add-one" lp-cart-add-one="{{! id }}">+</a>
-    </td>
-</tr>
-</script>
-<script type="text/x-template" id="shopping-cart-total" >
-<tr>
-    
-</tr>
-</thead>
-<tr>
-    <td>Total:</td> 
-    <td id="total" class="money lib">{{! total|money }}</td>
-    <td></td>
-</tr>
-</script>
-<script type="text/x-template" id="shopping-cart-units-total" >
-    <span> {{! units_total }}</span>
-</script>
-<script type="text/x-template" id="shopping-cart-checkout-form" >
-<form action="{{! checkout_url}}" method="get" novalidate id="shipping-form" class="myform" onclick="return Validate()">
-    <input name="site_id" class="form-control required" type="hidden" value="34">
-    <input name="cart_id" class="form-control required" type="hidden" value="{{! cart_id}}">
-    <input name="origin" class="form-control required" type="hidden" value="{{ site.name }}">
-    <input name="total" class="total-carro" type="hidden" value="{{! total }}">
-    <div class="form-group text-center">
-         <button type="submit" class="btn bn pagar-carro" style="
-            background-color: rgba(0, 0, 0, 0.24); color: #777; width: 31%;border-radius: 0px; height: 51px; font-weight: 600; float:right;" disabled>PAGAR
-        </button>
-    
-    </div>
-</form>
-   <div class=""> 
-             <a class="modal-close pin" data-dismiss="modal" aria-hidden="true">VOLVER</a>
-               
-           </a>        
+        <div class=""> 
+            <a class="modal-close pin" data-dismiss="modal" aria-hidden="true">VOLVER</a>
         </div>
-</script>
-
-
+    </script>
 
     <!-- termino carrito de compra -->
 
-
     {% block javascript %}{% end %}
     <script>
-    window.fbAsyncInit = function() {
-        FB.init({
-            appId: '348231912006000',
-            xfbml: true,
-            version: 'v2.1'
-        });
-    };
-    (function(d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {
-            return;
-        }
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "//connect.facebook.net/en_US/sdk.js";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
+        window.fbAsyncInit = function()
+        {
+            FB.init({
+                appId: '348231912006000',
+                xfbml: true,
+                version: 'v2.1'
+            });
+        };
+        (function(d, s, id)
+        {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id))
+            {
+                return;
+            }
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
     </script>
     {% if is_admin %}
-    <script type="text/javascript">
-    var site_name = "{{site.name}}";
-    </script>
-    <script type="text/javascript" src="{{ site_base }}/common/js/contentmanager.js"></script>
+        <script type="text/javascript">
+            var site_name = "{{site.name}}";
+        </script>
+        <script type="text/javascript" src="{{ site_base }}/common/js/contentmanager.js"></script>
     {% end %}
-    <script type="text/javascript" src "https://clouddelivery.textbox.io/1/getEditor?apiKey=1wugguwjiatkm69xmt7w1den1mpvqkxi75mwfmb49lz89o4r">
+    <script type="text/javascript" src="https://clouddelivery.textbox.io/1/getEditor?apiKey=1wugguwjiatkm69xmt7w1den1mpvqkxi75mwfmb49lz89o4r">
     </script>
     <script>
-                $(document).ready(function()
-                {
-                   
-
-                   $('.cate').click(function(){
-                        $('#myModal-pro').modal('toggle');                   
-                        // alert("algo");
-                   });
-                });
-                
+        $(document).ready(function()
+        {
+            $('.cate').click(function()
+            {
+                $('#myModal-pro').modal('toggle');
+            });
+        });
     </script>
     <script type="text/javascript">
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -392,7 +316,6 @@
         ga('create', '{{ get_config("analytics") }}', 'auto');
         ga('send', 'pageview');
     </script>
-
     <script type="text/javascript">
         $(document).ready(function()
         {
@@ -410,7 +333,7 @@
               {
                 if($(".total-carro").val() > 0)
                 {
-                  $(".pagar-carro").attr("disabled", false);
+                    $(".pagar-carro").attr("disabled", false);
                 }
               },1);
             });
@@ -421,7 +344,7 @@
               {
                 if($(".total-carro").val() > 0)
                 {
-                  $(".pagar-carro").attr("disabled", false);
+                    $(".pagar-carro").attr("disabled", false);
                 }
               },1);
             });
@@ -432,7 +355,7 @@
               {
                 if($(".total-carro").val() > 0)
                 {
-                  $(".pagar-carro").attr("disabled", false);
+                    $(".pagar-carro").attr("disabled", false);
                 }
               },1);
             });
@@ -440,12 +363,6 @@
     </script>
 </body>
 </html>
-'toggle');                   
-                        // alert("algo");
-                   });
-                });
-                
-    </script>
     <script type="text/javascript">
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -455,7 +372,6 @@
         ga('create', '{{ get_config("analytics") }}', 'auto');
         ga('send', 'pageview');
     </script>
-
     <script type="text/javascript">
         $(document).ready(function()
         {
@@ -473,7 +389,7 @@
               {
                 if($(".total-carro").val() > 0)
                 {
-                  $(".pagar-carro").attr("disabled", false);
+                    $(".pagar-carro").attr("disabled", false);
                 }
               },1);
             });
@@ -484,7 +400,7 @@
               {
                 if($(".total-carro").val() > 0)
                 {
-                  $(".pagar-carro").attr("disabled", false);
+                    $(".pagar-carro").attr("disabled", false);
                 }
               },1);
             });
@@ -495,7 +411,7 @@
               {
                 if($(".total-carro").val() > 0)
                 {
-                  $(".pagar-carro").attr("disabled", false);
+                    $(".pagar-carro").attr("disabled", false);
                 }
               },1);
             });
