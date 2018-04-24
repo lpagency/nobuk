@@ -40,6 +40,18 @@ li
     margin-top: 100px;
 }
 
+.historia-banner
+{
+    height:375px; background-size:cover;
+    filter: grayscale(0%) brightness(80%);
+    -webkit-filter: grayscale(0%) brightness(80%);
+    -moz-filter: grayscale(0%) brightness(80%);
+    -ms-filter: grayscale(0%) brightness(80%);
+    -o-filter: grayscale(0%) brightness(80%);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 .seccion-mama
 {
     padding: 0px 25px;
