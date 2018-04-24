@@ -192,13 +192,16 @@
         var related = function(tag)
         {
 
+            var random_seed = 'random('+ Math.random() +')';
+
             var config =
             {
                 'app_public' : app_public,
                 'base_url' : base_url,
-                'maxProducts' : 8,
+                'maxProducts' : 4,
                 'templateOrigin' : '#product_template_home',
                 'tag' : tag,
+                'column': random_seed,
                 'ignore_stock' : true,
                     'onLoad':function(){
                          // $('.ellipsis').ellipsis();
