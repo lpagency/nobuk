@@ -73,6 +73,9 @@
                     <img id="{{ site.name }}_home_nobuk" src="{{ read_image(site.name + '_home_nobuk', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_home_nobuk',500) }}'" class="banner_home margen-principal" alt="item">
                 </a>
                 <div class="texto-banner {{editabletext}}" text-id="{{ site.name + '_uno_no' }}"> {{ read_text(site.name +  '_uno_no') }} </div>
+                {% if is_admin %}
+                    <img class="change-image editablelink" link-id="{{ site.name + '_home_nobuk' }}" content="{{ read_link(site.name + '_home_nobuk') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
+                {% end %}
             </div>
             <!--2º banner-->
             <div class="col-md-4 col-sm-4 col-xs-12 banner-centro" align="center">
@@ -88,6 +91,9 @@
                     <img id="{{ site.name }}_home_nobuk_2" src="{{ read_image(site.name + '_home_nobuk_2', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_home_nobuk_2',500) }}'" class="banner_home" alt="item">
                 </a>
                 <div class="texto-banner {{editabletext}}" text-id="{{ site.name + '_nobuk_banner_2' }}"> {{ read_text(site.name +  '_nobuk_banner_2') }} </div>
+                {% if is_admin %}
+                    <img class="change-image editablelink" link-id="{{ site.name + '_home_nobuk_2' }}" content="{{ read_link(site.name + '_home_nobuk_2') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
+                {% end %}
             </div>
             <!--3º banner-->
             <div class="col-md-4 col-sm-4 col-xs-12 banner-derecha" align="center">
@@ -102,6 +108,9 @@
                 <a id="{{ site.name + '_home_nobuk_3' }}" href="{{ read_link(site.name + '_home_nobuk_3') }}">
                     <img id="{{ site.name }}_home_nobuk_3" src="{{ read_image(site.name + '_home_nobuk_3', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_home_nobuk_3',500) }}'" class="banner_home" alt="item">
                 </a>
+                {% if is_admin %}
+                    <img class="change-image editablelink" link-id="{{ site.name + '_home_nobuk_3' }}" content="{{ read_link(site.name + '_home_nobuk_3') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
+                {% end %}
                 <div class="texto-banner {{editabletext}}" text-id="{{ site.name + '_nobuk_banner_3' }}"> {{ read_text(site.name +  '_nobuk_banner_3') }} </div>
             </div>
         </section>

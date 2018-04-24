@@ -15,7 +15,6 @@
     -ms-filter: grayscale(0%) brightness(80%);
     -o-filter: grayscale(0%) brightness(80%);
     object-fit: cover;
-    margin-top: -68px;
 }
 
 .t-2

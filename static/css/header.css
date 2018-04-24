@@ -7,6 +7,7 @@
     top: 9px;
     padding-left: 15px;
     padding-right: 0px;
+    margin-bottom: 6px;
 }
 
 .container_header
@@ -18,7 +19,8 @@
 {
     float: left;
     padding: 0px;
-    top: 43px;
+    top: 21px;
+    left: 6px;
     width: 145px;
     height: 57px;
     object-fit: scale-down;
@@ -40,11 +42,11 @@
 .navbar-nav li a
 {
     font-size: 13px;
-    color: white;
+    color: black;
     font-weight: 400;
     font-family: 'Lato', sans-serif;
     padding: 8px 23px 8px 23px;
-    margin-top: 7px;
+    margin-top: 0px;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -79,15 +81,16 @@ li#open-cart
 {
     width: 45%;
     float: right;
+    margin-right: -65px;
 }
 
 .icon
 {
-    top: 13px;
+    top: 7px;
     font-size: 16px;
     left: -7px;
     cursor: pointer;
-    color: white;
+    color: black;
     font-weight: 400;
     letter-spacing: 2px;
     text-rendering: optimizeLegibility;
@@ -128,11 +131,12 @@ span.units-total
 
 .line-white
 {
-    background: gainsboro;
+    background: white;
     width: 1120px;
-    height: 86px;
+    height: 64px;
     margin-top: 0px;
-    margin-bottom: -71px;
+    margin-bottom: -60px;
+    border-bottom: solid 1px #e6e5e5;
 }
 
 .btn-primary.menu
