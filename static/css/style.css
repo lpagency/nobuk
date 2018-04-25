@@ -303,7 +303,7 @@ div.image-upload.con
 
 .texto-banner
 {
-   font-size: 38px;
+    font-size: 38px;
     color: white;
     text-align: left;
     position: absolute;
@@ -317,6 +317,8 @@ div.image-upload.con
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    height: 465px;
+    left: 20px;
 }
 
 .res
@@ -681,15 +683,25 @@ div.image-upload.con
         color: white;
         font-size: 24px;
     }
+
+    .texto-banner
+    {
+        font-size: 31px;
+    }
 }
 
 @media (max-width: 991px)
 {
-
     .boton-mama
     {
         left: 27%;
         position: relative;
+    }
+
+    .texto-banner
+    {
+        height: 280px;
+        font-size: 16px;
     }
 
     .especial-mama-cont-boton
@@ -774,6 +786,17 @@ div.image-upload.con
         left: 8%;
     }
 
+    .banner-izquerda
+    {
+        margin-top: 128px;
+    }
+
+    .texto-banner
+    {
+        font-size: 25px;
+        height: 280px;
+    }
+
     .especial-mama-cont-boton
     {
         margin-bottom: 4px;
@@ -815,6 +838,16 @@ div.image-upload.con
     {
         margin-top: 0px !important;
     }
+
+    .container.min.movil-cont
+    {
+        padding: 0px 17px;
+    }
+
+    .sep-home
+    {
+        padding: 0px 16px;
+    }
 }
 
 @media (max-width: 375px)
@@ -831,5 +864,10 @@ div.image-upload.con
     .especial-mama-cont-boton
     {
         left: 0%;
+    }
+
+    .sep-home
+    {
+        padding: 0px 14px;
     }
 }
