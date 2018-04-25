@@ -500,6 +500,19 @@ span.units-total
     }
 }
 
+@media screen and (max-width: 768px)
+{
+    .nobuk-menu
+    {
+        top: 14px;
+    }
+
+    .carrito
+    {
+        font-size: 30px !important;
+    }
+}
+
 
 @media screen and (max-width: 767px)
 {
@@ -519,12 +532,13 @@ span.units-total
 
     span.units-total
     {
-        top: 0px;
+        top: -7px;
+        left: -9px;
     }
 
     .navbar-default .navbar-nav .open .dropdown-menu>li>a
     {
-        text-align: center;
+        text-align: left;
     }
 
     .navbar
@@ -536,7 +550,13 @@ span.units-total
         top: 0px;
         z-index: 1030;
         width: 100%;
-        background-color: #d0be97;
+        background-color: white;
+    }
+
+    .carrito
+    {
+        font-size: 33px !important;
+        top: -2px;
     }
 
     .line-white
