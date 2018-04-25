@@ -500,6 +500,19 @@ span.units-total
     }
 }
 
+@media screen and (max-width: 768px)
+{
+    .nobuk-menu
+    {
+        top: 14px;
+    }
+
+    .carrito
+    {
+        font-size: 30px !important;
+    }
+}
+
 
 @media screen and (max-width: 767px)
 {
