@@ -38,14 +38,16 @@
         <div class="caja-log">
             {% if is_admin %}
                 <div class="image-upload visible-movil">
-                    <label for="img_logo_movil">
+                    <label for="img_logo">
                         <img class="change-image" src="https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png" onmouseover="this.src='https://7static.loadingplay.com/static/images/f2e626ad62e2c957b3708a27e55f4b03_btn-edit-hover.png';" onmouseout="this.src='https://7static.loadingplay.com/static/images/ef03c01fe39c6b7d1404e311adfe47ff_btn-edit.png'" style="">
                     </label>
-                    <input type="file" class="editableimage" image-id="{{ site.name }}_img_logo_movil" name="image" id="img_logo_movil">
+                    <input type="file" class="editableimage" image-id="{{ site.name }}_img_logo" name="image" id="img_logo" >
                 </div>
             {% end %}
-            <a id="{{ site.name + '_logo_movil' }}" href="#">
-                <img class="logo" id="{{ site.name }}_img_logo_movil" src="{{ read_image(site.name + '_img_logo_movil', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_img_logo_movil',500) }}'" alt="item">
+            <a href="#">
+                <div class="container_header">
+                    <img class="logo-desk" id="{{ site.name }}_img_logo" src="{{ read_image(site.name + '_img_logo', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_img_logo',500) }}'" alt="item">
+                </div>
             </a>
         </div>
     </div>
