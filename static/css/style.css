@@ -788,12 +788,12 @@ div.image-upload.con
 
     .banner-izquerda
     {
-        margin-top: 128px;
+        margin-top: 130px;
     }
 
     .texto-banner
     {
-        font-size: 25px;
+        font-size: 21px;
         height: 280px;
     }
 
@@ -864,6 +864,11 @@ div.image-upload.con
     .especial-mama-cont-boton
     {
         left: 0%;
+    }
+
+    .texto-banner
+    {
+        font-size: 17px;
     }
 
     .sep-home

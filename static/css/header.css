@@ -462,6 +462,7 @@ span.units-total
     .cero
     {
         width: 46%;
+        margin-right: -36px;
     }
 
     .nobuk-menu
@@ -510,6 +511,11 @@ span.units-total
     .carrito
     {
         font-size: 30px !important;
+    }
+
+    .logo-desk
+    {
+        top: 126px;
     }
 }
 
@@ -579,11 +585,6 @@ span.units-total
         float: right;
     }
 
-    .banner-izquerda
-    {
-        margin-top: 72px;
-    }
-
     .dropdown:hover .dropdown-menu
     {
         width: 100%;
@@ -609,6 +610,11 @@ span.units-total
         border: 1px solid rgba(0, 0, 0, 0.13);
         top: 9px;
         margin-bottom: 18px;
+    }
+
+    .logo-desk
+    {
+        top: 60px;
     }
 
     .icon-bar
