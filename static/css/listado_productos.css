@@ -988,6 +988,16 @@ img.mini
         margin: 3px;
     }
 
+    .text-two
+    {
+        margin-bottom: 25px;
+    }
+
+    .relacionados
+    {
+        top: 100px;
+    }
+
     .bullet
     {
         margin-bottom: 0%;
