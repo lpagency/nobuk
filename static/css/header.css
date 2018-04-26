@@ -321,7 +321,6 @@ span.units-total
     }
 }
 
-
 @media (max-width: 1199px)
 {
     .carro
@@ -338,7 +337,6 @@ span.units-total
         left: 350px;
     }
 }
-
 
 @media (max-width: 1141px)
 {
@@ -625,6 +623,11 @@ span.units-total
     {
         bottom: 40px!important;
         position: relative!important;
+    }
+
+    .navbar-nav
+    {
+        margin: 7.5px 0px;
     }
 }
 
