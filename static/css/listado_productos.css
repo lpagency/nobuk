@@ -767,15 +767,13 @@ img.mini
         height: 137px;
         object-fit: scale-down;
         margin-top: 0px;
-        float: left;
         margin-bottom: 0%;
     }
 
     .bullet
     {
         margin-bottom: 0%;
-        margin-top: 180%;
-        text-align: left;
+        text-align: center;
         font-size: 20px;
     }
 
@@ -933,6 +931,17 @@ img.mini
 
 @media (max-width: 414px)
 {
+    .kim
+    {
+        left: -7px;
+        width: 50%;
+    }
+
+    .producto-main
+    {
+        top: 40px;
+    }
+
     .pri
     {
         width: 92%;
