@@ -29,7 +29,6 @@ a:hover
     text-decoration: none;
 }
 
-
 li
 {
     list-style: none;
@@ -778,6 +777,12 @@ div.image-upload.con
         padding-left: 48px;
         padding-right: 48px;
     }
+
+    .banner-secundario
+    {
+        width: 100%;
+        left: 0px;
+    }
 }
 
 @media (max-width: 420px)
@@ -785,6 +790,13 @@ div.image-upload.con
     .especial-mama-cont-boton
     {
         left: 8%;
+    }
+
+    .banner-secundario
+    {
+        line-height: 2rem;
+        white-space: 0rem;
+        font-size: 16px;
     }
 
     .banner-izquerda
@@ -857,6 +869,11 @@ div.image-upload.con
     {
         left: 5%;
     }
+
+    .banner-secundario
+    {
+        line-height: 1.7rem;
+    }
 }
 
 
@@ -875,5 +892,10 @@ div.image-upload.con
     .sep-home
     {
         padding: 0px 14px;
+    }
+
+    .banner-secundario
+    {
+        line-height: 1.4rem;
     }
 }
