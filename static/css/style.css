@@ -34,7 +34,7 @@ li
     list-style: none;
 }
 
-.to
+.no-margin-top
 {
     margin-top: 100px;
 }
@@ -55,6 +55,12 @@ li
 .seccion-mama
 {
     padding: 0px 25px;
+}
+
+.link-btn
+{
+    left: 1000px;
+    top: 36px;
 }
 
 .banner-principal-abajo
@@ -646,18 +652,18 @@ div.image-upload.con
 /*-----------------------------------------------Responsive--------------------------------------------------*/
 @media (max-width: 1199px)
 {
-    .img-mobile
-    {
-        margin-top: -124px !important;
-    }
-
     .img-mobile 
     {
         margin-top: 0px !important;
     }
 
-   .logo-mob
-   {
+    .link-btn
+    {
+        left: 10px;
+    }
+
+    .logo-mob
+    {
         width: 70px;
         position: relative;
         left: 27px;
