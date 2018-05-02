@@ -930,7 +930,7 @@ img.mini
 
 @media (max-width: 414px)
 {
-    .detalle-prod
+    .product-detail-info
     {
         position: relative;
         top: 56px;
@@ -1024,7 +1024,7 @@ img.mini
         width: 80%;
     }
 
-    .fa.fa-shopping-cart.carrito
+    .fa.fa-shopping-cart.shopping-cart-div
     {
         margin-right: 8px;
     }

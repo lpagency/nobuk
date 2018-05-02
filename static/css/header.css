@@ -98,7 +98,7 @@ li#open-cart
     -moz-osx-font-smoothing: grayscale;
 }
 
-.carrito
+.shopping-cart-div
 {
     font-size: 40px !important;
     position: relative;
@@ -506,7 +506,7 @@ span.units-total
         top: 14px;
     }
 
-    .carrito
+    .shopping-cart-div
     {
         font-size: 30px !important;
     }
@@ -557,7 +557,7 @@ span.units-total
         background-color: white;
     }
 
-    .carrito
+    .shopping-cart-div
     {
         font-size: 33px !important;
         top: -2px;
@@ -633,7 +633,7 @@ span.units-total
 
 @media screen and (max-width: 375px)
 {
-    .carrito
+    .shopping-cart-div
     {
         font-size: 27px !important;
     }
@@ -641,7 +641,7 @@ span.units-total
 
 @media screen and (max-width: 320px)
 {
-    .carrito
+    .shopping-cart-div
     {
         left: -12px;
     }
