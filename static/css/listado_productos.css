@@ -71,7 +71,7 @@ div.image-upload.part1
     -o-transform: scaleY(1.2);
 }
 
-.clearfix-dos
+.clearfix-two
 {
     margin-top: 78px;
     margin-bottom: 0px;
@@ -1040,7 +1040,7 @@ img.mini
         width: 80%;
     }
 
-    .clearfix-dos
+    .clearfix-two
     {
         margin-top: 78px;
     }
