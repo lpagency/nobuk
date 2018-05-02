@@ -19,7 +19,6 @@ div.image-upload.part1
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-
 }
 
 .img-pro
@@ -1040,6 +1039,16 @@ img.mini
         position: relative;
         font-size: 13px;
         width: 80%;
+    }
+
+    .clearfix-dos
+    {
+        margin-top: 78px;
+    }
+
+    .to
+    {
+        margin-top: 0px;
     }
 
     .bullet
