@@ -26,6 +26,11 @@ div.image-upload.part1
     z-index: 11111;
 }
 
+.boton-cargar
+{
+    z-index: 11111;
+}
+
 .img-pro
 {
     width: 100%;
