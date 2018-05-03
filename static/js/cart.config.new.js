@@ -95,6 +95,8 @@ $(document).ready(function()
         'infinite_scroll': true,
         // 'maxProducts': 100,
         'checkout_url': checkout_url, 
+        'column': 'position', 
+        'direction': 'asc',
         'operator' :'and',
         'onLoad': function(products) 
         {
