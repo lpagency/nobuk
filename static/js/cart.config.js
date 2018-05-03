@@ -65,7 +65,7 @@ $(document).ready(function()
         'products_per_page' : 9, 
         'tag': tag,
         'ignore_stock': true,
-        'infinite_scroll': true,
+        'infinite_scroll': false,
         // 'maxProducts': 100,
         'checkout_url': checkout_url,
         'column': 'position', 
