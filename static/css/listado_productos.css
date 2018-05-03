@@ -496,6 +496,7 @@ img.mini
     -o-filter: grayscale(0%) brightness(80%);
     margin-bottom: 40px;
     width: 87.5%;
+    margin-top: 50px;
 }
 
 .kim
