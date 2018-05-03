@@ -21,6 +21,11 @@ div.image-upload.part1
     -moz-osx-font-smoothing: grayscale;
 }
 
+.more-products
+{
+    z-index: 11111;
+}
+
 .img-pro
 {
     width: 100%;
@@ -240,7 +245,7 @@ hr.len
 
 .subcateg
 {
-    color: #b1a9a9;
+    color: black;
     font-size: 15px;
     font-weight: 300;
     padding: 0px 10px;
@@ -264,7 +269,7 @@ a.subcateg:hover
     background-color: transparent;
     font-size: 15px;
     padding: 0px 10px;
-    color: #b1a9a9;
+    color: black;
     font-weight: 300;
     margin-left: 2px;
     margin-right: 2px;
@@ -477,7 +482,7 @@ img.mini
 
 .banner_productos
 {
-    height: 375px;
+    height: 250px;
     object-fit: cover;
     filter: grayscale(0%) brightness(80%);
     -webkit-filter: grayscale(0%) brightness(80%);

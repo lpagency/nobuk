@@ -250,6 +250,14 @@ span.units-total
 }
 
 /*-------------------------------------Responsive--------------------------------------------------------*/
+@media (max-width: 1370px)
+{
+    .units-total
+    {
+        top: 0px;
+    }
+}
+
 @media (max-width: 1280px)
 {
     .logo_wrapper-2
