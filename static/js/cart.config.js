@@ -9,18 +9,16 @@ var getIncludeParameters = function()
 {
     var scripts = document.getElementsByTagName('script');
     var myScript = scripts[ scripts.length - 6 ];
-    // var scripts = document.getElementsByTagName('script');
-    // var myScript = scripts[ scripts.length - 1 ];
-
     var queryString = myScript.src.replace(/^[^\?]+\??/,'');
-
     var params = parseQuery( queryString );
 
-    function parseQuery ( query ) {
+    function parseQuery ( query )
+    {
         var Params = new Object ();
-        if ( ! query ) return Params; // return empty object
+        if ( ! query ) return Params;
         var Pairs = query.split(/[;&]/);
-        for ( var i = 0; i < Pairs.length; i++ ) {
+        for ( var i = 0; i < Pairs.length; i++ )
+        {
             var KeyVal = Pairs[i].split('=');
             if ( ! KeyVal || KeyVal.length != 2 ) continue;
             var key = unescape( KeyVal[0] );
@@ -30,11 +28,11 @@ var getIncludeParameters = function()
         }
         return Params;
     }
-
     return params;
 };
 
-String.prototype.replaceAll = function(search, replacement) {
+String.prototype.replaceAll = function(search, replacement)
+{
     var target = this;
     return target.split(search).join(replacement);
 };
@@ -55,14 +53,16 @@ $(document).ready(function()
     }
 
     $("#"+tag).addClass("active");
-    if (tag === undefined || tag === 'todos'){
+    if (tag === undefined || tag === 'todos')
+    {
         $("#todos").addClass("active");
     }
 
-    var config = {
+    var config =
+    {
         'app_public': app_public,
         'base_url': base_url,
-        'products_per_page' : 9, 
+        'products_per_page' : 8, 
         'tag': tag,
         'ignore_stock': true,
         'infinite_scroll': false,
@@ -73,14 +73,14 @@ $(document).ready(function()
         'operator' :'and',
         'onLoad': function(products) 
         {
+            $(".boton-cargar").removeClass("hidden");
         }
     };
 
-    console.log(config.tag);
-
     $(document).ecommerce(config);
 
-    $(document).on("click", ".subcateg", function(ev){
+    $(document).on("click", ".subcateg", function(ev)
+    {
         ev.preventDefault();
 
         var subtag = $(this).attr('tag');
@@ -103,13 +103,5 @@ $(document).ready(function()
         $(".products").html("");
         $(document).ecommerce('destroy');
         $(document).ecommerce(config);
-
-        
-        // console.log(config);
-        
-        // facade.page = 1; // o 1 no estoy seguro
-        
-
-            // alert($(this).attr("tag"));
     });
 });
