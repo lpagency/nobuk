@@ -62,7 +62,7 @@ $(document).ready(function()
     var config = {
         'app_public': app_public,
         'base_url': base_url,
-        'products_per_page' : 9, 
+        'products_per_page' : 8, 
         'tag': tag,
         'ignore_stock': true,
         'infinite_scroll': false,
@@ -73,10 +73,9 @@ $(document).ready(function()
         'operator' :'and',
         'onLoad': function(products) 
         {
+            $(".boton-cargar").removeClass("hidden");
         }
     };
-
-    console.log(config.tag);
 
     $(document).ecommerce(config);
 
@@ -103,13 +102,5 @@ $(document).ready(function()
         $(".products").html("");
         $(document).ecommerce('destroy');
         $(document).ecommerce(config);
-
-        
-        // console.log(config);
-        
-        // facade.page = 1; // o 1 no estoy seguro
-        
-
-            // alert($(this).attr("tag"));
     });
 });
