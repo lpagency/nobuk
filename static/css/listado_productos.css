@@ -28,6 +28,7 @@ div.image-upload.part1
 
 .boton-cargar
 {
+    margin-top: 20px;
     z-index: 11111;
 }
 
@@ -648,6 +649,11 @@ img.mini
         color: #727272;
         border: solid 1px;
         border-radius: 0px;
+    }
+
+    .clearfix-two
+    {
+        margin-top: 0px;
     }
 
     .img_prod_little
