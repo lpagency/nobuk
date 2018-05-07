@@ -13,7 +13,7 @@
 {% end %}
 
 {% block javascript %}
-    <script type="text/javascript" src="{{ site_base }}/static/js/frubik.js"></script>
+    <script type="text/javascript" src="{{ site_base }}/{{ nocache_static }}/js/frubik.js"></script>
     <script type="text/javascript">
         $(document).ready(function()
         {
@@ -73,7 +73,7 @@
                     <img id="{{ site.name }}_home_nobuk" src="{{ read_image(site.name + '_home_nobuk', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_home_nobuk',500) }}'" class="banner_home margen-principal" alt="item">
                     <div class="texto-banner {{editabletext}}" text-id="{{ site.name + '_uno_no' }}"> {{ read_text(site.name +  '_uno_no') }} </div>
                     {% if is_admin %}
-                        <img class="change-image editablelink" link-id="{{ site.name + '_home_nobuk' }}" content="{{ read_link(site.name + '_home_nobuk') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
+                        <img class="change-image editablelink" link-id="{{ site.name + '_home_nobuk' }}" content="{{ read_link(site.name + '_home_nobuk') }}" src="{{ site_base }}/{{ nocache_static }}/img/link.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/link.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/link.png';">
                     {% end %}
                 </div>
             </a>
@@ -91,7 +91,7 @@
                     <img id="{{ site.name }}_home_nobuk_2" src="{{ read_image(site.name + '_home_nobuk_2', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_home_nobuk_2',500) }}'" class="banner_home" alt="item">
                     <div class="texto-banner {{editabletext}}" text-id="{{ site.name + '_nobuk_banner_2' }}"> {{ read_text(site.name +  '_nobuk_banner_2') }} </div>
                     {% if is_admin %}
-                        <img class="change-image editablelink" link-id="{{ site.name + '_home_nobuk_2' }}" content="{{ read_link(site.name + '_home_nobuk_2') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
+                        <img class="change-image editablelink" link-id="{{ site.name + '_home_nobuk_2' }}" content="{{ read_link(site.name + '_home_nobuk_2') }}" src="{{ site_base }}/{{ nocache_static }}/img/link.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/link.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/link.png';">
                     {% end %}
                 </div>
             </a>
@@ -108,7 +108,7 @@
                     {% end %}
                     <img id="{{ site.name }}_home_nobuk_3" src="{{ read_image(site.name + '_home_nobuk_3', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_home_nobuk_3',500) }}'" class="banner_home" alt="item">
                     {% if is_admin %}
-                        <img class="change-image editablelink" link-id="{{ site.name + '_home_nobuk_3' }}" content="{{ read_link(site.name + '_home_nobuk_3') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
+                        <img class="change-image editablelink" link-id="{{ site.name + '_home_nobuk_3' }}" content="{{ read_link(site.name + '_home_nobuk_3') }}" src="{{ site_base }}/{{ nocache_static }}/img/link.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/link.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/link.png';">
                     {% end %}
                     <div class="texto-banner {{editabletext}}" text-id="{{ site.name + '_nobuk_banner_3' }}"> {{ read_text(site.name +  '_nobuk_banner_3') }} </div>
                 </div>
@@ -125,7 +125,7 @@
                     <button id="{{ site.name + '_box_nobuk_dia_mama' }}" class="boton-mama" onclick="location.href='{{ read_link(site.name + '_box_nobuk_dia_mama') }}'">AQUÍ</button>
                 </div>
                 {% if is_admin %}
-                    <img class="change-image editablelink link-btn" link-id="{{ site.name + '_box_nobuk_dia_mama' }}" content="{{ read_link(site.name + '_box_nobuk_dia_mama') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
+                    <img class="change-image editablelink link-btn" link-id="{{ site.name + '_box_nobuk_dia_mama' }}" content="{{ read_link(site.name + '_box_nobuk_dia_mama') }}" src="{{ site_base }}/{{ nocache_static }}/img/link.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/link.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/link.png';">
                 {% end %}
                 </div>
             </div>
@@ -177,7 +177,7 @@
                     </a> 
                 </div>
                 {% if is_admin %}
-                    <img class="change-image editablelink" link-id="{{ site.name + '_box_nobuk_4_a' }}" content="{{ read_link(site.name + '_box_nobuk_4_a') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
+                    <img class="change-image editablelink" link-id="{{ site.name + '_box_nobuk_4_a' }}" content="{{ read_link(site.name + '_box_nobuk_4_a') }}" src="{{ site_base }}/{{ nocache_static }}/img/link.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/link.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/link.png';">
                 {% end %}
             </div>
 
@@ -199,7 +199,7 @@
                     </a> 
                 </div>
                 {% if is_admin %}
-                    <img class="change-image editablelink" link-id="{{ site.name + '_box_nobuk_5_a' }}" content="{{ read_link(site.name + '_box_nobuk_5_a') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
+                    <img class="change-image editablelink" link-id="{{ site.name + '_box_nobuk_5_a' }}" content="{{ read_link(site.name + '_box_nobuk_5_a') }}" src="{{ site_base }}/{{ nocache_static }}/img/link.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/link.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/link.png';">
                 {% end %}
             </div>
 
@@ -221,7 +221,7 @@
                     </a> 
                 </div>
                 {% if is_admin %}
-                    <img class="change-image editablelink" link-id="{{ site.name + '_box_nobuk_6_a' }}" content="{{ read_link(site.name + '_box_nobuk_6_a') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
+                    <img class="change-image editablelink" link-id="{{ site.name + '_box_nobuk_6_a' }}" content="{{ read_link(site.name + '_box_nobuk_6_a') }}" src="{{ site_base }}/{{ nocache_static }}/img/link.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/link.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/link.png';">
                 {% end %}
             </div>
 
@@ -243,7 +243,7 @@
                     </a> 
                 </div>
                 {% if is_admin %}
-                    <img class="change-image editablelink" link-id="{{ site.name + '_box_nobuk_7_a' }}" content="{{ read_link(site.name + '_box_nobuk_7_a') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
+                    <img class="change-image editablelink" link-id="{{ site.name + '_box_nobuk_7_a' }}" content="{{ read_link(site.name + '_box_nobuk_7_a') }}" src="{{ site_base }}/{{ nocache_static }}/img/link.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/link.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/link.png';">
                 {% end %}
             </div>
         </div>
