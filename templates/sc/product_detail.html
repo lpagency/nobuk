@@ -10,7 +10,7 @@
 
 {% block css %}
     <link rel="stylesheet" type="text/css" href="{{ site_base }}/common/js/bower/bodegas.client/dist/bodegas.client.css">
-    <link rel="stylesheet" href="{{ site_base }}/static/css/ocul.css">
+    <link rel="stylesheet" href="{{ site_base }}/{{ nocache_static }}/css/ocul.css">
     <style type="text/css">
         @media (max-width: 1199px)
         {
@@ -24,7 +24,7 @@
 {% end %}
 
 {% block javascript %}
-    <script type="text/javascript" src="{{ site_base }}/static/js/product_detail.js"></script>
+    <script type="text/javascript" src="{{ site_base }}/{{ nocache_static }}/js/product_detail.js"></script>
 
     <script type="text/javascript">
         function getCookie(cname)

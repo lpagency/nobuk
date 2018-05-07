@@ -26,7 +26,7 @@
              <img id="{{ site.name }}_footer_1_blue" src="{{ read_image(site.name + '_footer_1_blue', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_footer_1_blue',500) }}'" class="img-foot-red" alt="item">
            </a>
            {% if is_admin %}
-           <img class="change-image editablelink redess" link-id="{{ site.name + '_footer_1_blue' }}" content="{{ read_link(site.name + '_footer_1_blue') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
+           <img class="change-image editablelink redess" link-id="{{ site.name + '_footer_1_blue' }}" content="{{ read_link(site.name + '_footer_1_blue') }}" src="{{ site_base }}/{{ nocache_static }}/img/link.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/link.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/link.png';">
            {% end %}
          </div>
        </div>
@@ -45,7 +45,7 @@
            <img id="{{ site.name }}_footer_1_green" src="{{ read_image(site.name + '_footer_1_green', 1) }}" onload="this.onload='';this.src='{{ read_image(site.name + '_footer_1_green',500) }}'" class="img-foot-red" alt="item">
          </a>
          {% if is_admin %}
-         <img class="change-image editablelink redess" link-id="{{ site.name + '_footer_1_green' }}" content="{{ read_link(site.name + '_footer_1_green') }}" src="{{ site_base }}/static/img/link.png" onmouseover="this.src='{{ site_base }}/static/img/link.png';" onmouseout="this.src='{{ site_base }}/static/img/link.png';">
+         <img class="change-image editablelink redess" link-id="{{ site.name + '_footer_1_green' }}" content="{{ read_link(site.name + '_footer_1_green') }}" src="{{ site_base }}/{{ nocache_static }}/img/link.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/link.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/link.png';">
          {% end %}
        </div>
      </ul> 
