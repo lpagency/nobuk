@@ -82,7 +82,7 @@ $(document).ready(function()
 
                 if(a == "false")
                 {
-                    b.parent().children().children("button").html("Encargar");
+                    b.parent().children().children("button").html("Agotado");
                     b.parent().children().children("button").attr("disabled", true);
                 }
             });
