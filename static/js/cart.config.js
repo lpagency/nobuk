@@ -74,6 +74,18 @@ $(document).ready(function()
         'onLoad': function(products) 
         {
             $(".boton-cargar").removeClass("hidden");
+            $(".inf").each(function()
+            {
+                var b = $(this);
+                var a = $(this).attr("in_stock");
+                console.log(a);
+
+                if(a == "false")
+                {
+                    b.parent().children().children("button").html("Encargar");
+                    b.parent().children().children("button").attr("disabled", true);
+                }
+            });
         }
     };
 

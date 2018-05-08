@@ -53,33 +53,11 @@
     <script type="text/javascript">
         $(document).ready(function()
         {
-            setTimeout(function()
-            {
-                $(".inf").each(function()
-                {
-
-                    var b = $(this);
-                    var a = $(this).attr("in_stock");
-
-                    if(a == "false")
-                    {
-                        b.parent().children().children("button").html("Agotado");
-                        b.parent().children().children("button").attr("disabled", true);
-                    }
-
-                });
-            },2000);
-        });
-    </script>
-
-    <script type="text/javascript">
-        $(document).ready(function()
-        {
             $(document).on("click", ".mas-info", function()
             {
                 var a = $(this).children().children("button");
 
-                if(a.html() == "Agotado")
+                if(a.html() == "Encargar")
                 {
                     document.cookie = "stock=none";
                 }
