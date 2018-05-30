@@ -118,14 +118,15 @@ div.image-upload.part1
     position: relative;
     top: 11px;
     width: 100%;
-    height: 100%;
+    object-fit: contain;
+    height: 350px;
     max-width: 360px;
 }
 
 .img_prod_little
 {
     width: 170%;
-    height: auto;
+    height: 100px;
     margin-bottom: 13px;
     position: relative;
     object-fit: contain;
@@ -514,7 +515,7 @@ img.mini
         position: relative;
         top: 11px;
         width: 74%;
-        height: 100%;
+        height: 350px;
         max-width: 360px;
     }
 
@@ -795,13 +796,13 @@ img.mini
 
     .combinaciones
     {
-        text-align: left;
+        text-align: center;
     }
 
     .up-ex
     {
         float: left;
-        text-align: left;
+        text-align: center;
         width: 100%;
         position: relative;
         top: 60px;
@@ -830,7 +831,8 @@ img.mini
 
     .product-price-2
     {
-        left: 20px;
+        left: 0px;
+        text-align: center;
     }
 
     .btn-success.car
@@ -953,6 +955,11 @@ img.mini
         top: 56px;
     }
 
+    .btn-success.car
+    {
+        left: 52px;
+    }
+
     .kim
     {
         left: -7px;
@@ -1022,9 +1029,10 @@ img.mini
     {
         margin-bottom: 0%;
         margin-top: 0%;
-        width: 117%;
+        width: 100%;
         float: left;
-        margin-left: -22%;
+        text-align: center;
+        font-size: 13px;
     }
 }
 
@@ -1068,16 +1076,6 @@ img.mini
         margin-top: 0px;
     }
 
-    .bullet
-    {
-        margin-left: -35%;
-        width: 161%;
-        font-size: 14px;
-        text-align: center;
-        position: relative;
-        top: -16px;
-    }
-
     .pri
     {
         width: 89%;
@@ -1104,7 +1102,7 @@ img.mini
 
     .btn-success.car
     {
-        left: 5px;
+        left: 30px;
     }
 
     hr.len
