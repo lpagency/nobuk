@@ -126,7 +126,7 @@ div.image-upload.part1
 .img_prod_little
 {
     width: 170%;
-    height: auto;
+    height: 100px;
     margin-bottom: 13px;
     position: relative;
     object-fit: contain;
@@ -796,13 +796,13 @@ img.mini
 
     .combinaciones
     {
-        text-align: left;
+        text-align: center;
     }
 
     .up-ex
     {
         float: left;
-        text-align: left;
+        text-align: center;
         width: 100%;
         position: relative;
         top: 60px;
@@ -831,7 +831,8 @@ img.mini
 
     .product-price-2
     {
-        left: 20px;
+        left: 0px;
+        text-align: center;
     }
 
     .btn-success.car
@@ -954,6 +955,11 @@ img.mini
         top: 56px;
     }
 
+    .btn-success.car
+    {
+        left: 52px;
+    }
+
     .kim
     {
         left: -7px;
@@ -1023,9 +1029,10 @@ img.mini
     {
         margin-bottom: 0%;
         margin-top: 0%;
-        width: 117%;
+        width: 100%;
         float: left;
-        margin-left: -22%;
+        text-align: center;
+        font-size: 13px;
     }
 }
 
