@@ -6,8 +6,8 @@
 'use strict';
 
 var base_url = $.environmentVar(
-    'https://apibodegas.loadingplay.com/',
-    'https://apibodegas.loadingplay.com/',
+    'https://apibodegas.ondev.today/',
+    'https://apibodegas.ondev.today/',
     'https://apibodegas.loadingplay.com/');
 var checkout_url = $.environmentVar(
     'https://lpcheckout.ondev.today',
