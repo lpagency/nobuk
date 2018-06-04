@@ -22,15 +22,15 @@
         $(document).ready(function()
         {
 
-            var hyper = location.href;
-            hyper = hyper.split("tag=");
+            var tag_url = location.href;
+            tag_url = tag_url.split("tag=");
 
-            if(hyper[1] != "new")
+            if(tag_url[1] != "new" && tag_url[1] != "regiones")
             {
                 $(".mtl").removeClass("hidden");
             }
 
-            if(hyper[1] == undefined)
+            if(tag_url[1] == undefined)
             {
                 $(".todo").removeClass("hidden");
             }
