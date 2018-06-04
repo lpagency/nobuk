@@ -73,12 +73,15 @@ $(document).ready(function()
         'operator' :'and',
         'onLoad': function(products) 
         {
+            var tag_url = location.href;
+
+            tag_url = tag_url.split("tag=");
+
             $(".boton-cargar").removeClass("hidden");
             $(".inf").each(function()
             {
                 var b = $(this);
                 var a = $(this).attr("in_stock");
-                console.log(a);
 
                 if(a == "false")
                 {
@@ -86,6 +89,18 @@ $(document).ready(function()
                     b.parent().children().children("button").attr("disabled", true);
                 }
             });
+
+            if(!tag_url[1])
+            {
+                for(var prod = 0; prod < products.length; prod++)
+                {
+                    if(products[prod].tags.indexOf("especiales") != -1)
+                    {
+                        var sku = "." +products[prod].sku;
+                        $(sku).addClass("hidden");
+                    }
+                }
+            }
         }
     };
 
@@ -96,24 +111,26 @@ $(document).ready(function()
         ev.preventDefault();
 
         var subtag = $(this).attr('tag');
-        var hyper = location.href;
+        var tag_url = location.href;
         var tag = "";
 
-        hyper = hyper.split("tag=");
+        tag_url = tag_url.split("tag=");
 
-        if(hyper[1] == undefined)
+        if(!tag_url[1])
         {
             config.tag = subtag;
-            history.pushState('', 'nobuk', hyper[0]+'?tag='+subtag);
+            history.pushState('', 'nobuk', tag_url[0]+'?tag='+subtag);
         }
         else
         {
             config.tag = subtag;
-            history.pushState('', 'nobuk', hyper[0]+'tag='+subtag);
+            history.pushState('', 'nobuk', tag_url[0]+'tag='+subtag);
         }
 
         $(".products").html("");
         $(document).ecommerce('destroy');
         $(document).ecommerce(config);
+
+
     });
 });
