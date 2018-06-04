@@ -90,7 +90,7 @@ $(document).ready(function()
                 }
             });
 
-            if(tag_url[1] == "")
+            if(!tag_url[1])
             {
                 for(var prod = 0; prod < products.length; prod++)
                 {
@@ -116,7 +116,7 @@ $(document).ready(function()
 
         tag_url = tag_url.split("tag=");
 
-        if(tag_url[1] == undefined)
+        if(!tag_url[1])
         {
             config.tag = subtag;
             history.pushState('', 'nobuk', tag_url[0]+'?tag='+subtag);
