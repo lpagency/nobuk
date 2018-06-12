@@ -790,11 +790,6 @@ div.image-upload.con
 
 @media (max-width: 420px)
 {
-    .especial-mama-cont-boton
-    {
-        left: 8%;
-    }
-
     .banner-secundario
     {
         line-height: 2rem;
@@ -868,11 +863,6 @@ div.image-upload.con
 
 @media (max-width: 375px)
 {
-    .especial-mama-cont-boton
-    {
-        left: 5%;
-    }
-
     .banner-secundario
     {
         line-height: 1.7rem;
