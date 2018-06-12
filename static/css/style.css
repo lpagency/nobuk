@@ -86,7 +86,7 @@ li
 .especial-mama
 {
     height: auto;
-    background-color: #dac1d8;
+    background-color: #9e5122;
     margin-top: 2px;
     margin-bottom: 3px;
 }
@@ -95,6 +95,7 @@ li
 {
     position: relative;
     top: 36px;
+    color: white;
 }
 
 .boton-mama
@@ -341,6 +342,7 @@ div.image-upload.con
     margin-bottom: 60px;
     font-size: 26px;
     font-weight: 100;
+    color: white;
 }
 
 .cuadros-home
@@ -400,7 +402,6 @@ div.image-upload.con
     width: 106%;
     height: 250px;
     object-fit: cover;
-    margin-bottom: 40px;
     filter: grayscale(0%) brightness(80%);
     -webkit-filter: grayscale(0%) brightness(80%);
     -moz-filter: grayscale(0%) brightness(80%);
@@ -583,13 +584,8 @@ div.image-upload.con
 
 .contenedor-2
 {
-    width: 100%;
-    height: 162px;
-    line-height: 114px;
-    text-align: center;
-    bottom: 235px;
-    position: relative;
-    margin-bottom: -150px;
+    bottom: 0px;
+    position: absolute;
 }
 
 .contenedor-2>div.tu
