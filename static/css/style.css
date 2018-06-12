@@ -697,7 +697,7 @@ div.image-upload.con
 {
     .boton-mama
     {
-        left: 27%;
+        left: 38%;
         position: relative;
     }
 
@@ -790,11 +790,6 @@ div.image-upload.con
 
 @media (max-width: 420px)
 {
-    .especial-mama-cont-boton
-    {
-        left: 8%;
-    }
-
     .banner-secundario
     {
         line-height: 2rem;
@@ -822,7 +817,7 @@ div.image-upload.con
     {
         position: relative;
         top: -12px;
-        left: 0px;
+        left: 42px;
     }
 
     .banner-principal-abajo
@@ -868,11 +863,6 @@ div.image-upload.con
 
 @media (max-width: 375px)
 {
-    .especial-mama-cont-boton
-    {
-        left: 5%;
-    }
-
     .banner-secundario
     {
         line-height: 1.7rem;
@@ -901,5 +891,10 @@ div.image-upload.con
     {
         line-height: 1.4rem;
         font-size: 16px;
+    }
+
+    .boton-mama
+    {
+        left: 33px;
     }
 }
