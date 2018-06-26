@@ -37,7 +37,7 @@ div.image-upload.part1
     width: 100%;
     height: 219px;
     object-fit: scale-down;
-    margin-bottom: 99px;
+    margin-bottom: 113px;
     padding-left:0px;
     top: 39px;
 }
@@ -69,11 +69,13 @@ div.image-upload.part1
     font-size: 13px;
     font-weight: 300;
     margin-bottom: 87px;
-    height: 20px;
-    padding-left: 25px;
-    padding-right: 23px;
     font-weight: 600;
     text-rendering: optimizeLegibility;
+    padding-left: 25px;
+    padding-right: 23px;
+    height: 3em;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -ms-transform: scaleY(1.2);
@@ -598,16 +600,6 @@ img.mini
         height: 100% !important;
     }
 
-    .img-pro
-    {
-        width: 89%;
-        height: 213px;
-        object-fit: scale-down;
-        margin-bottom: 99px;
-        padding-left: 43px;
-        top: 45px;
-    }
-
     img.mini
     {
         display: block;
@@ -1103,19 +1095,6 @@ img.mini
     hr.len
     {
         width: 100%;
-    }
-
-    .inf
-    {
-        position: absolute;
-        bottom: 0px;
-        width:61%;
-        text-align: left;
-        left: 64px;
-        color: white;
-        font-size: 25px;
-        font-weight: 300;
-        margin-bottom: 57px;
     }
 
     .carro
