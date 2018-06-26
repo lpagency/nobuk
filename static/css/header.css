@@ -5,7 +5,7 @@
     background:transparent;
     border-radius: 1px;
     top: 9px;
-    padding-left: 15px;
+    padding-left: 0px;
     padding-right: 0px;
     margin-bottom: 6px;
 }
@@ -17,14 +17,9 @@
 
 .logo-desk
 {
-    float: left;
-    padding: 0px;
-    top: 21px;
-    left: 6px;
-    width: 145px;
-    height: 57px;
     object-fit: scale-down;
-    position: relative;
+    margin-top: -3px;
+    height: 51px;
 }
 
 .nav>li.logo_wrapper>a:hover:focus
@@ -77,13 +72,6 @@ li#open-cart
     margin: auto;
 }
 
-.cero
-{
-    width: 45%;
-    float: right;
-    margin-right: -65px;
-}
-
 .icon
 {
     top: 7px;
@@ -100,33 +88,20 @@ li#open-cart
 
 .shopping-cart-div
 {
-    font-size: 40px !important;
-    position: relative;
-    top: -11px;
-    margin-right: 10px;
+    font-size: 40px;
+    margin-top: -10px;
 }
 
 span.units-total
 {
     position: relative;
-    top: -17px;
-}
-
-.caja-log
-{
-    width: 224px;
-    float: left;
-    margin-top: -18px;
-    margin-bottom: 21px;
-    left: 435px;
-    position: absolute;
-    z-index: 1030;
+    top: -7px;
 }
 
 .sig
 {
-  position:relative;
-  left: -14px;
+    position:relative;
+    left: -14px;
 }
 
 .line-white
@@ -190,7 +165,7 @@ span.units-total
     margin-top: 16px;
 }
 
-.dropdown-menu 
+.dropdown-menu
 {
     position: absolute;
     top: 155%;
@@ -250,13 +225,6 @@ span.units-total
 }
 
 /*-------------------------------------Responsive--------------------------------------------------------*/
-@media (max-width: 1370px)
-{
-    .units-total
-    {
-        top: 0px;
-    }
-}
 
 @media (max-width: 1280px)
 {
@@ -268,12 +236,6 @@ span.units-total
 
 @media (max-width: 1277px)
 {
-    .navbar-nav li a
-    {
-        font-size: 13px;
-        padding: 8px 33px 8px 17px;
-    }
-
     .btn-primary.menu
     {
         display: inline-block;
@@ -299,25 +261,12 @@ span.units-total
     }
 }
 
-@media (max-width: 1227px)
+@media (max-width: 1199px)
 {
     .navbar-nav li a
     {
         font-size: 13px;
-        padding: 8px 33px 8px 8px;
-    }
-
-    .icon
-    {
-        top: 15px;
-        font-size: 13px;
-        left: 13px;
-        cursor: pointer;
-        font-weight: 400;
-        letter-spacing: 2px;
-        text-rendering: optimizeLegibility;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
+        padding: 8px 15px 8px 15px;
     }
 
     .btn-primary.menu
@@ -327,45 +276,18 @@ span.units-total
         margin-bottom: 0;
         font-size: 13px;
     }
-}
 
-@media (max-width: 1199px)
-{
     .carro
     {
         width: 34px;
-    }
-
-    .caja-log
-    {
-        width: 179px;
-        float: left;
-        margin-top: -24px;
-        margin-bottom: 0px;
-        left: 350px;
     }
 }
 
 @media (max-width: 1141px)
 {
-    .navbar-nav li a
-    {
-        font-size: 12px;
-        padding: 8px 23px 8px 8px;
-    }
-
     .icon
     {
         font-size: 12px !important;
-    }
-}
-
-@media (max-width: 1140px)
-{
-    .sig
-    {
-        position: relative;
-        left: 21px;
     }
 }
 
@@ -380,28 +302,8 @@ span.units-total
     }
 }
 
-@media (max-width: 1116px)
-{
-    .navbar-nav li a
-    {
-        font-size: 12px;
-        padding: 8px 20px 8px 8px;
-    }
-
-    .icon
-    {
-        font-size: 12px !important;
-    }
-}
-
 @media (max-width: 1092px)
 {
-    .navbar-nav li a
-    {
-        font-size: 12px;
-        padding: 8px 18px 8px 8px;
-    }
-
     .icon
     {
         font-size: 12px !important;
@@ -411,123 +313,50 @@ span.units-total
     {
         width: 89.8%;
     }
-
-    .caja-log
-    {
-        left: 300px;
-    }
-}
-
-@media (max-width: 1076px)
-{
-     .navbar-nav li a
-     {
-        font-size: 12px;
-        padding: 8px 11px 8px 8px;
-    }
-
-    .icon
-    {
-        font-size: 12px !important;
-    }
-}
-
-@media (max-width: 1020px)
-{
-    .navbar-nav li a
-    {
-        font-size: 12px;
-        padding: 8px 8px 8px 8px;
-    }
-
-    .sig
-    {
-        position: relative;
-        left: 16px;
-    }
 }
 
 @media (max-width: 991px)
 {
-    .caja-log
+    .shopping-cart-div
     {
-        width: 179px;
-        float: left;
-        margin-top: 11px;
-        margin-bottom: 0px;
-        left: 332px;
-    }
-
-    .line-white
-    {
-        width: 100%;
-        margin-top: -84px;
-        height: 135px;
-    }
-
-    .cero
-    {
-        width: 46%;
-        margin-right: -36px;
-    }
-
-    .nobuk-menu
-    {
-        padding-left: 11px;
-        padding-right: 11px;
-        top: 35px;
-    }
-
-    .caja-log
-    {
-        margin-top: -48px;
-        left: 272px;
+        font-size: 30px;
+        margin-top: -4px;
+        margin-left: 10px;
     }
 
     .navbar-nav li a
     {
         font-size: 12px;
-        padding: 8px 8px 8px 8px;
+        padding: 8px 2px 8px 2px;
     }
 
-    span.units-total
-    {
-        top: -20px;
-    }
-
-    .logo-desk-inside
-    {
-        float: left;
-        padding: 0px;
-        top: 8px;
-        width: 175px;
-        height: 45px;
-        object-fit: scale-down;
-        position: relative;
-    }
-}
-
-@media screen and (max-width: 768px)
-{
     .nobuk-menu
     {
         top: 14px;
     }
 
-    .shopping-cart-div
+    .navbar-nav li a
     {
-        font-size: 30px !important;
+        font-size: 12px;
+        padding: 8px 5px 8px 5px;
+    }
+
+    .container_header
+    {
+        float: left;
+        width: auto;
     }
 
     .logo-desk
     {
-        top: 126px;
+        height: 48px;
     }
 }
 
 
 @media screen and (max-width: 767px)
 {
+
     .logo
     {
         max-width: 160px;
@@ -540,12 +369,6 @@ span.units-total
         z-index: 1111;
         top: 63px;
         left: -13px;
-    }
-
-    span.units-total
-    {
-        top: -7px;
-        left: -9px;
     }
 
     .navbar-default .navbar-nav .open .dropdown-menu>li>a
@@ -565,10 +388,10 @@ span.units-total
         background-color: white;
     }
 
-    .shopping-cart-div
+    .logo-desk
     {
-        font-size: 33px !important;
-        top: -2px;
+        margin-left: 10px;
+        margin-top: 10px;
     }
 
     .line-white
@@ -580,17 +403,6 @@ span.units-total
         top: 0px;
     }
 
-    .icon
-    {
-        top: 11px;
-        font-size: 15px;
-        left: -2px;
-        position: relative;
-        text-align: center;
-        width: 14%;
-        float: right;
-    }
-
     .dropdown:hover .dropdown-menu
     {
         width: 100%;
@@ -598,13 +410,9 @@ span.units-total
         position: relative;
     }
 
-    .caja-log
+    .shopping-cart-div
     {
-        width: 300px;
-        float: left;
-        margin-top: -115px;
-        margin-bottom: 0px;
-        left: 27px;
+        margin-top: 10px;
     }
 }
 
@@ -636,27 +444,5 @@ span.units-total
     .navbar-nav
     {
         margin: 7.5px 0px;
-    }
-}
-
-@media screen and (max-width: 375px)
-{
-    .shopping-cart-div
-    {
-        font-size: 27px !important;
-    }
-}
-
-@media screen and (max-width: 320px)
-{
-    .shopping-cart-div
-    {
-        left: -12px;
-    }
-
-    span.units-total
-    {
-        top: -20px;
-        left: 6px;
     }
 }

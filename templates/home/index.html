@@ -4,10 +4,6 @@
     {{ site.name }}
 {% end %}
 
-{% block header %}
-    {% include '../home/header.html' %}
-{% end %}
-
 {% block css %}
     <link rel="stylesheet" type="text/css" href="{{ site_base }}/common/js/bower/bodegas.client/dist/bodegas.client.css?22">
 {% end %}
@@ -118,7 +114,7 @@
     <!--*END BANNER PRINCIPAL (3 BANNERS)*-->
     <!--*BOTON CON TEXTO*-->
     <section>
-        <div class="container min seccion-mama"> 
+        <div class="container min seccion-mama">
             <div class="col-md-12 col-sm-12 especial-mama">
                 <div class="col-md-9 col-sm-12 text-one {{editabletext}}" text-id="{{ site.name + '_especial_mama' }}"> {{ read_text(site.name +  '_especial_mama') }} </div>
                 <div class="col-md-3 col-sm-12 especial-mama-cont-boton">
@@ -158,7 +154,7 @@
     </section>
     <!--*END BANNER SECUNDARIO (1 BANNER)*-->
     <section>
-        <div class="container min sep-home"> 
+        <div class="container min sep-home">
             <div class="col-md-3 article-box-3">
                 <div style="position:relative;">
                     {% if is_admin %}
@@ -174,7 +170,7 @@
                         <div class='contenedor-2'>
                             <div class="tu {{editabletext}}" text-id="{{ site.name + '_t_no_3_a' }}"> {{ read_text(site.name +  '_t_no_3_a') }}</div>
                         </div>
-                    </a> 
+                    </a>
                 </div>
                 {% if is_admin %}
                     <img class="change-image editablelink" link-id="{{ site.name + '_box_nobuk_4_a' }}" content="{{ read_link(site.name + '_box_nobuk_4_a') }}" src="{{ site_base }}/{{ nocache_static }}/img/link.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/link.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/link.png';">
@@ -196,7 +192,7 @@
                         <div class='contenedor-2'>
                             <div class="tu {{editabletext}}" text-id="{{ site.name + '_t_no_3_b' }}"> {{ read_text(site.name +  '_t_no_3_b') }}</div>
                         </div>
-                    </a> 
+                    </a>
                 </div>
                 {% if is_admin %}
                     <img class="change-image editablelink" link-id="{{ site.name + '_box_nobuk_5_a' }}" content="{{ read_link(site.name + '_box_nobuk_5_a') }}" src="{{ site_base }}/{{ nocache_static }}/img/link.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/link.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/link.png';">
@@ -218,7 +214,7 @@
                         <div class='contenedor-2'>
                             <div class="tu {{editabletext}}" text-id="{{ site.name + '_t_no_3_c' }}"> {{ read_text(site.name +  '_t_no_3_c') }}</div>
                         </div>
-                    </a> 
+                    </a>
                 </div>
                 {% if is_admin %}
                     <img class="change-image editablelink" link-id="{{ site.name + '_box_nobuk_6_a' }}" content="{{ read_link(site.name + '_box_nobuk_6_a') }}" src="{{ site_base }}/{{ nocache_static }}/img/link.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/link.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/link.png';">
@@ -240,7 +236,7 @@
                         <div class='contenedor-2'>
                             <div class="tu {{editabletext}}" text-id="{{ site.name + '_t_no_3_d' }}"> {{ read_text(site.name +  '_t_no_3_d') }}</div>
                         </div>
-                    </a> 
+                    </a>
                 </div>
                 {% if is_admin %}
                     <img class="change-image editablelink" link-id="{{ site.name + '_box_nobuk_7_a' }}" content="{{ read_link(site.name + '_box_nobuk_7_a') }}" src="{{ site_base }}/{{ nocache_static }}/img/link.png" onmouseover="this.src='{{ site_base }}/{{ nocache_static }}/img/link.png';" onmouseout="this.src='{{ site_base }}/{{ nocache_static }}/img/link.png';">

@@ -1,4 +1,4 @@
-html, body 
+html, body
 {
     font-family: 'Oxygen', sans-serif;
 }
@@ -32,6 +32,16 @@ a:hover
 li
 {
     list-style: none;
+}
+
+.no-padding-left
+{
+    padding-left: 0px!important;
+}
+
+.no-padding-right
+{
+    padding-right: 0px!important;
 }
 
 .no-margin-top
@@ -621,12 +631,6 @@ div.image-upload.con
     padding-right: 17px;
 }
 
-.mg-home
-{
-    width: 50%;
-    margin-left: -31px;
-}
-
 .sep-home
 {
     position: relative;
@@ -649,7 +653,7 @@ div.image-upload.con
 /*-----------------------------------------------Responsive--------------------------------------------------*/
 @media (max-width: 1199px)
 {
-    .img-mobile 
+    .img-mobile
     {
         margin-top: 0px !important;
     }

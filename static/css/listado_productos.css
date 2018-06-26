@@ -1049,11 +1049,6 @@ img.mini
     {
         width: 80%;
     }
-
-    .fa.fa-shopping-cart.shopping-cart-div
-    {
-        margin-right: 8px;
-    }
 }
 
 
@@ -1127,13 +1122,6 @@ img.mini
     {
         position: relative;
         left: -20px;
-    }
-
-    .units-total
-    {
-        position: relative;
-        top: -25px;
-        left: 7px;
     }
 
     .subcateg.active
