@@ -5,7 +5,7 @@
 {% end %}
 
 {% block header %}
-    {% include '../home/header_inside.html' %}
+    {% include '../home/header.html' %}
 {% end %}
 
 {% block css %}
@@ -278,7 +278,7 @@
        <section>
             <div style="position: relative;">
                 <div class="container">
-               
+
                     <h1 class="name texto-detalle" class="line" href="#">{{! name }}</h1>
                 </div>
             </div>
@@ -293,7 +293,7 @@
                         <div class="col-md-6 col-sm-10 col-xs-12 producto-main">
                             <div class="col-xs-3 col-md-2 col-sm-2 image_little">
                                 <img class="{{! images[0]['thumb_500']|hide_if_empty}} col-xs-3 little img_prod_little" src="{{! images[0]['thumb_500'] }}" onload="this.onload='';this.src={{! images[0]['thumb_500']}}" />
-                                 <img class="{{! images[1]['thumb_500']|hide_if_empty }} col-xs-3 little img_prod_little" src="{{! images[1]['thumb_500'] }}" onload="this.onload='';this.src={{! images[1]['thumb_500']}}" /> 
+                                 <img class="{{! images[1]['thumb_500']|hide_if_empty }} col-xs-3 little img_prod_little" src="{{! images[1]['thumb_500'] }}" onload="this.onload='';this.src={{! images[1]['thumb_500']}}" />
                                 <img class="{{! images[2]['thumb_500']|hide_if_empty }} col-xs-3 little img_prod_little" src="{{! images[2]['thumb_500'] }}" title="" alt="" onload="this.onload='';this.src={{! images[2]['thumb_500']}}" />
                                 <img class="{{! images[3]['thumb_500']|hide_if_empty }} col-xs-3 little img_prod_little" src="{{! images[3]['thumb_500'] }}" title="" alt="" onload="this.onload='';this.src={{! images[3]['thumb_500']}}" />
                                 <img class="{{! images[4]['thumb_500']|hide_if_empty }} col-xs-3 little img_prod_little" src="{{! images[4]['thumb_500'] }}" title="" alt="" onload="this.onload='';this.src={{! images[4]['thumb_500']}}" />
@@ -314,7 +314,7 @@
                                 <div class="row product-related" style="margin-bottom: 68px;">
                                 </div>
                                 <div class="product-price-2">{{! main_price|money }} </div>
-                                <button 
+                                <button
                                     type="button"
                                     class="btn add-to-cart btn-success car"
                                     id="open-cart"
@@ -336,7 +336,7 @@
             <div align="center">
                 <div class="fin text-center"> Más detalle sobre el producto </div>
                 <hr class="len">
-                <h3 class="descr_prod_detail ellipsis multiline"> 
+                <h3 class="descr_prod_detail ellipsis multiline">
                     {{! description }}
                 </h3>
             </div>
