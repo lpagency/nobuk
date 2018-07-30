@@ -1,7 +1,7 @@
 /* global $ */
 'use strict';
 
-$(document).ready(function() 
+$(document).ready(function()
 {
 var base_url = $.environmentVar(
     'https://apibodegas.ondev.today/',
@@ -11,11 +11,11 @@ var checkout_url = $.environmentVar(
     'https://lpcheckout.ondev.today',
     'https://lpcheckout.ondev.today',
     'https://pay.loadingplay.com');
-var app_public = $.environmentVar(34,34,34);
+var app_public = $.environmentVar('nobuk','nobuk','nobuk');
 
-    // functions 
+    // functions
     // productos relacionados
-    var related = function(tag) 
+    var related = function(tag)
     {
         var config = {
             'app_public': app_public,
@@ -29,7 +29,7 @@ var app_public = $.environmentVar(34,34,34);
         $('.product-related').ecommerce('product_box', config);
     };
 
-    //cambia imagenes pequeñas en detalle de producto 
+    //cambia imagenes pequeñas en detalle de producto
     $(document).on("click", '.little', function(){
         $("#img_detail").attr("src", $(this).attr('src'));
     });

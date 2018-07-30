@@ -13,4 +13,4 @@ var checkout_url = $.environmentVar(
     'https://lpcheckout.ondev.today',
     'https://lpcheckout.ondev.today',
     'https://pay.loadingplay.com');
-var app_public = $.environmentVar(34,34,34);
+var app_public = $.environmentVar('nobuk','nobuk','nobuk');
