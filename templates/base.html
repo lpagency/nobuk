@@ -143,7 +143,7 @@
     <script type="text/javascript" src="{{ site_base }}/common/js/bower/file_uploader/dist/fileuploader.js"></script>
     <script type="text/javascript" src="{{ site_base }}/common/js/jquery.cookie.js"></script>
     <script type="text/javascript" src="{{ site_base }}/common/js/environment.detection.js"></script>
-    <script type="text/javascript" src="{{ site_base }}/common/js/bower/bodegas.client/dist/bodegas.client.js?12"></script>
+    <script type="text/javascript" src="https://cdn.loadingplay.com/js/connect/1.0.0/bodegas.client.es5.js"></script>
     <script type="text/javascript" src="{{ site_base }}/common/js/parallax.min.js"></script>
     <script type="text/javascript" src="{{ site_base }}/common/js/ellipsis/src/jquery.dotdotdot.min.js"></script>
     <script type="text/javascript" src="{{ site_base }}/common/js/ellipsis/src/jquery.dotdotdot.min.umd.js"></script>
@@ -194,7 +194,7 @@
     </script>
     <script type="text/x-template" id="shopping-cart-checkout-form" >
         <form action="{{! checkout_url}}" method="get" novalidate id="shipping-form" class="myform" onclick="return Validate()">
-            <input name="site_id" class="form-control required" type="hidden" value="34">
+            <input name="site_name" class="form-control required" type="hidden" value="nobuk">
             <input name="cart_id" class="form-control required" type="hidden" value="{{! cart_id}}">
             <input name="origin" class="form-control required" type="hidden" value="{{ site.name }}">
             <input name="total" class="total-carro" type="hidden" value="{{! total }}">
